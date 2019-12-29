@@ -1,0 +1,198 @@
+/*
+Master BRAIN Style Sheet Document 03/14/02
+*/
+
+* {
+  color: #000000;
+	font-family: sans-serif;
+	font-size: 10pt;
+}
+
+body {
+	background-color: #006699;
+  overflow-y: scroll;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+p {color: #000000; font-family: verdana,arial,sans-serif; font-size: 10pt; }
+tr {color: #000000; font-family: verdana,arial,sans-serif; font-size: 10pt; }
+td {color: #000000; font-family: verdana,arial,sans-serif; font-size: 10pt; }
+table {color: #000000; font-family: verdana,arial,sans-serif; font-size: 10pt; }
+blockquote {color: #000000; font-family: verdana,arial,sans-serif; font-size: 9pt; }
+a:link {color: #000099; } /* unvisited links */
+a:visited {color: #006699; } /*visited links */
+a:active {color: #333399; } /*active links */
+h1 {color: #000000; font-family: verdana,arial,sans-serif; font-size: 14pt;}
+h2 {color: #000000; font-family: verdana,arial,sans-serif; font-size: 12pt; }
+h3 {color: #000000; font-family: verdana,arial,sans-serif; font-size: 10pt; font-weight: bold; }
+
+.Authors {color: #006699; font-family: verdana,arial,sans-serif; font-weight: bold; font-size: 10pt; }
+.Authors:visited {color: #003366; font-family: verdana,arial,sans-serif; font-weight: bold; font-size: 10pt; }
+.Author {color: #006699; font-family: verdana,arial,sans-serif; font-weight: bold; font-size: 10pt; }
+.Author:visited {color: #003366; font-family: verdana,arial,sans-serif; font-weight: bold; font-size: 10pt; }
+.AuthorAffiliation {color: #006699; font-family: verdana,arial,sans-serif; font-size: 9pt; }
+.AuthorAffiliation:visited {color: #003366; font-family: verdana,arial,sans-serif; font-size: 9pt; }
+
+#index /*#mainContent, #graphnav*/ {
+	position: relative;
+	width: 760px;
+	left: 50%;
+	margin-left: -370px;
+}
+
+#index {
+	position: absolute;
+	width: 750px;
+	padding: 0 5px 20px 5px;
+	background-color: #eeeeee;
+	top: 78px;
+	bottom: 0px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+#index h1 {
+	margin: 20px 0 5px 0;
+	padding: 0;
+}
+
+#centering-column {
+  width: 780px;
+  background-color: red;
+  height: 100%;
+}
+
+#header {
+	background-color: #404040;
+  padding: 5px;
+  margin: 0;
+  height: 75px;
+}
+#header h1 {
+	color: #eeeeee;
+	font-size: 25pt;
+	margin-bottom: -20px;
+}
+#header a {
+	color: #eeeeee;
+}
+
+#logo {
+  float: left;
+}
+
+#title {
+  float: right;
+  padding-top: 10px;
+  padding-right: 30px;
+  align: right;
+}
+#title > * {
+  margin: 0;
+  padding: 0;
+}
+.clearer {
+  clear: both;
+}
+
+#graphnav {
+	padding: 0;
+	background-color: #01215c;
+	background: url(wallpaper.jpg);
+  display: flex;
+  justify-content: center;
+  height: 280px;
+  width: 100%;
+}
+/*
+#graphnav td {
+	vertical-align: top;
+	margin: 0;
+	padding: 0 0 0 5px;
+	width: 33%;
+}
+*/
+#graphnav a {
+	color: #ffffff;
+	font-size: 12px;
+}
+#graphnav h4 {
+	margin: 0;
+	color: #ffffff;
+  height: 15px;
+  padding: 5px;
+}
+#graphnav h3  {
+	margin: 0;
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: bold;
+	overflow: hidden;
+}
+#parents_here_children {
+	overflow: hidden;
+  width: 260px;
+  height: 100%;
+}
+#related, #siblings {
+	overflow: none;
+  width: 260px;
+  height: 100%;
+}
+#related_links, #siblings_links {
+  height: 245px;
+  overflow-y: auto;
+  padding: 5px;
+}
+#parents { /* effective height: 120px */
+	height: 120px;
+	overflow: hidden;
+}
+#parents_links {
+  height: 85px;
+  overflow-y: auto;
+  padding: 5px;
+}
+#here { /* effective height: 25px */
+	height: 13px;
+	border: 1px solid #ff5735;
+	background-color: #003e55;
+	overflow: hidden;
+  padding: 5px;
+}
+#graphnav #here * {
+	font-size: 10px;
+}
+#children { /* effective height: 135px */
+	height: 135px;
+	overflow: none;
+}
+#children_links {
+  height: 100px;
+  overflow-y: auto;
+  padding: 5px;
+}
+
+#mainContent {
+	padding: 0 5px 20px 5px;
+	background-color: #EEEEEE;
+	overflow-y: auto;
+  position: absolute;
+  top: 365px;
+  bottom: 0px;
+  left: auto;
+  right: auto;
+  width: 770px;
+}
+
+#entryIndex {
+	padding: 0 5px 20px 5px;
+	background-color: #EEEEEE;
+	overflow-y: auto;
+  position: absolute;
+  top: 75;
+  bottom: 0px;
+  left: auto;
+  right: auto;
+  width: 770px;
+}

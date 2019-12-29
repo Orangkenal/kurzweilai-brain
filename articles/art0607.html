@@ -1,0 +1,1127 @@
+<html>
+<head><base href="file:///Users/beka/Projects/Brain%20Archive/brain_archive/"><link href="articlemaster.css" rel="stylesheet" title="style1" type="text/css">
+<style>
+.sidebar {border-left-width: 2px; border-right-width: 0px; border-top-width: 0px; border-bottom-width: 0px; border-color: #000000; border-style: solid; padding-left: 12px;}
+</style>
+<title>Design of a Primitive Nanofactory</title>
+</head>
+<body leftmargin="0" marginheight="0" marginwidth="0" topmargin="0"><div id="centering-column"><div id="header">
+  <div id="logo">
+    <img src="logo.gif" />
+  </div>
+  <div id="title">
+    <h1>Brain Archive</h1><br />
+    <a href="">Entry Index</a>
+  </div>
+  <div class="clearer"></div>
+</div>
+<table align="center" bgcolor="#EEEEEE" border="0" cellpadding="0" cellspacing="0" height="100%" width="780">
+<tr height="100%">
+<td align="left" valign="top">
+<table align="center" bgcolor="#EEEEEE" border="0" cellpadding="0" cellspacing="0" width="780">
+<tr>
+<td><img alt="" border="0" height="5" src="https://web.archive.org/web/20060925101456im_/http://www.kurzweilai.net/blank.gif" width="20"></td>
+<td><img alt="" border="0" height="1" src="https://web.archive.org/web/20060925101456im_/http://www.kurzweilai.net/blank.gif" width="90"></td>
+<td><img alt="" border="0" height="1" src="https://web.archive.org/web/20060925101456im_/http://www.kurzweilai.net/blank.gif" width="375"></td>
+<td><img alt="" border="0" height="1" src="https://web.archive.org/web/20060925101456im_/http://www.kurzweilai.net/blank.gif" width="30"></td>
+<td><img alt="" border="0" height="1" src="https://web.archive.org/web/20060925101456im_/http://www.kurzweilai.net/blank.gif" width="200"></td>
+<td><img alt="" border="0" height="1" src="https://web.archive.org/web/20060925101456im_/http://www.kurzweilai.net/blank.gif" width="30"></td>
+</tr>
+<tr>
+<td> &#160; </td>
+<td colspan="5"> <span class="breadcrumb"><a href="https://web.archive.org/web/20060925101456/http://www.kurzweilai.net/" target="_top">Origin</a> &gt;
+ <a href="https://web.archive.org/web/20060925101456/http://www.kurzweilai.net/meme/memelist.html?m=18">Nanotechnology</a> &gt; 
+Design of a Primitive Nanofactory
+<br>
+Permanent link to this article: <a href="http://web.archive.org/web/20060925101456/http://www.kurzweilai.net/meme/frame.html?main=/articles/art0607.html" target="_top">http://www.kurzweilai.net/meme/frame.html?main=/articles/art0607.html</a></span>
+<br>
+<a class="printable" href="https://web.archive.org/web/20060925101456/http://www.kurzweilai.net/articles/art0607.html?printable=1" target="_new">Printable Version</a></td>
+</tr>
+<tr><td colspan="6"><img alt="" border="0" height="50" src="https://web.archive.org/web/20060925101456im_/http://www.kurzweilai.net/blank.gif" width="1"></td></tr>
+<tr>
+<td> &#160; </td>
+<td> &#160; </td>
+<td valign="top"><span class="Title">Design of a Primitive Nanofactory</span>
+<br>
+<span class="Subtitle"></span>
+<table border="0" cellpadding="0" cellspacing="0">
+<td valign="top"><span class="Authors">by &#160;</span></td>
+<td><span class="Authors">
+<a class="Authors" href="https://web.archive.org/web/20060925101456/http://www.kurzweilai.net/bios/frame.html?main=/bios/bio0218.html" target="_top">Chris Phoenix</a><br></span></td>
+</table>
+<br>
+<div class="TeaserText">Molecular manufacturing requires more than mechanochemistry. A single nanoscale fabricator cannot build macro-scale products. This paper describes the mechanisms, structures, and processes of a prototypical macro-scale, programmable nanofactory composed of many small fabricators. Power requirements, control of mechanochemistry, reliability in the face of radiation damage, convergent assembly processes and joint mechanisms, and product design are discussed in detail, establishing that the design should be capable of duplicating itself. Nanofactory parameters are derived from plausible fabricator parameters. The pre-design of a nanofactory and many products appears to be within today's capabilities. Bootstrapping issues are discussed briefly, indicating that nanofactory development might occur quite soon after fabricator development. Given an assembler, a nanofactory appears feasible and worthwhile, and should be accounted for in assembler policy discussions.</div>
+<br>
+<br>
+<p><i>Originally published in the</i> <a href="http://web.archive.org/web/20060925101456/http://www.jetpress.org/volume13/Nanofactory.htm" target="_blank">Journal 
+              of Evolution and Technology</a> <i>October 2003. Published on KurzweilAI.net 
+              December 3, 2003.</i></p>
+<h2>1.&#160;&#160; Introduction </h2>
+<p>The <a class="thought" href="entries/utility_entry.html">utility</a> of a new <a class="thought" href="entries/technology_entry.html">technology</a> depends on many factors, including 
+              the difficulty of development and the ease and cost of use.&#160; 
+              Most technologies require significant additional work to form useful 
+              products.&#160; Previous theoretical work in molecular <a class="thought" href="entries/nanotechnology_entry.html">nanotechnology</a> 
+              has provided only incomplete and fragmentary answers to the question 
+              of how molecular <a class="thought" href="entries/nanotechnology_entry.html">nanotech</a>nologic <a class="thought" href="entries/device_entry.html">device</a>s can be used in practice.&#160; 
+              Although it appears that fabrication <a class="thought" href="entries/system_entry.html">system</a>s can be built on a nanometer 
+              scale (Drexler, 1992), small devices will be difficult to use directly 
+              in many applications.&#160; Several designs have been proposed in 
+              more or less detail (Drexler, 1986, 1992; Bishop, 1996; Merkle, 
+              1997a; Hall, 1999; Freitas and Merkle, in press) for parallel control 
+              of many small fabricators to make a large product.&#160; Other proposals 
+              (Hall, 1993) combine many small products to create a large product.&#160; 
+              However, each of these proposals has provided insufficient detail 
+              to allow estimation of their practical difficulty and utility. </p>
+<p>This paper builds on previous proposals to describe an <a class="thought" href="entries/architecture_entry.html">architecture</a> 
+              for combining large <a class="thought" href="entries/number_entry.html">number</a>s of <a class="thought" href="entries/program_entry.html">program</a>mable mechanochemical fabricators 
+              into a manufacturing system, or <i>nanofactory,</i> capable of producing 
+              a wide range of <a class="thought" href="entries/human_entry.html">human</a>-scale products.&#160; The proposed system 
+              is described in sufficient detail to allow estimation of nanofactory 
+              mass, volume, power requirements, reliability, fabrication <a class="thought" href="entries/time_entry.html">time</a>, 
+              and product capability and cost, as simple functions of the properties 
+              of the mechanochemical fabricator <a class="thought" href="entries/component_entry.html">component</a>.&#160; Bootstrapping 
+              a human-scale system from a sub-micron system is also discussed.&#160; 
+              Discussion of product design issues and nanofactory manufacturing 
+              capability demonstrates that the nanofactory should be able to efficiently 
+              fabricate duplicates of itself as well as larger versions.&#160; 
+              This proposal differs from previous proposals in that, with the 
+              exception of mechanochemical component fabrication, design of the 
+              nanofactory should be within the reach of present-day <a class="thought" href="entries/engine_entry.html">engine</a>ering; 
+              physical <a class="thought" href="entries/structure_entry.html">structure</a>s and functional requirements are described in 
+              sufficient detail that remaining problems should be within the capability 
+              of current engineering practice to solve.&#160; In particular, the 
+              design considers all transport and manipulation requirements for 
+              raw materials and product components, as well as control, power, 
+              and cooling issues. </p>
+<p>This exploration can provide a basis for estimating the practical 
+              value and difficulty of developing a nanofactory.&#160; As noted 
+              in (Merkle, 1999), even a primitive sub-micron mechanochemical fabricator 
+              may produce valuable products.&#160; The question at hand is whether, 
+              once such a device is developed, it is feasible and worthwhile to 
+              adapt such devices into a nanofactory.&#160; Since no complete designs, 
+              or even complete <a class="thought" href="entries/parameter_entry.html">parameter</a> sets, exist for a mechanochemical fabricator, 
+              this question cannot be answered fully at this time.&#160; However, 
+              the results of the present paper can be applied to a wide range 
+              of hypothetical fabricator parameters.&#160; As fabricator designs 
+              are proposed in increasing detail, these results will become increasingly 
+              useful in predicting the capabilities of a nanofactory based on 
+              such designs.&#160; Issues of product design and manufacture are 
+              examined in <a class="thought" href="entries/order_entry.html">order</a> to establish that the nanofactory is capable of 
+              fabricating duplicates and larger versions of itself.&#160; The 
+              time required to bootstrap a human-scale factory from a nano-scale 
+              fabricator cannot be estimated with any certainty, since bootstrapping 
+              will require time for <a class="thought" href="entries/debugging_entry.html">debugging</a> and redesign as well as for fabrication 
+              of larger versions.&#160; However, the minimum time required for 
+              fabrication can be estimated, and the design developed here is simple 
+              enough that debugging and redesign may be fairly simple and rapid. 
+            </p>
+<p>The paper is arranged in several sections.&#160; Section <a href="http://web.archive.org/web/20060925101456/http://www.jetpress.org/volume13/Nanofactory.htm#s2" target="_blank">2</a> 
+              surveys previous work toward manufacturing systems relying on mechanochemistry 
+              and producing human-scale products.&#160; Section <a href="http://web.archive.org/web/20060925101456/http://www.jetpress.org/volume13/Nanofactory.htm#s3" target="_blank">3</a> 
+              describes two innovations required for efficient <a class="thought" href="entries/operation_entry.html">operation</a> of the 
+              nanofactory architecture.&#160; Section <a href="http://web.archive.org/web/20060925101456/http://www.jetpress.org/volume13/Nanofactory.htm#s4" target="_blank">4</a> 
+              describes the nanofactory architecture, including a highly reliable 
+              <i>production module</i> incorporating several thousand mechanochemical 
+              fabricators and a scalable convergent assembly and transport architecture 
+              for integrating large numbers of production modules.&#160; Section 
+              <a href="http://web.archive.org/web/20060925101456/http://www.jetpress.org/volume13/Nanofactory.htm#s5" target="_blank">5</a> 
+              covers issues of product design to establish that the nanofactory 
+              is designable and buildable by itself.&#160; Section <a href="http://web.archive.org/web/20060925101456/http://www.jetpress.org/volume13/Nanofactory.htm#s6" target="_blank">6</a> 
+              discusses <a class="thought" href="entries/computer_entry.html">computer</a> control of the nanofactory.&#160; Section <a href="http://web.archive.org/web/20060925101456/http://www.jetpress.org/volume13/Nanofactory.htm#s7" target="_blank">7</a> 
+              covers product performance.&#160; Section <a href="http://web.archive.org/web/20060925101456/http://www.jetpress.org/volume13/Nanofactory.htm#s8" target="_blank">8</a> 
+              provides calculations relating nanofactory performance and characteristics 
+              to fabricator performance and characteristics.&#160; Section <a href="http://web.archive.org/web/20060925101456/http://www.jetpress.org/volume13/Nanofactory.htm#s9" target="_blank">9</a> 
+              summarizes the paper.&#160; Appendix <a href="http://web.archive.org/web/20060925101456/http://www.jetpress.org/volume13/Nanofactory.htm#sa" target="_blank">A</a> 
+              is a computer program that <a class="thought" href="entries/implement_entry.html">implement</a>s repetitive calculations for 
+              probability, size of components, and pressure in cooling channels.&#160; 
+              Appendix <a href="http://web.archive.org/web/20060925101456/http://www.jetpress.org/volume13/Nanofactory.htm#sb" target="_blank">B</a> 
+              is a brief discussion of the suitability of a proposed fabricator 
+              design (Merkle, 1999) for the nanofactory architecture. </p>
+<h2>2.&#160;&#160; Background </h2>
+<p>In order to create useful products with molecular manufacturing, 
+              several steps are required.&#160; Large products cannot be built 
+              by a single small fabricator.&#160; Even at a million atoms per 
+              second, building a gram of product would take more than a billion 
+              years.&#160; Building a large product requires a system implementing 
+              several steps.&#160; First, <a class="thought" href="entries/molecule_entry.html">molecule</a>s must be reacted under positional 
+              control by fabricators to form parts.&#160; Second, the parts must 
+              be combined into nanosystems.&#160; Third, the nanosystems must 
+              be combined into products, either by physical attachment or by distributed 
+              control.&#160; Many authors have considered one or more of these 
+              steps, but none has described a complete factory system. &#160; 
+            </p>
+<h3><font color="#000000">2.1.&#160; Mechanochemistry</font> </h3>
+<p>As used in this paper, mechanochemistry refers to the process of 
+              inducing <a class="thought" href="entries/covalent_bond_entry.html">covalent bond</a> formation or breaking under controlled conditions 
+              by mechanical <a class="thought" href="entries/motion_entry.html">motion</a>.&#160; As discussed in (Drexler, 1992, chap. 
+              8 &amp; 9), mechanochemistry performed in a well-controlled environment 
+              appears sufficient to fabricate small devices from covalently bonded 
+              <a class="thought" href="entries/carbon_entry.html">carbon</a> (diamondoid).&#160; Merkle (1997d, 1998) describes additional 
+              reactions that could be used to build diamondoid products&amp;#8212a 
+              complete hydrocarbon "metabolism" capable of refreshing 
+              the molecular deposition tools, and Merkle and Freitas (2003) have 
+              analyzed a specific diamond mechanosynthesis tool in detail.&#160; 
+              The present design assumes that some such <a class="thought" href="entries/chemistry_entry.html">chemistry</a> is possible 
+              in practice, and will have been characterized to some extent in 
+              the process of building a working fabricator.&#160; Diamondoid fabrication 
+              chemistry need not be completely understood&amp;#8212a <a class="thought" href="entries/basic_entry.html">basic</a> <a class="thought" href="entries/single_electron_transfer_entry.html">set</a> of 
+              a few reliable deposition reactions, with motions parameterized 
+              to account for edges and other discontinuities, should be sufficient 
+              to build bulk diamond. </p>
+<p>In order to focus on nanofactory architecture, the present work 
+              does not consider mechanochemical operations in detail.&#160; Instead, 
+              the design assumes the <a class="thought" href="entries/existence_entry.html">existence</a> of a small programmable mechanochemical 
+              fabricator.&#160; To simplify architectural considerations, the 
+              fabricator is assumed to be self-contained: it must be capable within 
+              a small volume of performing all mechanical motions necessary to 
+              fabricate parts from feedstock and assemble them into small devices 
+              of <a class="thought" href="entries/complexity_entry.html">complexity</a> comparable to itself. &#160; </p>
+<h3>2.2.&#160; Mechanochemical fabricator designs </h3>
+<p>Several proposed devices appear to be capable of performing reliable 
+              mechanochemical operations with sufficient flexibility for self-duplication.&#160; 
+              These include the <a class="thought" href="entries/robot_entry.html">robot</a> arm described by Drexler (1992, sec. 13.4), 
+              the double tripod described by Merkle (1997c), the molecular mill 
+              described by Drexler (1992, sec. 13.3), and the "parts <a class="thought" href="entries/synthesizer_entry.html">synthesizer</a>" 
+              described by Hall (1999).&#160; Additionally, <a class="thought" href="entries/biological_entry.html">biological</a> or hybrid 
+              systems have been proposed (Bradbury, 2003) in which organic <a class="thought" href="entries/synthesis_entry.html">synthesis</a> 
+              is used to build relatively large chemical components.&#160; Each 
+              of these systems is attractive for various <a class="thought" href="entries/reason_entry.html">reason</a>s. </p>
+<p>The robot arm requires several different mechanical components, 
+              including small gears, triply-threaded toroidal worm drives, and 
+              several types of cylindrical sliding <a class="thought" href="entries/interface_entry.html">interface</a>s.&#160; Each of these 
+              components may require significant <a class="thought" href="entries/atom_entry.html">atom</a>-level design.&#160; In addition, 
+              the robot arm requires a control system involving rotational motion 
+              on several drive rods.&#160; Nanometer-scale clutches have not been 
+              designed in detail.&#160; In order to provide results relevant to 
+              early fabricator and nanofactory development, this paper does not 
+              assume that devices of such complexity can be built.&#160;&#160; 
+              Hall's parts synthesizer requires separate assembly robots to deliver 
+              chemicals, and the power/control mechanism is not specified. </p>
+<p>Systems relying on many biologically-based feedstock molecules 
+              require separate synthesis and assembly areas, which may have quite 
+              different environmental requirements.&#160; In addition, they may 
+              require nontrivial transport mechanisms to prevent premature reaction 
+              of the feedstock molecules.&#160; Finally, such systems do not appear 
+              to permit the fabrication of diamondoid structures. </p>
+<p>The molecular mill is an attractive <a class="thought" href="entries/concept_entry.html">concept</a> for several reasons.&#160; 
+              It does not require explicit control of each mechanochemical operation, 
+              thus greatly increasing efficiency over the other three proposals.&#160; 
+              Operations can also be quite fast, since merely moving a belt a 
+              short distance is sufficient to accomplish a mechanochemical operation.&#160; 
+              However, each reactive encounter mechanism, or station, in a molecular 
+              mill performs only one mechanochemical operation.&#160; Although 
+              each station is efficient, in the <a class="thought" href="entries/sense_entry.html">sense</a> of processing a mass equal 
+              to its own in a short time and with little <a class="thought" href="entries/energy_entry.html">energy</a> wasted, a large 
+              number of stations would be required to fabricate all the parts 
+              needed to build a nanofactory, let alone the desired range of products.&#160; 
+              This number has not been quantified.&#160; Additional design would 
+              be required to explain how a number of stations performing different 
+              mechanochemical operations and using different parts can produce 
+              all the required parts for <a class="thought" href="entries/self_replication_entry.html">self-replication</a> given that only one 
+              chemical operation is performed at each station.&#160; Although 
+              this does not contradict the possibility of a self-replicating set 
+              of mills, it indicates that the set may be large and difficult to 
+              design.&#160; In addition, the set may grow unpredictably when required 
+              to produce additional parts for the non-fabricator portions of the 
+              nanofactory, and may need significant modification if the design 
+              of a part must be changed.&#160; Accordingly, a mill solution is 
+              not used in this paper.&#160; However, it should be noted that a 
+              combination of a mill making small blocks and a double tripod capable 
+              of both joining blocks seamlessly (Drexler, 1992, sec. 9.7.3) and 
+              performing detailed mechanochemistry may be fast, flexible, and 
+              relatively easy to design, and would be preferable to the simple 
+              robotic manipulator implicitly assumed for this baseline design. 
+            </p>
+<p>The current design effort is based loosely on a double-tripod "assembler" 
+              discussed by Merkle (1999).&#160; Merkle's <a class="thought" href="entries/assembler_entry.html">assembler</a> is self-contained, 
+              simple to control, and approximately the right size for a basic 
+              factory or product building block.&#160; Every effort has been made 
+              to avoid depending on any specific property of Merkle's design.&#160; 
+              However, the claimed feasibility of this design serves as inspiration 
+              for the present effort to integrate designs with comparable functionality 
+              into a monolithic nanofactory. &#160; </p>
+<h3>2.3.&#160; Parts assembly, scaling, and product integration </h3>
+<p>Several nanotech manufacturing designs have been proposed that 
+              could be used to build large products.&#160; For example, Bishop 
+              (1996) describes an "Overtool" composed of multiple "active 
+              cells" and "gantry cells" which can both do mechanochemistry 
+              and encompass and manipulate a large product.&#160; This design 
+              is incomplete, lacking description of control <a class="thought" href="entries/algorithm_entry.html">algorithm</a>s and internal 
+              <a class="thought" href="entries/communication_entry.html">communication</a>s.&#160; Hall (1999) describes a system of robots and 
+              framework components that can in theory scale to large size and 
+              then make large products.&#160; However, feedstock delivery and 
+              system control are not specified, and products it can fabricate 
+              are not described.&#160; Drexler (1992, chap. 14) describes a system 
+              in a fair amount of detail, including estimates of volume, mass, 
+              and replication time.&#160; However, this description does not include 
+              the assembly operations used, <a class="thought" href="entries/robotics_entry.html">robotics</a> required, or control of those 
+              robotics.&#160; Additionally, the system uses molecular mills, which 
+              have not been studied in detail, and the physical layout of the 
+              system is specified only in general terms.&#160; This work, though 
+              seminal and inspiring, does not permit detailed estimation of the 
+              technological sophistication required to design such a system.&#160; 
+              Merkle (1997a) described a variant of that system, including fabrication 
+              time and the suggestion of assembling products from large sub-blocks.&#160; 
+              However, he did not calculate the power requirements, describe the 
+              internal control mechanisms, or discuss product design issues or 
+              the feasibility of self-replication in any detail. </p>
+<p>Large-scale cooperative designs are not well understood today, 
+              and directing them may be expected to be difficult.&#160; Hall (1993) 
+              describes a "utility fog" composed of many small identical 
+              robots.&#160; Such a system would be relatively simple to manufacture, 
+              requiring no large-scale assembly.&#160; Hall suggests that the 
+              fog could use any of several fairly simple algorithms to simulate 
+              solid <a class="thought" href="entries/object_entry.html">object</a>s.&#160; However, he also does not consider how to power 
+              the product/object, and the control algorithms are not worked out 
+              in detail.&#160; Also, his fog is quite weak for its mass, at least 
+              compared to a more strongly fastened diamondoid product. </p>
+<p>The purpose of the nanofactory is to build strong, functionally 
+              rich, monolithic, human-scale products that are easy to design and 
+              use.&#160; Several innovations described in this paper allow a nanofactory 
+              design to be presented in detail for the first time.&#160; The nanofactory 
+              itself is intended to be in the set of possible products.&#160; 
+              The paper focuses on early development and on demonstrably feasible 
+              designs, so does not include some obvious but currently speculative 
+              techniques for improving performance.&#160; The design is deliberately 
+              simple, especially in minimizing the amount of mechanochemical design 
+              needed in addition to the preexisting fabricator.&#160; The major 
+              design effort focuses on mechanical and <a class="thought" href="entries/digital_entry.html">digital</a> design, physical 
+              layout, and fault tolerance. </p>
+<p>Mechanical design <a class="thought" href="entries/method_entry.html">method</a>ology has achieved great competence in 
+              the transformation of mechanical motion and force.&#160; Many devices 
+              have been developed to accomplish this, such as cams and followers, 
+              rack and pinion drives, <a class="thought" href="entries/planet_entry.html">planet</a>ary and differential gears, and pantographs.&#160; 
+              Drexler (1992, chap. 10) demonstrated that many of these devices 
+              can be translated directly to nanometer scale.&#160; However, many 
+              of Drexler's designs use a specialized arrangement of surface atoms, 
+              and sometimes of internal atoms.&#160; Such devices would require 
+              <a class="thought" href="entries/individual_entry.html">individual</a> chemical design.&#160; To avoid the unknown but potentially 
+              large effort involved in developing new chemical synthesis for new 
+              mechanical structures, the present design does not generally assume 
+              the use of mechanical features smaller than ~1 nm.&#160; Such a 
+              design is referred to as "bulk diamond", meaning that 
+              simply specifying a suitable volumetric design to be filled with 
+              diamond lattice is sufficient to specify a part with the required 
+              mechanical function. </p>
+<p>Although a wide range of sensing and feedback technologies have 
+              been developed at the macro scale, some of them do not work at the 
+              nanometer scale (e.g. optics and electromagnets; see Drexler, 1992, 
+              sec. 2.4), and others may require excessive volume or complexity.&#160; 
+              In general, this design effort avoids sensing in favor of predictability 
+              and reliability.&#160; Digital <a class="thought" href="entries/logic_entry.html">logic</a> is useful for performing repetitive 
+              functions, doing precise calculations, and selecting among alternatives 
+              using well-specified criteria.&#160; <a class="thought" href="entries/software_entry.html">Software</a> systems that interact 
+              with mechanical systems may be hampered by sensor <a class="thought" href="entries/data_entry.html">data</a> that are 
+              not well specified.&#160; Accordingly, this design does not make 
+              much use of feedback, or require software to deal with "fuzzy" 
+              situations.&#160; Almost all aspects of nanofactory operation are 
+              deterministic; this mirrors the (theoretically) deterministic <a class="thought" href="entries/nature_entry.html">nature</a> 
+              of the mechanochemical technique (Drexler, 1992, sec. 6.3).&#160; 
+              Because the factory layout is extremely repetitive and strictly 
+              hierarchical, issues in controlling a large number of fabricators 
+              and robots can be reduced to controlling a single fabricator or 
+              robot, plus simple iteration. </p>
+<p>As previously noted, this paper builds on work which demonstrates 
+              that a nanofactory is conceptually feasible.&#160; The design presented 
+              here is sufficiently detailed that the feasibility of each part 
+              of it can be assessed.&#160; However, it is sufficiently general 
+              that it can accommodate a variety of mechanochemical systems.&#160; 
+              Where design principles are well understood, details are not supplied.&#160; 
+              For example, the use of a gantry crane is specified in order to 
+              demonstrate the existence of robotics capable of doing the job required, 
+              and to allow approximate calculation of the mass of those components.&#160; 
+              The drive mechanism of the gantry crane is not specified; however, 
+              given a design tolerance of 1 nm and the presumed feasibility of 
+              motors&#160; as small as 50 nm in diameter (see Section <a href="http://web.archive.org/web/20060925101456/http://www.jetpress.org/volume13/Nanofactory.htm#s8.2" target="_blank">8.2</a>), 
+              it is clear that such a mechanism can be designed in a wide range 
+              of sizes; at the present level of design, it is not necessary to 
+              examine work on industrial robotics. </p>
+<p>The extreme conservatism that is appropriate for a feasibility 
+              demonstration is less appropriate for a preliminary engineering 
+              study.&#160; For example, it is conservative to assume that each 
+              individual part will require individual design at the atomic scale.&#160; 
+              However, it is reasonable to assume that in the case of a rod with 
+              bumps regularly spaced on it, the rod can be extended and bumps 
+              can be added or removed without requiring detailed redesign.&#160; 
+              Thus the use of mechanical digital logic designs (Drexler, 1992, 
+              chap. 12) is assumed to require a mechanochemical design effort 
+              for only a fixed and relatively small number of parts.&#160; Likewise, 
+              the quantitative sections of this paper choose typical or reasonable 
+              values instead of extreme or pessimistic values. &#160; </p>
+<h3>2.4.&#160; Nanofactory overview </h3>
+<p>The nanofactory system described here incorporates a large number 
+              of fabricators under computer control.&#160; In a single <i>product 
+              cycle</i>, each fabricator produces one <i>nanoblock</i>, approximately 
+              the same size as the fabricator.&#160; The blocks are then joined 
+              together, eight sub-blocks making one block twice as big.&#160; 
+              This process is repeated until eight large blocks are produced, 
+              and finally joined in an arrangement that is not necessarily cubical.&#160; 
+              The output of multiple product cycles may be combined to produce 
+              large products.&#160; The production system is arranged in a three-dimensional 
+              hierarchical branching structure (see Section <a href="http://web.archive.org/web/20060925101456/http://www.jetpress.org/volume13/Nanofactory.htm#s4.3" target="_blank">4.3</a>) 
+              which allows the sub-block assembly to be done by <a class="thought" href="entries/machine_entry.html">machine</a>ry of appropriate 
+              size.&#160; Eight factories of a given size can be combined to form 
+              one larger factory; the 64 blocks produced are joined into eight 
+              blocks twice as big.&#160; The design is easily scalable to tabletop 
+              size, with a ~1 meter factory producing eight ~5 cm blocks per product 
+              cycle.&#160; As discussed in Section <a href="http://web.archive.org/web/20060925101456/http://www.jetpress.org/volume13/Nanofactory.htm#s8.4" target="_blank">8.4</a>, 
+              depending on the capabilities of the mechanochemical fabricator, 
+              the time required for a product cycle will be conveniently measured 
+              in hours.&#160; The blocks need not be solid cubes, and their interior 
+              may be quite complex.&#160; As discussed in Section <a href="http://web.archive.org/web/20060925101456/http://www.jetpress.org/volume13/Nanofactory.htm#s5.1.5" target="_blank">5.1.5</a>, 
+              products can be unfolded after manufacture, greatly increasing the 
+              range of possible product structures and allowing products to be 
+              much larger than the nanofactory that produced them. </p>
+<p>The exact size of the nanoblock is unimportant.&#160; For this 
+              design, a 200-nm cube is convenient: it is large enough to contain 
+              a simple 8086-equivalent <a class="thought" href="entries/central_processing_unit_entry.html">CPU</a>, a microwatt worth of electrostatic 
+              motors/generators, a shaft carrying 0.4 watts (Freitas, 1999, <a href="http://web.archive.org/web/20060925101456/http://www.nanomedicine.com/NMI/6.4.3.4.htm" target="_blank">sec. 
+              6.4.3.4</a>), or the Merkle assembler (1999), but small enough to 
+              be fabricated quickly and to survive background radiation for a 
+              useful period of time.&#160; As discussed in Section <a href="http://web.archive.org/web/20060925101456/http://www.jetpress.org/volume13/Nanofactory.htm#s6" target="_blank">6</a>, 
+              the partitioning of the product into nanoblocks, and the use of 
+              relatively large sub-blocks at each step, allows the use of relatively 
+              simple robotics and control algorithms in the nanofactory.&#160; 
+              As discussed in Section <a href="http://web.archive.org/web/20060925101456/http://www.jetpress.org/volume13/Nanofactory.htm#s5" target="_blank">5</a>, 
+              such division also simplifies product design without imposing many 
+              practical limits on product complexity.&#160; (W. Ware points out 
+              that a combination of tetrahedra and truncated tetrahedra is also 
+              <a class="thought" href="entries/space_entry.html">space</a>-filling, and that this may be more compatible with the tetrahedral 
+              diamond <a class="thought" href="entries/matrix_entry.html">matrix</a>.) </p>
+<p>At the smallest scale, the organization of the factory changes 
+              to allow simpler distribution of feedstock, cooling, power, and 
+              control, and simpler error handling.&#160; A <i>production module</i> 
+              consists of one computer and a few thousand fabricators.&#160; It 
+              produces a few blocks, a few microns in size, by combining a few 
+              thousand nanoblocks.&#160; These rectilinear production modules 
+              incorporate a few block assembly stages.&#160; They are combined 
+              into the smallest factories, which are also rectilinear&amp;#8212and 
+              so on to any size desired.&#160; At each stage, product blocks are 
+              delivered through the center of the smallest face, allowing compact 
+              stacking of multiple modules or stages.&#160; The stages are stacked 
+              on either side of a gathering/assembly tube which contains simple 
+              robotics to join the incoming product blocks into larger blocks 
+              and deliver them out the end of the tube.&#160; Two stacks of stages, 
+              plus the tube in between, constitute the next higher level stage. 
+            </p>
+<p>The nanofactory design is highly repetitive: each input (sub-factory, 
+              or substage) to a stage is identical.&#160; Thus only one design 
+              is required for each level, regardless of the number of substages 
+              at that level.&#160; Since each stage joins eight blocks to form 
+              one block with twice the <a class="thought" href="entries/linear_entry.html">linear</a> dimension, 19 sizes of stage (4 
+              internal to the production module) are required to <a class="thought" href="entries/progress_entry.html">progress</a> from 
+              a 200-nm nanoblock to a 10.5-cm product.&#160; (One additional stage, 
+              a simplified gathering stage, is used to transition from production 
+              modules to gathering/assembly stages.)&#160; Most of these stages 
+              perform identical block-joining operations.&#160; The design of 
+              one stage may be used with minor modification for several similar 
+              stage sizes. </p>
+<p>A nanofactory built with primitive fabricators and control systems 
+              may use a lot of power.&#160; It will be cooled by a fluid with 
+              suspended encapsulated ice <a class="thought" href="entries/particle_entry.html">particle</a>s (Drexler, 1992, sec. 11.5).&#160; 
+              Thus the temperature of the nanofactory will be a uniform 0 <a class="thought" href="entries/c_entry.html">C</a> (273 
+              K).&#160; This is significant for the energy used by digital logic 
+              (Section <a href="http://web.archive.org/web/20060925101456/http://www.jetpress.org/volume13/Nanofactory.htm#s8.2" target="_blank">8.2</a>) 
+              and for aligning and joining large blocks (Section <a href="http://web.archive.org/web/20060925101456/http://www.jetpress.org/volume13/Nanofactory.htm#s3.2.1" target="_blank">3.2.1</a>). 
+            </p>
+<p>The control architecture of the nanofactory, like the physical 
+              arrangement, is strictly hierarchical.&#160; Instructions can be 
+              distributed from central computers directly to the computers that 
+              directly control the fabricators.&#160; All error detection and 
+              correction takes place either within a single nanocomputer or within 
+              a production module controlled by a single nanocomputer, and error 
+              reporting and compensation are not required beyond the production 
+              module.&#160; There is no need for communication between any two 
+              computers at the same level; a simple tree architecture can be used 
+              to send all required data (Section <a href="http://web.archive.org/web/20060925101456/http://www.jetpress.org/volume13/Nanofactory.htm#s8.1" target="_blank">8.1</a>).&#160; 
+              Exotic or complex control algorithms, <a class="thought" href="entries/network_entry.html">network</a>ing architectures, 
+              and <a class="thought" href="entries/operating_system_entry.html">operating system</a>s are not required. </p>
+<p>The size, mass, energy requirement, and duplication time of this 
+              nanofactory design depend heavily on the properties of the fabricator.&#160; 
+              Sections <a href="http://web.archive.org/web/20060925101456/http://www.jetpress.org/volume13/Nanofactory.htm#s8.2" target="_blank">8.2</a>, 
+              <a href="http://web.archive.org/web/20060925101456/http://www.jetpress.org/volume13/Nanofactory.htm#s8.3" target="_blank">8.3</a>, 
+              and <a href="http://web.archive.org/web/20060925101456/http://www.jetpress.org/volume13/Nanofactory.htm#s8.4" target="_blank">8.4</a> 
+              quantify these relations.&#160; With the assumptions made in those 
+              sections, a tabletop nanofactory (1x1x1/2 meters) might weigh 10 
+              kg or less, produce 4 kg of diamondoid (~10.5 cm cube) in 3 hours, 
+              and require as little as fifteen hours to produce a duplicate nanofactory. 
+              &#160; </p>
+<h2>3.&#160;&#160; Components and Innovations </h2>
+<p>To provide a workable design for a simple first-generation nanofactory 
+              made from primitive fabricators, several innovations are described.&#160; 
+              The linear ratchet drive proposed by Drexler (1992, sec. 16.3.2) 
+              is extremely inefficient.&#160; Section <a href="http://web.archive.org/web/20060925101456/http://www.jetpress.org/volume13/Nanofactory.htm#s3.1" target="_blank">3.1</a> 
+              describes a thermodynamically efficient stepping drive that is applicable 
+              to all stepping actuators.&#160; The problem of how to join small 
+              components into a large product has been greatly simplified by designing 
+              a mechanical fastening system, described in Section <a href="http://web.archive.org/web/20060925101456/http://www.jetpress.org/volume13/Nanofactory.htm#s3.2.1" target="_blank">3.2.1</a>.&#160; 
+              It has only two moving parts, requires no insertion force or actuation, 
+              preserves much of the strength of the unbroken material, is easy 
+              to grip and handle, and is tolerant of alignment errors.&#160; With 
+              the addition of one actuator, the joint can be made reversible to 
+              aid in product unfolding (Section <a href="http://web.archive.org/web/20060925101456/http://www.jetpress.org/volume13/Nanofactory.htm#s5.1.5" target="_blank">5.1.5</a>).&#160; 
+              Section <a href="http://web.archive.org/web/20060925101456/http://www.jetpress.org/volume13/Nanofactory.htm#s3.2.2" target="_blank">3.2.2</a> 
+              describes a variety of press-fit connections for conveying power, 
+              signal, and fluid between nanoblocks. </p>
+<p>The fabricator used in the nanofactory is unspecified; the nanofactory 
+              design is sufficiently general that a wide variety of possible fabricator 
+              designs can be incorporated.&#160; The reader may find it helpful 
+              to study Merkle's "assembler" (1999) (<a href="http://web.archive.org/web/20060925101456/http://www.jetpress.org/volume13/Nanofactory.htm#sb" target="_blank">Appendix 
+              B</a>) as a prototype.&#160; The only requirements are that the 
+              fabricator must be capable of producing a variety of products of 
+              size and complexity equal to itself from soluble feedstock molecules, 
+              and that it use digital deterministic control, which implies that 
+              the mechanochemical processes must be highly reliable.&#160; Since 
+              only a few reactions will be sufficient to make a wide variety of 
+              molecular shapes, and since error detection and correction will 
+              be difficult if not impossible in early <a class="thought" href="entries/broadcast_entry.html">broadcast</a>-architecture assemblers, 
+              these requirements do not greatly reduce the generality of the present 
+              design.&#160; (Unreliable operations can be retried multiple times 
+              even in a deterministic system; see for example Drexler, 1992, sec. 
+              13.3.1c). &#160; </p>
+<h3>3.1.&#160; A Thermodynamically Efficient Stepping Drive </h3>
+<p><a href="http://web.archive.org/web/20060925101456/http://www.jetpress.org/volume13/PinDriveBig.jpg" target="_blank">Figure 
+              1: Pin Drive</a> </p>
+<p>A mechanical device driven by a sequence of simple digital commands 
+              will have an internal state that changes with each command, and 
+              must be maintained without error or slippage.&#160; Thermal <a class="thought" href="entries/noise_entry.html">noise</a> 
+              injects constant vibration into the system, requiring strong latching 
+              mechanisms.&#160; A simple latching mechanism is a ratchet with 
+              a strong spring, as proposed by Drexler and used by Merkle.&#160; 
+              A stepping drive can be built from two ratchets, and early assembler 
+              designs that are controlled by simple external signals may make 
+              extensive use of such drives.&#160; Such a mechanism is extremely 
+              inefficient, since the energy used to compress the spring (at least 
+              100 kT [Boltzmann's constant times ambient temperature] to overpower 
+              room-temperature thermal noise) is lost each time the ratchet moves 
+              to the next tooth.&#160; However, when a fabricator is connected 
+              to a digital logic system, the fabricator no longer needs internal 
+              state-maintenance mechanisms, and the device can be made far more 
+              efficient. (Digital logic, including gates and registers, can be 
+              made thermodynamically efficient.) </p>
+<p>An efficient drive with functional characteristics similar to the 
+              ratchet drive is the pin drive.&#160; (See <a href="http://web.archive.org/web/20060925101456/http://www.jetpress.org/volume13/PinDriveBig.jpg" target="_blank">Figure 
+              1</a>.)&#160; In this design, pins are inserted into equally spaced 
+              holes (or notches) in the moving bar to assure its position at all 
+              times.&#160; The latching pin moves in and out but not sideways, 
+              and is used to hold the bar still.&#160; The driving pin moves in 
+              and out, and also is moved sideways by a bar actuator over a distance 
+              equal to the spacing of the holes.&#160; The pins are similar in 
+              structure and function to the rods in Drexler's rod logic design.&#160; 
+              To move the bar one step, the bar actuator is moved to one end of 
+              its range, pulling the driving pin into alignment with a hole.&#160; 
+              The driving pin is inserted.&#160; The latching pin is withdrawn.&#160; 
+              Then the bar actuator is moved to the other end of its range, bringing 
+              the next hole into alignment with the latching pin, which is then 
+              inserted.&#160; Finally, the driving pin is withdrawn and then moved 
+              back to its original position.&#160; Smaller step sizes may be obtained 
+              by additional offset pins, or by a second vernier drive, similar 
+              to the vernier ratchet drive described by Drexler (1992, sec. 16.3.2), 
+              with slightly different hole spacing and bar actuator range of motion 
+              from the main drive.&#160; Larger step sizes may be obtained by 
+              moving the bar actuator a larger distance in each cycle. </p>
+<p>Although the pin drive requires one more actuator than the ratchet 
+              drive&#8212;two pins and a bar actuator, instead of two ratchet pawl 
+              pullers&#8212;it has the advantage that it can move by measured steps 
+              in either direction, whereas the two-ratchet drive can only move 
+              stepwise in one direction and must retract in a single motion by 
+              lifting both ratchets.&#160; (If both pins are lifted simultaneously, 
+              the bar can be moved without restriction by a weak return actuator, 
+              allowing the same rapid return motion as the ratchet drive.&#160; 
+              Note that without careful design, verifying the complete return 
+              of the bar will require energy on the order of 100 kT.)&#160; Similar 
+              redesign can be applied to any stepping drive mechanism.&#160; As 
+              long as the position of the moving member is initially known, it 
+              can be moved stepwise, held stiffly against thermal noise at every 
+              point, and locked in place in its new position, all without irreversible 
+              state transitions. </p>
+<p>While the pins are moving, the bar is stationary and the pins may 
+              be moved reversibly.&#160; As the bar actuator is moved, the force 
+              encountered may vary.&#160; Nevertheless, stiffly imposed motion 
+              will be efficient in most cases.&#160; As long as the force profile 
+              of the motion does not vary more rapidly per distance than the stiffness 
+              of the drive mechanism, and does not vary substantially between 
+              forward and backward motion (e.g. due to an irreversible state transition), 
+              it does not <a class="thought" href="entries/matter_entry.html">matter</a> how much force is required to move the bar at 
+              each point because the energy will be recovered when the motion 
+              is reversed.&#160; This energy recovery requirement implies that 
+              the drive mechanism must be able to recover energy from being driven 
+              by the bar; such designs are not difficult, and include Drexler's 
+              electrostatic motor/generator (1992, sec. 11.7).&#160; The same 
+              argument applies to other types of actuators driven by other digital 
+              control mechanisms: as long as the force profile is reversible and 
+              is less steep than the stiffness of the drive mechanism, the energy 
+              that is put into the system is recoverable.&#160; Note that rapid 
+              motion causes the force profile to deviate from reversibility due 
+              to various energy dissipation mechanisms.&#160; (The author thanks 
+              Eric Drexler for clarifying discussion of thermodynamic reversibility.) 
+              &#160; </p>
+<h3>3.2.&#160; Joining Product Blocks </h3>
+<p>There are several possible ways to join two mechanochemically fabricated 
+              objects.&#160; Van der Waals force is an attractive force that develops 
+              between any two nearby objects.&#160; For a few unterminated surfaces, 
+              covalent chemical bond formation can in theory be used to make a 
+              seamless joint.&#160; A wide variety of mechanical joints can be 
+              used.&#160; Section <a href="http://web.archive.org/web/20060925101456/http://www.jetpress.org/volume13/Nanofactory.htm#s3.2.1" target="_blank">3.2.1</a> 
+              describes a particularly useful strong mechanical joint, and Section 
+              <a href="http://web.archive.org/web/20060925101456/http://www.jetpress.org/volume13/Nanofactory.htm#s3.2.2" target="_blank">3.2.2</a> 
+              describes several press-fit joints for power, control, and fluid 
+              connections between blocks. </p>
+<p>At very small separations, two objects <a class="thought" href="entries/experience_entry.html">experience</a> an attractive 
+              force called van der Waals force: simply bring them close together, 
+              and they stick.&#160; For two flat diamond surfaces, the force is 
+              approximately 1 nanonewton per square nanometer, or 10,000 atm of 
+              pressure (Freitas, 1999, <a href="http://web.archive.org/web/20060925101456/http://www.nanomedicine.com/NMI/9.3.2.htm" target="_blank">sec. 
+              9.3.2</a>).&#160; This is reasonably high, although it provides 
+              only a fraction of the strength and stiffness of chemical bonds.&#160; 
+              The van der Waals force is the simplest method of joining, it is 
+              reversible, and it should provide sufficient strength to keep even 
+              kg-scale products from falling apart under their own weight.&#160; 
+              This type of joint is convenient and can be used for weak joining 
+              of structures that must later be separated. </p>
+<p>A diamond surface that is not passivated with an outer layer of 
+              <a class="thought" href="entries/hydrogen_entry.html">hydrogen</a> will be very reactive.&#160; Unterminated diamondoid surfaces 
+              forced together should form covalent bonds.&#160; According to Drexler, 
+              two (110) surfaces of tetrahedral diamond or two (100) surfaces 
+              of hexagonal diamond should bond to each other on contact, forming 
+              a seamless joint (Drexler, 1992, secs. 8.6, 9.7.3, and 14.2.1).&#160; 
+              Sinnott et al. (1997) report the results of simulations that show 
+              bond formation, though not seamless joining.&#160; For other diamond 
+              surfaces, or in the case of too-rapid joining, a somewhat weaker 
+              joint may form with a lower bond density.&#160; Also, it is currently 
+              unknown how much pressure would be required to initiate the process.&#160; 
+              Crushing <a class="thought" href="entries/buckyball_entry.html">buckyball</a>s to diamond requires 20 GPa, but Drexler states 
+              (personal communication, January 24, 2003) that a covalent joint 
+              should "zipper" itself if started at an edge or corner, 
+              that neon atoms should be able to escape the closing gap and would 
+              not interfere with the joining, and that argon is even better in 
+              this regard.&#160; If the joint were comparable in structure to 
+              amorphous diamond currently made for <a class="thought" href="entries/mems_entry.html">MEMS</a>, it would have a tensile 
+              strength of only 8 GPa (Sullivan, 2002); this is significantly less 
+              than diamond's tensile strength of 60 GPa (measured) to over 100 
+              GPa (calculated, depending on crystal orientation) (Telling et al., 
+              2000).&#160; An additional problem is that radiation damage or stray 
+              molecules may cause local surface reconstruction or contamination 
+              that may hold surfaces apart and prevent a joint from forming.&#160; 
+              This type of joint is usually not reversible, though in theory a 
+              carefully designed edge might allow predictable crack formation.&#160; 
+              Since seamless covalent joints have not yet been demonstrated, the 
+              present nanofactory design does not use this method. &#160; </p>
+<h3>3.2.1.The Expanding Ridge Joint &#160;<a></a></h3>
+<p> <a href="http://web.archive.org/web/20060925101456/http://www.jetpress.org/volume13/RidgeBig.jpg" target="_blank">Figure 
+              2: Expanding Ridge Joint</a> </p>
+<p>Each mating block face is covered with small "ridges" 
+              that are roughly triangular in cross section.&#160; See <a href="http://web.archive.org/web/20060925101456/http://www.jetpress.org/volume13/RidgeBig.jpg" target="_blank">Figure 
+              2</a>.&#160; All exposed surfaces are non-reactive (e.g. hydrogen-passivated 
+              diamond).&#160; The ridges on each face interlock with the ridges 
+              on the opposing face.&#160; As the joint is pressed together, the 
+              ridges split and expand sideways.&#160; The exposed surfaces of 
+              the ridges are not smooth, but are shaped to grip the opposing ridge, 
+              with scallops deep enough to form overhangs when viewed perpendicular 
+              to the block face.&#160; A scallop is chosen instead of a sawtooth 
+              or ratchet profile in order to avoid crack formation at sharp concave 
+              angles.&#160; Scallops also make assembly motions smoother, and 
+              allow the un-powered assembly described below.&#160; The expansion 
+              of the ridge opens a space in its center, which is then filled by 
+              a shim which sits above the almost-closed gap between the two halves 
+              of the ridge.&#160; Once the shim is in place, the volume of the 
+              joint cannot easily be compressed, and the surfaces of the ridges 
+              cannot easily slide past each other; pulling apart the joint would 
+              require compressing a solid mass of diamond by several percent or 
+              breaking at least half of the ridges simultaneously.&#160; If the 
+              ridges all run in the same direction, the joint may be able to slide 
+              freely.&#160; Crossed ridges will produce a joint that is quite 
+              stiff against shear. </p>
+<p>The triangular shape of the ridges has several advantages.&#160; 
+              First, the area of the base of the triangles (almost the entire 
+              area of the block surface) is structurally solid.&#160; (By contrast, 
+              a square ridge would waste at least half of the structural strength 
+              of the blocks being joined, because the block area adjacent to the 
+              tops of the ridges would not contribute to the joint.)&#160; Second, 
+              at small scales, van der Waals forces make handling of components 
+              difficult because the components stick to any manipulator.&#160; 
+              With triangular ridges and narrow ridge tops, the contact area of 
+              the surface is much lower, reducing the van der Waals force.&#160; 
+              Third, a manipulator can easily be aligned with the ridges.&#160; 
+              Small blocks can be picked up by simple contact with a V-channeled 
+              manipulator that presents sufficient surface area to form a van 
+              der Waals bond of the desired strength, and the manipulator will 
+              automatically be pulled into alignment.&#160; A more complex mating 
+              <a class="thought" href="entries/pattern_entry.html">pattern</a> could fasten on several ridges at once.&#160; If the ridges 
+              are placed at varying angles or spacings, a well designed manipulator/ridge 
+              interface can guarantee that a misaligned manipulator cannot form 
+              a firm grip.&#160; Likewise, a well designed ridge/ridge interface 
+              can guarantee that misaligned blocks will not join incorrectly. 
+            </p>
+<p>There are at least three ways of mounting the ridge so that a small 
+              attractive force between mating ridges will be sufficient to cause 
+              the ridge to spread.&#160; The first possibility is to join the 
+              ridge to the nanoblock with dovetail joints, permitting it to slide 
+              sideways with very low friction.&#160; A simple dovetail joint costs 
+              somewhat more than half of the possible joint strength; a stairstepped 
+              dovetail joint (which is similar to a completed ridge joint) would 
+              recover much of the strength at the cost of additional volume and 
+              complexity.&#160; The second possibility is to use a mounting that 
+              is strong in tension but flexible in shear, such as thin columns 
+              of diamond or buckytubes.&#160; The third possibility, for use in 
+              linear stacks of many nanoblocks, is to build a solid structure 
+              extending from the base of the ridge all the way through the block 
+              to the ridge on the opposing face.&#160; Both ridges would move 
+              in tandem, and be locked in place when the shims were dropped on 
+              each side.&#160; This might require a mechanism for retaining all 
+              participating shims until all joints are pressed together. </p>
+<p>The simplest version of the expanding ridge joint requires no actuation 
+              to form the joint other than moving the faces together.&#160; As 
+              the faces are brought together, just before the final closure, each 
+              row of scallops brushes past the inverse row on the opposing ridge.&#160; 
+              As the interlocking ridges from each surface interpenetrate, the 
+              bulges of the scallops brush past each other, close enough to be 
+              attracted by van der Waals force.&#160; This pulls the halves of 
+              the ridge apart.&#160; The attraction between passing scallops when 
+              the faces nearly touch must be stronger than the intra-ridge attraction, 
+              to ensure ridge spreading during the last phase of joint insertion, 
+              as the final rows of scallops pass each other.&#160; This is ensured 
+              by the use of small spacers to control the van der Waals force holding 
+              the intra-ridge gap closed.&#160; (The spreading will become increasingly 
+              favorable as the faces approach, and the operation will happen slowly 
+              enough to allow equilibration, so thermal noise will not cause the 
+              joint to fail to close.)&#160; However, the intra-ridge attraction 
+              (between halves of the same ridge) must be strong enough in the 
+              initial position to prevent premature operation due to thermal noise.&#160; 
+              The half-ridges must require a certain energy, say 100 kT, to pull 
+              them apart far enough for the shim to be inserted; the displacement 
+              which absorbs this energy cannot be greater than the depth of the 
+              scallop.&#160; Note that the required energy is not dependent on 
+              any spatial parameter; it is related only to temperature.&#160; 
+              However, the attractive force is approximately proportional to surface 
+              area, so this condition can be satisfied by a sufficiently long 
+              ridge joint.&#160; In other words, regardless of the actual inter-scallop 
+              force, an intra-ridge gap can be chosen that will allow the ridge 
+              halves to be separated; and regardless of the gap, a sufficiently 
+              long ridge will be resistant to premature separation. </p>
+<p>Due to the complicated <a class="thought" href="entries/geometry_entry.html">geometry</a> of the scallops, exact calculation 
+              of the attractive force between mating ridge halves is beyond the 
+              scope of this paper.&#160; An inaccurate calculation is given to 
+              permit crude estimation of minimum ridge length.&#160; The formula 
+              for attraction between cylinders (Drexler, 1992, Fig. 3.10f) will 
+              be applied, treating each scallop as a 0.5-nm radius cylinder separated 
+              by 0.3 nm.&#160; (This is inaccurate because it ignores the attractive 
+              contribution from the material behind the cylinders, and because 
+              the formula's derivation assumes that cylinder radius is much greater 
+              than cylinder separation.)&#160; The inter-scallop potential energy 
+              is calculated as 61 zJ per linear nanometer of scallop contact, 
+              which corresponds to 2 nm^2 of surface between the two halves of 
+              the ridge.&#160; To reduce the intra-ridge potential energy to 50 
+              zJ per scallop-nm or 25 zJ per nm^2, the spacing must be at least 
+              0.6 nm (ignoring the attractive contribution from the spacer) according 
+              to the formula in (Drexler, 1992, Fig. 3.10d) which slightly overestimates 
+              the attractive force since the ridge is not infinitely thick. </p>
+<p>When the gap between the half-ridges is fully open, the shim (which 
+              includes a hollow to accommodate the spacer) is pulled into the 
+              gap and held there reliably by van der Waals force.&#160; The shim 
+              will insert when the ridges have moved apart by a distance equal 
+              to the depth of the scallop undercut, in this example 1 nm.&#160; 
+              With a 1-nm deep scallop and a 0.6 nm initial gap (thus a 1.6-nm 
+              wide shim), the difference in potential energy between 0.6 nm and 
+              1.6 nm spacing is 21.5 zJ/nm^2.&#160; To prevent premature insertion, 
+              the intra-ridge potential energy of attraction must differ by 100 
+              kT (260 zJ at 0 C) between closed and open positions.&#160; This 
+              requires 12 nm^2 of intra-ridge gap.&#160; If the ridge is 8 nm 
+              high (with 4 scallops), then it need only be 1.5 nm long. </p>
+<p>The joint may be stiffened by compressing the joint volume.&#160; 
+              In this case, extra force may be used to insert the shim into the 
+              gap.&#160; (This also allows the gap to be somewhat narrower, reducing 
+              non-structural volume.)&#160; A simple design for an electrostatic 
+              actuator adds only one moving part.&#160; The shim is blanketed 
+              between insulated capacitor plates, one of which is flexible.&#160; 
+              Charging the capacitor makes the plates pull together, expelling 
+              the shim like a watermelon seed.&#160; The electricity to power 
+              the actuator can be delivered through contact with small embedded 
+              conductors at the proper time during the convergent assembly process.&#160; 
+              The tip of the shim can be tapered to help spread the ridge halves.&#160; 
+              Once the shim is expelled, the capacitor plates will adhere to each 
+              other by van der Waals force, forming a reliable barrier to hold 
+              the shim in the joint even if the capacitor is discharged. </p>
+<p>Tension on the joint will tend to expand the entire joint volume 
+              sideways.&#160; This can be constrained by surrounding each joint 
+              (not each ridge) with a diamond collar sufficient to resist the 
+              sideways force generated by a single ridge.&#160; The ridge joint 
+              is somewhat less stiff in tension or compression than solid diamond 
+              would be, but should be almost as strong: failure requires either 
+              significant compression of a large volume of diamond, or the simultaneous 
+              failure of many covalent bonds.&#160; Effectively, the entire joint 
+              volume except for the depth of the scallops and the width of the 
+              shim contributes to the tensile strength, and the entire joint volume 
+              except for the shim contributes to the compressive strength.&#160; 
+              Shear strength and stiffness depend on the orientation and attachment 
+              of the ridges, but can be made quite high perpendicular to the ridge 
+              line.&#160; Torsional and bending strength and stiffness can also 
+              be made quite high. </p>
+<p>The width of the shim is unrelated to the size of the ridge, being 
+              equal to the depth of the scallop's undercut plus the intra-ridge 
+              van der Waals gap.&#160; A reasonable lower bound for component 
+              size is a ridge composed of four scallops 1 nm deep and offset by 
+              &#189; nm horizontally and 2 nm vertically.&#160; The height of the ridge 
+              is 8 nm, and the footprint of a half-ridge is 3.5 nm (accommodating 
+              0.5 nm of motion to mate with the opposing half-ridge), of which 
+              2 nm contributes structural strength.&#160; The 1.6-nm wide shim 
+              adds an additional 0.8 nm of non-structural overhead to each half-ridge; 
+              the total joint tensile strength is approximately 47% of solid diamond.&#160; 
+              (Shallower scallops will improve this number up to a point; scallops 
+              that are too shallow can fail by slipping past each other.)&#160; 
+              For reliable operation the ridge must be at least 1.5 nm long.&#160; 
+              The smallest joint consists of one half-ridge on each side, only 
+              one of which (and its shim) needs to move; the rest of the joint 
+              including the mating half-ridge can be solid diamond.&#160; A single 
+              joint can potentially have a footprint smaller than 3x6 nm.&#160; 
+              Larger ridges can have more scallops, with the size of each scallop 
+              (and thus of the shim) staying constant.&#160; For example, a half-ridge 
+              20 nm high with 10 scallops has a footprint of 6.5 nm (plus 0.8 
+              nm for its share of the shim) of which 5 nm is structural, for 68% 
+              of diamond strength.&#160; Covering a 200-nm block with 8-nm-high 
+              ridges on each side requires 8% of the block volume (ignoring block 
+              edges and corners).&#160; However, in a high-strength application 
+              that requires ridge joint coverage of the full surface, the block 
+              must be nearly solid diamond anyway. </p>
+<p>Because the strength of the joint decreases only slightly with 
+              smaller size (the decrease is a function of the minimum shim, scallop, 
+              and van der Waals gap size), small ridges are mechanically adequate 
+              for joining blocks at any scale.&#160; Minimum ridge size is determined 
+              by the mechanochemical fabrication process.&#160; The only limitations 
+              on block size are the precision of the block-handling machinery 
+              and the possibility of unequal expansion of the faces due to temperature 
+              differences.&#160; With 200 nm nanoblocks, ridges built in a single 
+              block can be up to 100 nm in height, with tops 50 nm apart.&#160; 
+              (Note that the blocks will overlap by the height of the ridge.&#160; 
+              The change in effective block width during assembly presents issues 
+              for the assembly process that are straightforward but beyond the 
+              scope of this paper.)&#160; An assembly tolerance of 0.05 micron 
+              is somewhat beyond today's standards; current state of the <a class="thought" href="entries/art_entry.html">art</a> for 
+              automated pick and place assembly for optical components appears 
+              to be around 0.5 micron (Blaze Network Products, 2003).&#160; However, 
+              today's pick and place systems use <a class="thought" href="entries/hardware_entry.html">hardware</a> made with a manufacturing 
+              tolerance comparable to its performance.&#160; In contrast, the 
+              dimensional precision of the nanofactory's hardware will be approximately 
+              one atomic diameter or less, regardless of scale.&#160; At large 
+              scales, single ridges can be assembled from multiple nanoblocks, 
+              allowing ridge spacing of multiple microns; this is sufficient even 
+              for today's robotics. </p>
+<p>Differences in fabrication processes, assembly processes, and internal 
+              structure may cause different blocks to be at different temperatures.&#160; 
+              The resulting thermal expansion can cause a misalignment of the 
+              ridges.&#160; The volumetric thermal expansion coefficient of diamond 
+              is 3.5x10^-6/K (Freitas, 1999, <a href="http://web.archive.org/web/20060925101456/http://www.nanomedicine.com/NMI/AppendixA.htm" target="_blank">Appendix 
+              A</a>); the linear coefficient is one-third that, or 1.2x10^-6/K.&#160; 
+              A temperature difference of 1 K thus causes a 200 nm block to expand 
+              by a small fraction of an <a class="thought" href="entries/angstrom_entry.html">angstrom</a>, while a 10.5-cm surface will 
+              expand by 126 nm.&#160; Because diamond is an excellent conductor 
+              of heat, passive equilibration may be sufficient.&#160; As long 
+              as the displacement is not greater than the ridge spacing, or the 
+              ridge pattern does not permit improper joining, the blocks may be 
+              pressed together slowly, allowing the temperature to equalize.&#160; 
+              Even a rarefied internal atmosphere will also facilitate temperature 
+              equalization between nearby faces, though this process may be slow 
+              depending on block mass, and the process will be somewhat slower 
+              with argon than with neon.&#160; Note that the nanofactory is cooled 
+              by phase transition (see Section <a href="http://web.archive.org/web/20060925101456/http://www.jetpress.org/volume13/Nanofactory.htm#s8.2" target="_blank">8.2</a>), 
+              so the cooling fluid will have the same temperature throughout the 
+              factory, minimizing potential product temperature differences.&#160; 
+              Active compensation might involve sensing the temperature at various 
+              points on the surfaces and applying heat to the cooler surface via 
+              embedded resistive heaters; this will only be necessary for the 
+              few large-scale joints that take place near the end of the assembly 
+              process, and the heating process can be initiated in advance to 
+              avoid delay.&#160; Embedded mechanical (bi-material) thermostats 
+              can allow each region to reach a preset temperature without individual 
+              attention. </p>
+<p>Because the joints require no external manipulation or assembly 
+              force, they can be used to fasten non-bonded parts that are only 
+              loosely connected to the main nanoblock.&#160; For example, a structural 
+              beam one micron long and 50 nm wide can be constructed in five sections.&#160; 
+              Each section will be terminated in ridge joints, and laid across 
+              a nanoblock in a position that will place the section ends next 
+              to each other during block assembly; van der Waals force will hold 
+              the section in place during block manipulation.&#160; When the nanoblocks 
+              are assembled, the ridge joints of the beam will join at the same 
+              time as the rest of the joints, with no additional effort.&#160; 
+              This allows the inclusion of long, thin components in product designs.&#160; 
+              Likewise, single nanoblocks can be made in separate pieces joined 
+              by van der Waals force.&#160; This allows a block to be pulled apart 
+              during the unfolding process, forming multiple walls with large 
+              spaces between them.&#160; This can be useful to save mass where 
+              only thin walls are needed.&#160; If a block is split into as many 
+              as 10 walls or 100 columns, the 20-nm width is sufficient for multiple 
+              full-sized ridge joints on each part.&#160; This capability is assumed 
+              for interior nanofactory structure. </p>
+<p>Joints can be formed after the product is released from the factory, 
+              as long as contaminants have been excluded from the joint space.&#160; 
+              The factory can manufacture a larger containing balloon for product 
+              unfolding, or the joints can be protected individually by a variety 
+              of covering mechanisms.&#160; A product can be created in a very 
+              compact form, then unfold like a pop-up book or like flat-packed 
+              cardboard boxes.&#160; Components can be built in pieces, with lightweight 
+              pantographic trusswork to bring the ends together as the product 
+              expands; once the ends touch, the strong joint will form. A component 
+              can also be made in a "broken" state, with mating surfaces 
+              held together on one edge with a small hinge at any desired angle, 
+              and the open end protected by a bellows if necessary.&#160; When 
+              the component is straightened, the mating surfaces will form the 
+              desired strong connection.&#160; A weak and reversible joint can 
+              be formed by preventing the shims from entering the gaps between 
+              the ridges.&#160; This allows blocks to be loosely connected, then 
+              disconnected, and finally reconnected tightly in the same or different 
+              <a class="thought" href="entries/configuration_entry.html">configuration</a>.&#160; This may be useful if the unfolding process 
+              requires a structure to be produced in its final conformation, then 
+              flexed, and finally fastened rigidly. &#160; </p>
+<h3>3.2.2.Functional joints </h3>
+<p>A product may contain embedded wires, pipes, rotating rods, nanocomputer 
+              logic rods, and polyyne control cables.&#160; All of these may need 
+              to make a connection between adjacent nanoblocks.&#160; These connections 
+              are generally simple, and cost less than 50% of the performance 
+              that would be possible with a seamless design. </p>
+<p>Embedded wires can be run up to a flat face, and electrical contact 
+              made by <a class="thought" href="entries/tunneling_entry.html">tunneling</a>.&#160; Contact can be maintained in the case of 
+              joint strain by the use of springy interfaces.&#160; According to 
+              measured values for a sample of HOPG (highly ordered pyrolitic graphite), 
+              (GE Advanced Ceramics, 2002) graphite is about 5000 times more conductive 
+              in-plane than cross-plane (and the in-plane value is 1/50 as good 
+              as a typical metal).&#160; The separation of graphite planes is 
+              0.335 nm, about 1/600 of the 200-nm nanoblock width.&#160; This 
+              implies that a graphite-graphite tunneling surface of 8 nm^2 per 
+              nm^2 of graphite wire, spaced every 200 nm, would only double the 
+              total resistance.&#160; To save nanoblock surface area, the tunneling 
+              surface can consist of interlocking corrugations.&#160; Because 
+              diamond is an excellent insulator, high voltages may be used to 
+              compensate for the resistance of graphite.&#160; Some buckytubes 
+              may be better conductors. </p>
+<p>Control cables and control rods will be built into each nanoblock 
+              when it is manufactured, and extend only to its edges.&#160; Tension 
+              and/or compression must be transferred between blocks.&#160; Nanocomputer 
+              logic rods have ends ~1 nm^2 which can be butted together.&#160; 
+              The nanocomputer design uses tensional force of 2 nN (Drexler, 1992, 
+              sec. 12.3.3.b) but this can be traded for displacement or compressive 
+              force without sacrificing reliability.&#160; Alternatively, the 
+              joint area can be increased by a few nm^2 to allow a few nN of tensile 
+              force to be transmitted through van der Waals attraction.&#160; 
+              Crossing between blocks may require adding extra <a class="thought" href="entries/logic_gate_entry.html">logic gate</a>s to 
+              transform and condition the signal; this logic can all be reversible 
+              at some cost of time.&#160; Such interfaces will not add significantly 
+              to the power requirements or design complexity of a nanocomputer. 
+            </p>
+<p>Polyyne (carbon chains with alternating single and triple bonds) 
+              control cables can be terminated with a small diamondoid plate flush 
+              with the nanoblock surface.&#160; When the blocks are joined, the 
+              plates will stick by van der Waals force.&#160; Each two atoms of 
+              polyyne spans a length of 0.2569 nm and has a compliance of 0.00185 
+              m/N (Casing an Assembler, "Control cables").&#160; A 1-nm 
+              diamond cube contains 176 carbon atoms.&#160; A van der Waals interface 
+              has a stiffness of &gt;30 N/m per nm^2 (Drexler, 1992, sec. 9.7.1), 
+              or a compliance of &lt;0.0334 m/N.&#160; Two hundred nm of polyyne 
+              contains 1557 carbon atoms and has a compliance of 1.44 m/N, while 
+              198 nm of polyyne interrupted by two 1-nm diamond cubes interfaced 
+              by van der Waals force contains 1893 carbon atoms and has a compliance 
+              of 1.47 m/N; the interface increases cable mass by 22% and compliance 
+              by 2% (ignoring the hydrogen termination and internal compliance 
+              of the diamond cubes) and may introduce resonances into extremely 
+              high-speed operations.&#160; The main drawback of the interface 
+              is its strength; the tensile strength of a polyyne rod is &gt;6 
+              nN, but the strength of the interface is ~1 nN.&#160; Increasing 
+              the interface area allows a stronger and stiffer joint, and for 
+              joint areas above a few square nanometers a ridge joint can be used 
+              at some cost of mass. </p>
+<p>Power can be transmitted by means of thin rotating rods, embedded 
+              in the nanoblocks like the control cables and logic rods.&#160; 
+              Mating convolutions on rod ends will allow the transmission of torque 
+              between ends that are simply pressed together.&#160; If the rod 
+              is driven near maximum torque, the interface may need to be somewhat 
+              larger than the cross section of the rod.&#160; The bursting speed 
+              of a disc decreases in proportion with its radius, while the area 
+              increases as the square of the radius; thus a 2x increase in interface 
+              area will cause a 1.4x <a class="thought" href="entries/reduction_entry.html">reduction</a> in speed.&#160; In this simple 
+              example, power transmission is derated by 40%; however, other mechanical 
+              linkages such as a thin belt connecting offset and overlapping rods 
+              may permit full speed while delivering full torque.&#160; (The belt 
+              can be placed around one rod during nanoblock manufacture and held 
+              open by any of a variety of methods.&#160; The other rod can be 
+              tapered to slip inside the belt during block assembly.&#160; Interlocking 
+              (gear-toothed) rod surfaces will also work but may require significant 
+              overlap for reliable torque transmission.)&#160; Rods and shafts 
+              larger than a few nm can be joined by ridge joints.&#160; Ridge 
+              joints may also serve as a means of chocking the shafts to ensure 
+              proper alignment, and then unlocking them during convergent assembly: 
+              the shims can be inserted only when the joint is fully closed, and 
+              the motion of their insertion can be used to remove a mechanical 
+              chock.&#160; Small rods can be controlled by adjacent ridge joints, 
+              and large shafts by facial joints with internal shims. </p>
+<p>Bearing surfaces for rotating shafts small enough to be embedded 
+              in nanoblocks can be built into each nanoblock during construction.&#160; 
+              Variations in rod diameter will prevent the rods slipping out of 
+              the block prior to convergent assembly.&#160; Large rods pose a 
+              special problem for convergent assembly, since they cannot be strongly 
+              and permanently fastened to a support or bearing structure.&#160; 
+              However, for products up to 10 cm size, a tight-fitting bearing 
+              surface between a rod and a housing can provide the necessary adhesion 
+              by van der Waals force alone.&#160; Rotational <a class="thought" href="entries/freedom_entry.html">freedom</a> can be constrained 
+              by small retractable chocks.&#160; Graphite pads covering the matching 
+              surfaces of the blocks constituting the shaft and the blocks constituting 
+              the housing can provide a bearing surface even for slightly rough 
+              curved surfaces.&#160; However, the boundaries between the pads 
+              will be aligned on the moving and bearing surface, and this can 
+              create a significant force.&#160; (Twisting one of the surfaces 
+              relative to the other would break the alignment, but this will not 
+              be possible for cylindrical bearings.)&#160; Order-of-magnitude 
+              calculations can be made by treating the boundary gaps as regions 
+              of wider spacing between the surfaces, calculating the difference 
+              in van der Waals energy between aligned and unaligned regions, and 
+              dividing that by the width of the gap to find a force.&#160; Approximating 
+              the boundary as a trench 1 nm wide and 0.1 nm deep and the pad spacing 
+              as 0.2 nm, and applying the formula from (Drexler, 1992, Fig. 3.10d), 
+              indicates an energy difference of 81 zJ per nm^2 in favor of the 
+              aligned state, or an average force of 81 pN per linear nm of trench.&#160; 
+              One mm^2 of flat sliding surface will contain 5x10^9 nm of trench 
+              crossing the direction of motion, creating a force of ~0.4 N.&#160; 
+              However, the stiffness of 1 mm^2 of graphite bearing surface is 
+              ~3x10^13 N/m, so for many macroscopic applications, bearings may 
+              be made small enough that the "roughness" is not a significant 
+              problem.&#160; A cylindrical bearing surface cuts across two nanoblock 
+              planes and only a fraction of the area contributes to stiffness; 
+              these factors increase the number of trenches (and thus the "roughness" 
+              force) for a given bearing stiffness by approximately a factor of 
+              4. </p>
+<p>Pipes are simply voids in the diamond nanoblocks that are butted 
+              together when the blocks are assembled.&#160; A flat, uncompressed 
+              interface between <a class="thought" href="entries/nitrogen_entry.html">nitrogen</a>-terminated diamond (111) surfaces is 
+              adequate to exclude helium (Drexler, 1992, sec. 11.4.2a).&#160; 
+              If this type of interface proves inadequate in practice (perhaps 
+              due to joint flexure, or unavailability of nitrogen termination 
+              chemistry), a conical extension of the pipe wall wrapped in one 
+              or more layers of graphite to provide a compressive seal and extending 
+              into a conical depression in the other block should suffice.&#160; 
+              Pipes too large to be contained inside a nanoblock can be sealed 
+              by diamond or graphite curtain walls, placed along each seam, to 
+              separate the interior of the pipe from the mechanical joint area.&#160; 
+              If the nanofactory is filled with inert gas, pipes will also be 
+              filled with the gas when they are manufactured.&#160; If this is 
+              a problem, one possible solution is to place a collapsed graphite 
+              tube inside the pipe, terminating the tube ends at the nanoblock 
+              faces with a diamond mating collar thin enough to be flexible.&#160; 
+              When the blocks are assembled, the collars join.&#160; When first 
+              used, the graphite tube will expand and conform to the walls of 
+              the pipe while displaced gas can be vented through small channels. 
+              &#160; </p>
+<h2>4.&#160;&#160; Nanofactory Architecture </h2>
+<p>A nanofactory, as conceived here, is a single device containing 
+              many mechanochemical fabricators and larger-scale manipulator systems.&#160; 
+              The mechanochemical fabricators produce nanoblocks and the manipulator 
+              systems join them into a product.&#160; The mechanochemical working 
+              space of a nanofactory must contain no stray reactive molecules.&#160; 
+              The factory must contain computers to control the machinery; space 
+              and mechanisms for convergent assembly; structures for distributing 
+              power, chemicals, and cooling fluid; mechanochemical fabricators 
+              with space for them to work; and additional space for joining blocks 
+              into larger blocks and transporting them through the factory. </p>
+<p>The nanofactory is built hierarchically, using only a few scalable 
+              designs.&#160; At the lowest level, a few thousand fabricators are 
+              arranged in a planar grid.&#160; Their products are picked up and 
+              assembled into increasingly large blocks by a series of increasingly 
+              large robotic manipulators.&#160; This plus a control computer constitutes 
+              a basic, reliable <i>production module</i>.&#160; The production 
+              modules are stacked three-dimensionally into <i>gathering stages</i>, 
+              which assemble blocks and pass them to higher-level gathering stages.&#160; 
+              Finally, the entire factory is enclosed in a suitable casing, with 
+              a mechanism to output product without contaminating the workspace. 
+            </p>
+<p>In Merkle's convergent assembly architecture (1999) it is suggested 
+              that each convergent assembly stage has four inputs, each supplying 
+              two blocks to make one output block.&#160; However, this means that 
+              each input to the preceding stage must supply four blocks to make 
+              those two, and so on.&#160; This is feasible if blocks can be manufactured 
+              extremely quickly, or (as in Merkle's design) fed through a relatively 
+              small number of ports efficiently.&#160; The current design, using 
+              large nanoblocks requiring minutes or hours to fabricate, uses only 
+              one block from each fabricator per product cycle.&#160; This implies 
+              that each stage will receive all its blocks in parallel.&#160; In 
+              general, then, each stage must have either eight (non-redundant) 
+              or nine or ten (redundant) inputs.&#160; (The first gathering stage 
+              has only four inputs, to compensate for the eighteen inputs of the 
+              final stage in the production module; see below.) </p>
+<h3>4.1.&#160; Mechanochemical functionality </h3>
+<p><a href="http://web.archive.org/web/20060925101456/http://www.jetpress.org/volume13/GridsBig.jpg" target="_blank">Figure 
+              3: Workstation Grids</a> </p>
+<p>Once a self-contained, digitally controlled mechanochemical fabrication 
+              system has been developed, the fabricator design can be copied directly 
+              from it.&#160; Early systems will presumably use a simple, stiff 
+              robot, such as a double tripod (Merkle, 1997c) or Stewart <a class="thought" href="entries/platform_entry.html">platform</a>.&#160; 
+              As noted in Section <a href="http://web.archive.org/web/20060925101456/http://www.jetpress.org/volume13/Nanofactory.htm#s8.2" target="_blank">8.2</a>, 
+              any inefficient ratchet or other state-keeping systems in the fabricator 
+              can be replaced with thermodynamically efficient stepping drives.&#160; 
+              Even with this improvement, the primitive method of mechanochemistry 
+              will cost some efficiency relative to the "mill" type 
+              designs analyzed by Drexler (1992, sec. 13.3) and used in his nanofactory 
+              design (1992, sec. 14.4).&#160; Because placing each atom or molecule 
+              requires a large and complicated motion of the tripod system, the 
+              nanofactory will suffer some penalty in both speed and energy use; 
+              these penalties are substantial but not crippling.&#160; Mills are 
+              not included in this preliminary design because they may require 
+              significant additional mechanical and mechanochemical design. </p>
+<p>Fabricators will be fastened together edgewise to form the planar 
+              array, which divides the coolant volume from the working volume.&#160; 
+              Cooling fluid with dissolved feedstock circulates past one side; 
+              the products (nanoblocks) are fabricated and released on the opposite 
+              side, which is open to the nanofactory's clean working volume.&#160; 
+              A square of nine fabricators (one redundant) forms a stage.&#160; 
+              Product blocks are picked up by a three degree of freedom gantry 
+              crane manipulator and assembled into a 0.4-micron block.&#160; Likewise, 
+              a square of nine of these stages forms the next stage.&#160; This 
+              continues through several levels; in the current design, four levels 
+              is chosen for suitable redundancy and convenient control. &#160; 
+            </p>
+<h3>4.2.&#160; The reliable basic production module </h3>
+<p> <a href="http://web.archive.org/web/20060925101456/http://www.jetpress.org/volume13/ProdModBig.jpg" target="_blank">Figure 
+              4: Production Module</a> </p>
+<p>A production module fabricates two 3.2 micron product blocks out 
+              of up to 8,192 nanoblocks, using a fabricator to produce each nanoblock.&#160; 
+              The module is extremely reliable in the face of radiation damage, 
+              and is controlled by an integrated nanocomputer.&#160; The overall 
+              shape of the module is a rectangular solid ~16x16x12 microns.&#160; 
+              The fabricators are placed on two opposite sides, delivering their 
+              product nanoblocks to the interior.&#160; The nanocomputer occupies 
+              a third side, surrounding the product exit <a class="thought" href="entries/port_entry.html">port</a>.&#160; The remaining 
+              three sides may be closed by thin walls, but need not be closed 
+              at all where two production modules are placed side by side in the 
+              nanofactory.&#160; The interior is sparsely filled with gantry crane 
+              manipulators to assemble the nanoblocks into larger blocks.&#160; 
+              The gantry crane mechanisms, even at the smallest scale, can be 
+              implemented as bulk diamond machines&#8212;the smallest blocks are 
+              200 nm on a side, and bulk diamond parts can be designed far smaller 
+              than that, so not much material or volume will be wasted due to 
+              inefficient design <a class="thought" href="entries/constraint_entry.html">constraint</a>s.&#160; With the ridge joints, the 
+              blocks can be assembled simply by bringing them into contact (Section 
+              <a href="http://web.archive.org/web/20060925101456/http://www.jetpress.org/volume13/Nanofactory.htm#s3.2.1" target="_blank">3.2.1)</a>.
+
+</p></td><td>&#160;</td><td class="sidebar" valign="top"><a href="https://web.archive.org/web/20060925101456/http://www.kurzweilai.net/mindx/frame.html?main=post.php?artID%3D607" target="_top">Be the first to comment on this article!</a><p>
+<p>Also see:</p>
+<p>Chris Phoenix, <a href="https://web.archive.org/web/20060925101456/http://www.kurzweilai.net/meme/frame.html?main=/articles/art0596.html" target="_top">Molecular 
+              Manufacturing: Start Planning</a></p>
+<p>Chris Phoenix, <a href="https://web.archive.org/web/20060925101456/http://www.kurzweilai.net/meme/frame.html?main=/articles/art0547.html" target="_top">Safe 
+              Utilization of Advanced Nanotechnology</a></p>
+<p>Ray Kurzweil, <a href="https://web.archive.org/web/20060925101456/http://www.kurzweilai.net/meme/frame.html?main=/articles/art0604.html" target="_top">The 
+              Drexler-Smalley Debate on Molecular Assembly </a></p>
+<p>K. Eric Drexler, <a href="http://web.archive.org/web/20060925101456/http://www.kurzweilai.net/meme/frame.html?main=/articles/art0559.html" target="_top">The 
+              Future of Nanotechnology: Molecular Manufacturing</a></p>
+<p>&#160;</p>
+<p>&#160;</p>
+<p>&#160;</p>
+</p></td><td> &#160; </td>
+</tr>
+<tr><td colspan="6"><img alt="" border="0" height="35" src="https://web.archive.org/web/20060925101456im_/http://www.kurzweilai.net/blank.gif" width="35"></td></tr>
+<tr>
+<td>&#160;</td>
+<td colspan="4">
+<a name="discussion"></a><p class="mindxheader">[<a href="https://web.archive.org/web/20060925101456/http://www.kurzweilai.net/mindx/frame.html?main=post.php?artID%3D607" target="_top">Post New Comment</a>]<p></p></p></td>
+<td>&#160;</td>
+</tr>
+</table>
+</td></tr></table>
+</body>
+</html>

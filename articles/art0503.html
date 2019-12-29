@@ -1,0 +1,1537 @@
+<html>
+<head><base href="file:///Users/beka/Projects/Brain%20Archive/brain_archive/"><link href="articlemaster.css" rel="stylesheet" title="style1" type="text/css">
+<style>
+.sidebar {border-left-width: 2px; border-right-width: 0px; border-top-width: 0px; border-bottom-width: 0px; border-color: #000000; border-style: solid; padding-left: 12px;}
+</style>
+<title>Book Review: A New Kind of Science</title>
+</head>
+<body leftmargin="0" marginheight="0" marginwidth="0" topmargin="0"><div id="centering-column"><div id="header">
+  <div id="logo">
+    <img src="logo.gif" />
+  </div>
+  <div id="title">
+    <h1>Brain Archive</h1><br />
+    <a href="">Entry Index</a>
+  </div>
+  <div class="clearer"></div>
+</div>
+<table align="center" bgcolor="#EEEEEE" border="0" cellpadding="0" cellspacing="0" height="100%" width="780">
+<tr height="100%">
+<td align="left" valign="top">
+<table align="center" bgcolor="#EEEEEE" border="0" cellpadding="0" cellspacing="0" width="780">
+<tr>
+<td><img alt="" border="0" height="5" src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/blank.gif" width="20"></td>
+<td><img alt="" border="0" height="1" src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/blank.gif" width="90"></td>
+<td><img alt="" border="0" height="1" src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/blank.gif" width="375"></td>
+<td><img alt="" border="0" height="1" src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/blank.gif" width="30"></td>
+<td><img alt="" border="0" height="1" src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/blank.gif" width="200"></td>
+<td><img alt="" border="0" height="1" src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/blank.gif" width="30"></td>
+</tr>
+<tr>
+<td> &#160; </td>
+<td colspan="5"> <span class="breadcrumb"><a href="https://web.archive.org/web/20071011040716/http://www.kurzweilai.net/" target="_top">Origin</a> &gt;
+ <a href="https://web.archive.org/web/20071011040716/http://www.kurzweilai.net/meme/memelist.html?m=7">Visions of the Future</a> &gt; 
+Book Review: A New Kind of Science
+<br>
+Permanent link to this article: <a href="http://web.archive.org/web/20071011040716/http://www.kurzweilai.net/meme/frame.html?main=/articles/art0503.html" target="_top">http://www.kurzweilai.net/meme/frame.html?main=/articles/art0503.html</a></span>
+<br>
+<a class="printable" href="https://web.archive.org/web/20071011040716/http://www.kurzweilai.net/articles/art0503.html?printable=1" target="_new">Printable Version</a></td>
+</tr>
+<tr><td colspan="6"><img alt="" border="0" height="50" src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/blank.gif" width="1"></td></tr>
+<tr>
+<td> &#160; </td>
+<td> &#160; </td>
+<td valign="top"><span class="Title">Book Review: A New Kind of Science</span>
+<br>
+<span class="Subtitle"></span>
+<table border="0" cellpadding="0" cellspacing="0">
+<td valign="top"><span class="Authors">by &#160;</span></td>
+<td><span class="Authors">
+<a class="Authors" href="https://web.archive.org/web/20071011040716/http://www.kurzweilai.net/bios/frame.html?main=/bios/bio0197.html" target="_top">Scott Aaronson</a><br></span></td>
+</table>
+<br>
+<div class="TeaserText">This review of Stephen Wolfram's new book addresses weaknesses in Wolfram's notions of computational complexity, general relativity, quantum mechanics, and the Bell inequality violation.</div>
+<br>
+<br> <blockquote>
+   "Somebody says, 'You know, you people always say that <a class="thought" href="entries/space_entry.html">space</a> is continuous.
+   How do you know when you get to a small enough dimension that there really are
+   enough points in between, that it isn't just a lot of dots separated by little
+   distances?' Or they say, 'You know those quantum mechanical amplitudes you
+   told me about, they're so complicated and absurd, what makes you think those
+   are right? Maybe they aren't right.' Such remarks are obvious and are
+   perfectly clear to anybody who is working on this problem. It does not do any
+   good to point this out."
+   - <a class="thought" href="entries/feynman_entry.html">Richard Feynman</a> [7]
+</blockquote>
+<p><b>1. Introduction</b>
+<p>
+<i>A New Kind of <a class="thought" href="entries/science_entry.html">Science</a></i> [18], the 1280-page
+   treatise by <i>Mathematica</i> creator Stephen Wolfram, has
+   only a few things to say about <a class="thought" href="entries/quantum_computing_entry.html">quantum computing</a>. Yet the book's goal - to
+   understand <a class="thought" href="entries/nature_entry.html">nature</a> in <a class="thought" href="entries/computation_entry.html">computation</a>al terms - is one widely shared by the quantum
+   computing community.  Thus, many in the field will likely be curious: is this
+   2.5-kilogram tome worth reading?  Notwithstanding newspaper comparisons
+   [6] to Darwin's <i>Origin of <a class="thought" href="entries/species_entry.html">Species</a></i>, what is the
+   book's actual <a class="thought" href="entries/content_entry.html">content</a>?  This review will not attempt a chapter-by-chapter
+   evaluation, but will focus on two specific areas: <a class="thought" href="entries/computation_entry.html">computation</a>al <a class="thought" href="entries/complexity_entry.html">complexity</a>
+   (Section 2), especially the claimed relevance of Wolfram's Principle of
+   <a class="thought" href="entries/computation_entry.html">Computation</a>al Equivalence to
+   NP-completeness
+   (Section 2.1); and fundamental <a class="thought" href="entries/physics_entry.html">physics</a> (Section 3), especially <a class="thought" href="entries/quantum_mechanics_entry.html">quantum mechanics</a>
+   (Section 3.1) and Wolfram's attempt to account for Bell inequality violation in a
+   classical model (Section 3.2).
+<p>
+   As a popularization, <i>A New Kind of <a class="thought" href="entries/science_entry.html">Science</a></i> is an
+   impressive accomplishment.  The book's main theme is that simple <a class="thought" href="entries/program_entry.html">program</a>s can
+   exhibit complex behavior.  For example, let
+   p<sub>i,j</sub>=1
+   if <a class="thought" href="entries/cell_entry.html">cell</a> (i,j)
+   is colored black, and
+   p<sub>i,j</sub>=0
+   if white.  Then the 'Rule
+   110'
+   cellular automaton is defined by the recurrence
+<p>p<sub>i+1,j</sub> = p<sub>i,j</sub> + p<sub>i,j+1</sub> - (1+p<sub>i,j-1</sub>)p<sub>i,j</sub>p<sub>i,j+1</sub>
+<p>for i&gt;0,
+   given some initial condition at
+   i=0.
+   Wolfram emphasizes that such an automaton, even when run with a simple initial
+   condition such as a single black <a class="thought" href="entries/cell_entry.html">cell</a>, can generate a complicated-looking
+   image with no apparent repetitive or nested <a class="thought" href="entries/structure_entry.html">structure</a>.  This <a class="thought" href="entries/phenomenon_entry.html">phenomenon</a>,
+   although well known to <a class="thought" href="entries/program_entry.html">program</a>ming enthusiasts as well as professionals, will
+   no doubt surprise many general readers.
+</p>
+<p>
+   Using <a class="thought" href="entries/cellular_automata_entry.html">cellular automata</a> as a framework, Wolfram moves on to discuss a range of
+   topics - including the second law of thermodynamics, natural selection, plant
+   and <a class="thought" href="entries/animal_entry.html">animal</a> morphology, <a class="thought" href="entries/ai_entry.html">artificial intelligence</a>, fluid <a class="thought" href="entries/dynamics_entry.html">dynamics</a>, special and
+   general <a class="thought" href="entries/relativity_entry.html">relativity</a>, <a class="thought" href="entries/quantum_mechanics_entry.html">quantum mechanics</a>, efficient <a class="thought" href="entries/algorithm_entry.html">algorithm</a>s and
+   NP-completeness, <a class="thought" href="entries/heuristic_entry.html">heuristic</a> <a class="thought" href="entries/search_entry.html">search</a> <a class="thought" href="entries/method_entry.html">method</a>s,
+   <a class="thought" href="entries/cryptography_entry.html">cryptography</a> and pseudorandomness, <a class="thought" href="entries/data_entry.html">data</a> compression, statistical <a class="thought" href="entries/hypothesis_entry.html">hypothesis</a>
+   testing, G&#246;del's Theorem, axiomatic <a class="thought" href="entries/set_theory_entry.html">set theory</a>, and the Church-Turing
+   thesis.  What is noteworthy is that he explains all of these without using
+   formal notation.  To do so, he relies on about
+   1000
+   high-resolution graphics, which often (though not always) convey the ideas
+   with as much precision as a formula would.  With suitable disclaimers,
+   <i>A New Kind of <a class="thought" href="entries/science_entry.html">Science</a></i> could form an excellent basis
+   for an undergraduate general-<a class="thought" href="entries/science_entry.html">science</a> course.
+</p>
+<p>
+   The trouble is that, as the title implies, Wolfram emphatically does not
+   believe that he is using <a class="thought" href="entries/cellular_automata_entry.html">cellular automata</a> to popularize known ideas.  In the
+   introduction, he describes his finding that one-dimensional <a class="thought" href="entries/cellular_automata_entry.html">cellular automata</a>
+   can produce complex behavior as one of the "more <a class="thought" href="entries/import_entry.html">import</a>ant single discoveries
+   in the whole <a class="thought" href="entries/history_entry.html">history</a> of theoretical <a class="thought" href="entries/science_entry.html">science</a>" (p. 2).  He refers in the
+   preface to "a crack in the very foundations of existing <a class="thought" href="entries/science_entry.html">science</a>," "new
+   ideas and new <a class="thought" href="entries/method_entry.html">method</a>s that ultimately depend very little on what has gone
+   before," and "a vast array of applications - both <a class="thought" href="entries/concept_entry.html">concept</a>ual and
+   practical - that can now be developed."  Comments of this character pervade
+   the book.
+</p>
+<p>
+   Significantly, there is no bibliography.  Instead there are
+   349
+   pages of endnotes, which summarize the <a class="thought" href="entries/history_entry.html">history</a>, from antiquity to the present,
+   of each subject that Wolfram addresses.  The notes are fascinating; in many
+   respects they constitute a better book than the main text.  However, in both
+   the main text and in the notes, Wolfram generally brings up prior work only to
+   dismiss it as misguided, or at best as irrelevant to his concerns.  For
+   example, after relating his 'discovery' that there is apparent <a class="thought" href="entries/complexity_entry.html">complexity</a> in
+   the distribution of primes, Wolfram acknowledges that "the first few hundred
+   primes were no doubt known even in antiquity, and it must have been evident
+   that there was at least some <a class="thought" href="entries/complexity_entry.html">complexity</a> in their distribution" (p. 134).
+<blockquote>
+   However [he continues], without the whole intellectual <a class="thought" href="entries/structure_entry.html">structure</a> that I have
+   developed in this book, the implications of this observation - and its
+   potential connection, for example, to phenomena in <a class="thought" href="entries/nature_entry.html">nature</a> - were not
+   recognized.  And even though there has been a vast amount of mathematical work
+   done on the sequence of primes over the course of many centuries, almost
+   without exception it has been concerned not with <a class="thought" href="entries/basic_entry.html">basic</a> issues of <a class="thought" href="entries/complexity_entry.html">complexity</a>
+   but instead with trying to find specific kinds of regularities (p. 134).
+</blockquote>
+<p><b>2. <a class="thought" href="entries/computation_entry.html">Computation</a>al <a class="thought" href="entries/complexity_entry.html">Complexity</a></b>
+<p>
+   In the opening chapter we are promised that Wolfram's new kind of <a class="thought" href="entries/science_entry.html">science</a>
+   "begins to shed new <a class="thought" href="entries/light_entry.html">light</a> on various longstanding questions in <a class="thought" href="entries/computation_entry.html">computation</a>al
+   <a class="thought" href="entries/complexity_theory_entry.html">complexity theory</a>" (p. 14).  On pages 758-764 we finally learn what this
+   means.  By enumerating simple <a class="thought" href="entries/turing_machine_entry.html">Turing machine</a>s - say, all those with
+   4
+   states and
+   2
+   <a class="thought" href="entries/symbol_entry.html">symbol</a>s - one can lower-bound the <a class="thought" href="entries/number_entry.html">number</a> of steps needed by any such <a class="thought" href="entries/machine_entry.html">machine</a>
+   to perform a particular task.  To illustrate that simple <a class="thought" href="entries/machine_entry.html">machine</a>s can already
+   display nontrivial behavior, Wolfram exhibits a <a class="thought" href="entries/machine_entry.html">machine</a> (call it
+   M)
+   that decides a <a class="thought" href="entries/language_entry.html">language</a>
+   L<sub>M</sub> in
+   <a class="thought" href="entries/time_entry.html">time</a> exponential in the length of its input.  No <a class="thought" href="entries/machine_entry.html">machine</a> with at most
+   4
+   states can decide
+   L<sub>M</sub> more
+   efficiently, and Wolfram conjectures that
+   M
+   is 'irreducible,' meaning that no <a class="thought" href="entries/machine_entry.html">machine</a> with <i>any</i>
+<a class="thought" href="entries/number_entry.html">number</a> of states can decide
+   L<sub>M</sub> substantially
+   more efficiently.
+<p>
+   It is unlikely that this enumeration approach scales even to
+   5-state,
+   2-<a class="thought" href="entries/symbol_entry.html">symbol</a>
+<a class="thought" href="entries/machine_entry.html">machine</a>s.  For let
+   S(n),
+   the
+   n<sup>th</sup> 'Busy
+   Beaver shift' <a class="thought" href="entries/number_entry.html">number</a>, be the maximum <a class="thought" href="entries/number_entry.html">number</a> of steps that an
+   n-state,
+   2-<a class="thought" href="entries/symbol_entry.html">symbol</a>
+<a class="thought" href="entries/machine_entry.html">machine</a> can make before halting, when started on a blank tape.  Then as noted
+   by Wolfram on p. 889, determining
+   S(5) is
+   still open; the best known lower bound, due to Marxen and Buntrock [12], is S(5)&gt;=47,176,870.
+  The situation is even worse if the <a class="thought" href="entries/machine_entry.html">machine</a> can be started on a non-blank tape.
+<p>
+   Wolfram would reply that extremely short <a class="thought" href="entries/program_entry.html">program</a>s are already of interest,
+   since they can exhibit 'irreducible <a class="thought" href="entries/complexity_entry.html">complexity</a>.'  And indeed, in Chapter 11 he
+   gives a remarkable construction, due to his employee Matthew Cook, showing
+   that even the Rule
+   110
+   cellular automaton is a universal <a class="thought" href="entries/computer_entry.html">computer</a>.  A corollary is that there exists
+   a
+   2-state,
+   5-<a class="thought" href="entries/symbol_entry.html">symbol</a>
+   universal <a class="thought" href="entries/turing_machine_entry.html">Turing machine</a>.  However, such constructions inevitably rely on a
+   complicated input encoding.  And given a problem of interest, such as <a class="thought" href="entries/matrix_entry.html">matrix</a>
+   multiplication, there seems to be nothing to suggest that an extremely short
+   <a class="thought" href="entries/program_entry.html">program</a> exists to solve it using a standard
+   encoding <a href="#1">(note 1)</a>.  So by restricting to
+   extremely short programs, in effect we trade an infeasible search among
+   programs for an infeasible search among input encoding schemes.
+<p>
+   Might it be worthwhile, though, to examine <i>tradeoffs</i>
+   between running time and program size?  If we do this, then again we must not
+   allow preprocessing of the input, since otherwise a constant-size program can
+   always achieve within a polynomial factor of the optimal running time.  We
+   therefore obtain complexity measures that are not 'robust' (in the traditional
+   sense) under changes to the input representation.  Such measures might
+   nevertheless have some interest for theoretical computer science.
+<p>
+   Elsewhere in the book, there are a few errors and oversights regarding
+   complexity.  Wolfram says that minimizing a DNF expression (p. 1096) and
+   computing a permanent (p. 1146) are NP-complete; they
+   are respectively &#931;<sub>2</sub>P-complete
+   (as shown by Umans [16]) and
+   #P-complete
+   (as shown by Valiant [17]).  Also, in Chapter 10, pseudorandom number
+   generators based on cellular automata are proposed.  Wolfram suggests that,
+   since certain questions involving cellular automata are
+   NP-complete, these generators might be a good basis
+   for cryptography <a href="#2">(note 2)</a>:
+</p>
+<blockquote>
+   To date [no] <a class="thought" href="entries/system_entry.html">system</a> has been devised whose cryptanalysis is known to be
+   NP-complete.  Indeed, essentially the only problem on which <a class="thought" href="entries/cryptography_entry.html">cryptography</a>
+<a class="thought" href="entries/system_entry.html">system</a>s have so far successfully been based is factoring of <a class="thought" href="entries/integer_entry.html">integer</a>s.  [And]
+   while this problem has resisted a fair <a class="thought" href="entries/number_entry.html">number</a> of attempts at solution, it is
+   not known to be NP-complete (and indeed its ability to be solved in polynomial
+   <a class="thought" href="entries/time_entry.html">time</a> on a formal quantum <a class="thought" href="entries/computer_entry.html">computer</a> may suggest that it is not) (p. 1089-1090).
+</blockquote>
+<p>
+   There are two problems here.  First, all cryptanalysis problems are in NP intersect coNP,
+   and thus cannot be NP-complete unless
+   NP=coNP.
+   Second, there is no shortage of candidate pseudorandom generators (or
+   equivalently, candidate one-way functions; H&#229;stad et al. [9] showed
+   that either can be obtained from the other).  Attention has focused on
+   factoring - and on other '<a class="thought" href="entries/structure_entry.html">structure</a>d' problems, involving elliptic curves,
+   error-correcting codes, lattices, and so on - because of the need for
+   <i>trapdoor</i> one-way functions in public-key <a class="thought" href="entries/cryptography_entry.html">cryptography</a>.
+
+<p><b>2.1. The Principle of <a class="thought" href="entries/computation_entry.html">Computation</a>al
+Equivalence</b>
+<p>
+   The final chapter proposes a 'Principle of <a class="thought" href="entries/computation_entry.html">Computation</a>al Equivalence': that
+   almost all <a class="thought" href="entries/system_entry.html">system</a>s that are not 'obviously simple' are in some <a class="thought" href="entries/sense_entry.html">sense</a>
+   equivalent to a universal <a class="thought" href="entries/turing_machine_entry.html">Turing machine</a>.  Wolfram [19] emphasizes that
+   this principle goes beyond the <a class="thought" href="entries/church_turing_thesis_entry.html">Church-Turing thesis</a> in two ways: it asserts,
+   first, that universality is pervasive in <a class="thought" href="entries/nature_entry.html">nature</a>; and second, that universality
+   arises in any sufficiently complex <a class="thought" href="entries/system_entry.html">system</a>, without needing to be '<a class="thought" href="entries/engine_entry.html">engine</a>ered
+   in.'  We confess that the principle still seems to us an <a class="thought" href="entries/expression_entry.html">expression</a> of the
+   conventional <a class="thought" href="entries/wisdom_entry.html">wisdom</a> in theoretical <a class="thought" href="entries/computer_science_entry.html">computer science</a>.  However, we will not
+   debate this question in general terms.  Instead we will consider a specific
+   implication that Wolfram offers for <a class="thought" href="entries/computation_entry.html">computation</a>al <a class="thought" href="entries/complexity_entry.html">complexity</a>:
+</p>
+<blockquote>
+   In studying the <a class="thought" href="entries/phenomenon_entry.html">phenomenon</a> of NP completeness what has mostly been done in the
+   past is to try to construct particular <a class="thought" href="entries/instance_entry.html">instance</a>s of rather general problems
+   that exhibit equivalence to other problems.  But almost always what is
+   actually constructed is quite complicated - and certainly not something one
+   would expect to occur at all often.  Yet on the basis of <a class="thought" href="entries/intuition_entry.html">intuition</a> from the
+   Principle of <a class="thought" href="entries/computation_entry.html">Computation</a>al Equivalence I strongly suspect that in most cases
+   there are already quite simple <a class="thought" href="entries/instance_entry.html">instance</a>s of general NP-complete problems that
+   are just as difficult as any NP-complete problem.  And so, for example, I
+   suspect that it does not take a cellular automaton nearly as complicated as
+   [one with 19 colors given previously] for it to be an NP-complete problem to
+   determine whether initial conditions exist that lead to particular behavior.
+   (p. 769)
+</blockquote>
+<p>
+   In <a class="thought" href="entries/computer_science_entry.html">computer science</a>, the <a class="thought" href="entries/complexity_entry.html">complexity</a> of 'typical' <a class="thought" href="entries/instance_entry.html">instance</a>s of
+   NP-complete
+   problems has been investigated for decades.  Highlights include Levin's theory
+   of average-case completeness [10] and studies of phase transitions in
+   randomly generated combinatorial problems [5].  It remains open to show that
+   some
+   NP-complete
+   problem is hard on average, under a simple distribution, so long as P!=NP.
+   However, 'worst-case/average-case equivalence' has been shown for several
+   cryptographic problems, including one studied by Ajtai and Dwork [1].
+</p>
+<p>
+   As for the cellular automaton conjecture, its validity depends on how it is
+   formulated.  Suppose we are given a one-dimensional, two-color cellular
+   automaton on a lattice of bounded size
+   n,
+   and an ending condition E in {0,1}<sup>n</sup>.  Then
+   we can decide in polynomial <a class="thought" href="entries/time_entry.html">time</a> whether there exists an initial condition
+   that evolves to
+   E
+   in one or more steps, by using <a class="thought" href="entries/dynamic_programming_entry.html">dynamic programming</a>.  Extending this technique,
+   we can decide whether there exists an initial condition that evolves to
+   E
+   in exactly
+   t
+   steps, where
+   t=O(log n),
+   by computing a list of all possible initial <a class="thought" href="entries/configuration_entry.html">configuration</a>s for each contiguous
+   block of
+   t cells.
+</p>
+<p>
+   Indeed, for any fixed polynomial-<a class="thought" href="entries/time_entry.html">time</a> predicate &#934;,
+   let Init<sub>110</sub>(&#934;) be
+   the following problem.  We are given an ending condition
+   E
+   with
+   n
+   cells, and asked to decide whether there exists an initial condition
+   I
+   such that (i) &#934;(I)  holds,
+   and (ii) the Rule
+   110
+   cellular automaton evolves
+   I
+   to
+   E
+   in exactly
+   t
+   steps.  Here
+   t
+   is a fixed polynomial in
+   n.
+   Then:
+<p><b>Proposition 1.</b> For all
+      &#934; and
+      polynomials
+      p,
+      there is a polynomial-<a class="thought" href="entries/time_entry.html">time</a> <a class="thought" href="entries/algorithm_entry.html">algorithm</a> that solves a
+      1-1/p(n) fraction
+      of
+      Init<sub>110</sub>(&#934;) <a class="thought" href="entries/instance_entry.html">instance</a>s.
+<p><b>Proof.</b> Consider a directed graph with
+      2<sup>n</sup>
+      vertices, one for each <a class="thought" href="entries/configuration_entry.html">configuration</a>, and edges corresponding to the <a class="thought" href="entries/action_entry.html">action</a> of
+      Rule
+      110.
+      Each vertex has outdegree
+      1,
+      so the <a class="thought" href="entries/number_entry.html">number</a> of paths of length
+      t
+      is 2<sup>n</sup>.
+      Thus, if
+      E
+      is chosen uniformly at random, then the expected <a class="thought" href="entries/number_entry.html">number</a> of
+      length-t
+      paths ending at
+      E
+      is
+      1,
+      so this <a class="thought" href="entries/number_entry.html">number</a> is at most
+      p(n) with
+      probability at least
+      1-1/p(n).
+      In this case we can trace
+      t
+      steps backward from
+      E
+      in <a class="thought" href="entries/time_entry.html">time</a>
+      O(ntp(n)),
+      maintaining a list of all possible predecessors, and then evaluate
+      &#934; on
+      each.
+   </p>
+<p>
+   Nevertheless, since Rule
+   110
+   is universal, the following <a class="thought" href="entries/intuition_entry.html">intuition</a> suggests that
+   Init<sub>110</sub>(&#934;) should
+   be
+   NP-complete for some
+   &#934;.
+   Given a Boolean formula
+   &#936; and
+   proposed solution
+   X,
+   we could create an initial condition
+   I(&#936;,X)
+   corresponding to a <a class="thought" href="entries/turing_machine_entry.html">Turing machine</a> that checks whether
+   X
+   satisfies
+   &#936;;
+   and if it does, erases
+   X,
+   preserves &#936;,
+   and goes into an 'accept' state
+   A(&#936;).
+   Then by having
+   &#934; verify
+   that the initial condition is of legal form, we could reduce the problem of
+   whether
+   &#936; is
+   satisfiable to that of whether there exists a legal initial condition that
+   evolves
+   to E=A(&#936;).
+<p>
+   This <a class="thought" href="entries/intuition_entry.html">intuition</a> fails for an interesting <a class="thought" href="entries/reason_entry.html">reason</a>.  Cook's proof that Rule
+   110
+   is universal relies on simulating 'cyclic tag <a class="thought" href="entries/system_entry.html">system</a>s,' a variant of the tag
+   <a class="thought" href="entries/system_entry.html">system</a>s studied in the 1960's by Cocke and Minsky [4] among others (see also
+   p. 670 of Wolfram).  However, though Wolfram does not discuss this explicitly
+   in the book, the known simulations of <a class="thought" href="entries/turing_machine_entry.html">Turing machine</a>s by tag <a class="thought" href="entries/system_entry.html">system</a>s require
+   exponential slowdown.  To prove that
+  Init<sub>110</sub>(&#934;) is
+   NP-complete,
+   what is needed is to show that Rule
+   110
+   allows <i>efficient</i> simulation of <a class="thought" href="entries/turing_machine_entry.html">Turing machine</a>s.
+<p>
+   In summary, there are many fascinating <a class="thought" href="entries/complexity_entry.html">complexity</a> questions about
+   one-dimensional <a class="thought" href="entries/cellular_automata_entry.html">cellular automata</a>, as well as about typical <a class="thought" href="entries/instance_entry.html">instance</a>s of
+   NP-complete
+   problems.  But it is unclear why the Principle of <a class="thought" href="entries/computation_entry.html">Computation</a>al Equivalence
+   should yield more insight into these questions than the standard techniques of
+   <a class="thought" href="entries/computation_entry.html">computation</a>al <a class="thought" href="entries/complexity_entry.html">complexity</a>.
+
+<p><b>3. Fundamental <a class="thought" href="entries/physics_entry.html">Physics</a></b>
+<p>
+   The most interesting chapter of <i>A New Kind of <a class="thought" href="entries/science_entry.html">Science</a></i>
+   is the ninth, on 'Fundamental <a class="thought" href="entries/physics_entry.html">Physics</a>.'  Here Wolfram confronts general
+   <a class="thought" href="entries/relativity_entry.html">relativity</a> and <a class="thought" href="entries/quantum_mechanics_entry.html">quantum mechanics</a>, arguably the two most serious challenges to
+   a view of <a class="thought" href="entries/nature_entry.html">nature</a> based on deterministic <a class="thought" href="entries/cellular_automata_entry.html">cellular automata</a>.  He conjectures
+   that spacetime is discrete at the Planck scale, of about 10<sup>-33</sup> centimeters
+   or
+   10<sup>-43</sup> seconds.
+   This conjecture is not new, and has received considerable attention recently
+   in connection with the holographic principle [3] from <a class="thought" href="entries/black_hole_entry.html">black hole</a>
+   thermodynamics, which Wolfram does not
+   discuss <a href="#3">(note 3)</a>.  But are new ideas
+   offered to substantiate the conjecture?
+</p>
+<p>
+   For Wolfram, spacetime is a <i>causal <a class="thought" href="entries/network_entry.html">network</a></i>, in which
+   events are vertices and edges specify the dependence relations between events.
+   Pages 486-496 and 508-515 discuss in detail how to generate such a <a class="thought" href="entries/network_entry.html">network</a>
+   from a simple <a class="thought" href="entries/single_electron_transfer_entry.html">set</a> of rules.  In particular, we could start with a finite
+   undirected '<a class="thought" href="entries/space_entry.html">space</a> graph'
+   G,
+   assumed to be regular with degree
+   3
+   (since higher-degree vertices can be replaced by cycles of
+   degree-3
+   vertices).  We then posit a <a class="thought" href="entries/single_electron_transfer_entry.html">set</a> of update rules, each of which replaces a
+   subgraph by another subgraph with the same <a class="thought" href="entries/number_entry.html">number</a> of outgoing edges.  The new
+   subgraph must preserve any symmetries of the old one.  Then each <a class="thought" href="entries/event_entry.html">event</a> in the
+   causal <a class="thought" href="entries/network_entry.html">network</a> corresponds to an application of an update rule.  If updating
+   <a class="thought" href="entries/event_entry.html">event</a>
+   B
+   becomes possible as a result of <a class="thought" href="entries/event_entry.html">event</a>
+   A,
+   then we draw an edge from
+   A
+   to
+   B.
+   As pointed out to us by Rowland [13], it is <a class="thought" href="entries/import_entry.html">import</a>ant to keep in <a class="thought" href="entries/mind_entry.html">mind</a> the
+   distinction between the causal <a class="thought" href="entries/network_entry.html">network</a> and the <a class="thought" href="entries/space_entry.html">space</a> graph
+   G.
+<p>
+   Properties of <a class="thought" href="entries/space_entry.html">space</a> are defined in terms of
+   G.
+   For example, if the <a class="thought" href="entries/number_entry.html">number</a> of vertices in
+   G
+   at distance at most
+   n
+   from any given vertex grows as
+   n<sup>D</sup>,
+   then <a class="thought" href="entries/space_entry.html">space</a> can be said to have dimension
+   D.
+   (As for formalizing this definition, Wolfram says only that there are "some
+   subtleties.  For example, to find a definite volume <a class="thought" href="entries/growth_entry.html">growth</a> rate one does still
+   need to take some kind of limit - and one needs to avoid sampling too many or
+   too few" vertices  (p. 1030).)  Similarly, Wolfram argues that the curvature
+   <a class="thought" href="entries/information_entry.html">information</a> needed for general <a class="thought" href="entries/relativity_entry.html">relativity</a>, in particular the Ricci
+   tensor <a href="#4">(note 4)</a>, can be read from the
+   connectivity <a class="thought" href="entries/pattern_entry.html">pattern</a> of
+   G.
+   Interestingly, to make the model as simple as possible, Wolfram does not
+   associate a <a class="thought" href="entries/bit_entry.html">bit</a> to each vertex of
+   G,
+   representing (say) the presence or absence of a <a class="thought" href="entries/particle_entry.html">particle</a>.  Instead <a class="thought" href="entries/particle_entry.html">particle</a>s
+   are localized <a class="thought" href="entries/structure_entry.html">structure</a>s, or 'tangles,' in
+   G.
+<p>
+   An immediate problem is that one might obtain many nonequivalent causal
+   <a class="thought" href="entries/network_entry.html">network</a>s, depending on the <a class="thought" href="entries/order_entry.html">order</a> in which update rules are applied to
+   G.
+   Wolfram calls a <a class="thought" href="entries/single_electron_transfer_entry.html">set</a> of rules that allows such nondeterministic <a class="thought" href="entries/evolution_entry.html">evolution</a> a
+   'multiway <a class="thought" href="entries/system_entry.html">system</a>.'  He recognizes, but rejects, a possible connection to
+   <a class="thought" href="entries/quantum_mechanics_entry.html">quantum mechanics</a>:
+<blockquote>
+   The notion of 'many-figured <a class="thought" href="entries/time_entry.html">time</a>' has been discussed since the 1950s in the
+   <a class="thought" href="entries/context_entry.html">context</a> of the many-worlds interpretation of <a class="thought" href="entries/quantum_mechanics_entry.html">quantum mechanics</a>.  There are
+   some similarities to the multiway <a class="thought" href="entries/system_entry.html">system</a>s that I consider here.  But an
+   <a class="thought" href="entries/import_entry.html">import</a>ant difference is that while in the many-worlds approach, branchings are
+   associated with possible observation or measurement events, what I suggest
+   here is that they could be an intrinsic feature of even the very lowest-level
+   rules for the <a class="thought" href="entries/universe_entry.html">universe</a> (p. 1035-6).
+</blockquote>
+   It is unclear exactly what distinction is being drawn: is there any physical
+   <a class="thought" href="entries/event_entry.html">event</a> that is not associated with a <i>possible</i>
+   observation or measurement?  In any case, Wolfram opts instead for rule sets
+   that are 'causal invariant': that is, that yield the same causal <a class="thought" href="entries/network_entry.html">network</a>
+   regardless of the <a class="thought" href="entries/order_entry.html">order</a> in which rules are applied.  As noted by Wolfram, a
+   sufficient (though not necessary) condition for causal invariance is that no
+   'replaceable' subgraph overlaps itself or any other replaceable subgraph.
+<p>
+   Wolfram points out an immediate <a class="thought" href="entries/analogy_entry.html">analogy</a> to special <a class="thought" href="entries/relativity_entry.html">relativity</a>, wherein
+   observers do not in general agree on the <a class="thought" href="entries/order_entry.html">order</a> in which spacelike separated
+   events occur, yet agree on any final outcome of the events.  He is vague,
+   though, about how (say) the Lorentz transformations might be derived in a
+   causal <a class="thought" href="entries/network_entry.html">network</a> model:
+<blockquote>
+   There are many subtleties here, and indeed to explain the details of what is
+   going on will no doubt require quite a few new and rather abstract <a class="thought" href="entries/concept_entry.html">concept</a>s.
+   But the general picture that I believe will emerge is that when <a class="thought" href="entries/particle_entry.html">particle</a>s move
+   faster they will appear to have more nodes associated with them (p. 529).
+</blockquote>
+   Wolfram is "certainly aware that many physicists will want to know more
+   details," he says in the endnotes, about how a discrete model of the sort he
+   proposes can reproduce known features of <a class="thought" href="entries/physics_entry.html">physics</a>.  But, although he chose to
+   omit technical formalism from the presentation, "[g]iven my own personal
+   background in theoretical <a class="thought" href="entries/physics_entry.html">physics</a> it will come as no surprise that I have
+   often used such formalism in the process of working out what I describe in
+   these sections" (p. 1043).
+
+<p><b>3.1. <a class="thought" href="entries/quantum_mechanics_entry.html">Quantum Mechanics</a></b>
+<p>
+   Physicists' hunger for details will likely grow further when they read the
+   section on 'Quantum Phenomena' (p. 537-545).  Here Wolfram's proposals are
+   even more unorthodox than he seems to acknowledge.  He believes that quantum
+   mechanics is only an approximation to an underlying classical (and most likely
+   deterministic) theory.  He is <i>not</i> advocating a
+   hidden-variable approach such as Bohmian mechanics, in which the state vector
+   is supplemented by an 'actual' eigenstate of a particular observable.  Instead
+   he thinks that, at the lowest level, the state vector is not needed at all; it
+   is merely a useful construct for describing some (though presumably not all)
+   higher-level phenomena.  Indeterminacy arises because of one's inability to
+   know the exact state of a <a class="thought" href="entries/system_entry.html">system</a>:
+<blockquote>
+   [I]f one knew all of the underlying details of the <a class="thought" href="entries/network_entry.html">network</a> that makes up our
+   <a class="thought" href="entries/universe_entry.html">universe</a>, it should always be possible to work out the result of any
+   measurement.  I strongly believe that the initial conditions for the <a class="thought" href="entries/universe_entry.html">universe</a>
+   were quite simple.  But like many of the processes we have seen in this book,
+   the <a class="thought" href="entries/evolution_entry.html">evolution</a> of the <a class="thought" href="entries/universe_entry.html">universe</a> no doubt intrinsically generates apparent
+   randomness.  And the result is that most aspects of the <a class="thought" href="entries/network_entry.html">network</a> that
+   represents the current state of our <a class="thought" href="entries/universe_entry.html">universe</a> will seem essentially random (p.
+   543).
+</blockquote>
+   Similarly, Wolfram explains as follows why an <a class="thought" href="entries/electron_entry.html">electron</a> has <a class="thought" href="entries/wave_entry.html">wave</a> properties:
+   "...a <a class="thought" href="entries/network_entry.html">network</a> which represents our whole <a class="thought" href="entries/universe_entry.html">universe</a> must also include us as
+   observers.  And this means that there is no way that we can look at the
+   <a class="thought" href="entries/network_entry.html">network</a> from the outside and see the <a class="thought" href="entries/electron_entry.html">electron</a> as a definite <a class="thought" href="entries/object_entry.html">object</a>" (p. 538).
+   An obvious question then is how Wolfram accounts for the possibility of
+   <a class="thought" href="entries/quantum_computing_entry.html">quantum computing</a>, assuming BPP!=BQP.
+   He gives an answer in the final chapter:
+<blockquote>
+   Indeed within the usual formalism [of <a class="thought" href="entries/quantum_mechanics_entry.html">quantum mechanics</a>] one can construct
+   quantum <a class="thought" href="entries/computer_entry.html">computer</a>s that may be able to solve at least a few specific problems
+   exponentially faster than ordinary <a class="thought" href="entries/turing_machine_entry.html">Turing machine</a>s.  But particularly after my
+   discoveries in Chapter 9 ['Fundamental <a class="thought" href="entries/physics_entry.html">Physics</a>'], I strongly suspect that even
+   if this is formally the case, it will still not turn out to be a true
+   representation of ultimate physical <a class="thought" href="entries/reality_entry.html">reality</a>, but will instead just be found to
+   reflect various idealizations made in the models used so far (p. 771).
+</blockquote>
+   In the endnotes, though, where he explains <a class="thought" href="entries/quantum_computing_entry.html">quantum computing</a> in more detail,
+   Wolfram seems to hedge about which idealizations he has in mind:
+<blockquote>
+   It does appear that only modest precision is needed for the initial
+   amplitudes.  And it seems that perturbations from the environment can be
+   overcome using versions of error-correcting codes.  But it remains unclear
+   just what might be needed actually to perform for example the final
+   measurements required (p. 1148).
+</blockquote>
+   One might respond that, with or without <a class="thought" href="entries/quantum_computing_entry.html">quantum computing</a>, Wolfram's proposals
+   can be ruled out on the simpler ground that they disallow Bell inequality
+   violations.  Wolfram, however, puts forward an imaginative <a class="thought" href="entries/hypothesis_entry.html">hypothesis</a> to
+   account for bipartite entanglement.  When two <a class="thought" href="entries/particle_entry.html">particle</a>s (or 'tangles' in the
+   graph
+   G)
+   collide, long-range 'threads' may form between them, which remain in place
+   even if the <a class="thought" href="entries/particle_entry.html">particle</a>s are later separated:
+<blockquote>
+   The picture that emerges is then of a background containing a very large
+   <a class="thought" href="entries/number_entry.html">number</a> of connections that maintain an approximation to three-dimensional
+   <a class="thought" href="entries/space_entry.html">space</a>, together with a few threads that in effect go outside of that <a class="thought" href="entries/space_entry.html">space</a> to
+   make direct connections between <a class="thought" href="entries/particle_entry.html">particle</a>s (p. 544).
+</blockquote>
+   The threads can produce Bell correlations, but are somehow too small (i.e.
+   contain too few edges) to transmit <a class="thought" href="entries/information_entry.html">information</a> in a way that violates
+   causality.  This is reminiscent of, for example, the 'multisimultaneity' model
+   studied <a class="thought" href="entries/experiment_entry.html">experiment</a>ally by Stefanov et al. [15].
+            <p> There are several <a class="thought" href="entries/object_entry.html">object</a>ions one could raise against this thread 
+              <a class="thought" href="entries/hypothesis_entry.html">hypothesis</a>. What we will show in Section 3.2 is that, <i>if</i> 
+              one accepts two of Wolfram's own desiderata - <a class="thought" href="entries/determinism_entry.html">determinism</a> and causal 
+              invariance - then the <a class="thought" href="entries/hypothesis_entry.html">hypothesis</a> fails. For now, though, we remark 
+              that Wolfram says little about what, to us, is a more natural possibility 
+              than the thread <a class="thought" href="entries/hypothesis_entry.html">hypothesis</a>. This is an explicitly <i>quantum</i> 
+              cellular automaton or causal <a class="thought" href="entries/network_entry.html">network</a>, with a unitary transition 
+              rule. The <a class="thought" href="entries/reason_entry.html">reason</a> seems to be that he does not want continuity anywhere 
+              in a model, not even in probabilities or amplitudes. In the notes, 
+              he describes an <a class="thought" href="entries/experiment_entry.html">experiment</a> with a quantum cellular automaton as 
+              follows: 
+            <blockquote>
+   One might hope to be able to get an ordinary cellular automaton with a limited
+   <a class="thought" href="entries/single_electron_transfer_entry.html">set</a> of possible values by choosing a suitable [phase rotation]
+   &#952;
+   [&#952;=&#960;/4
+   and
+   &#952;=&#960;/3 are
+   given as examples in an illustration].  But in fact in non-trivial cases most
+   of the cells generated at each step end up having distinct values (p. 1060).
+</blockquote>
+   This observation is unsurprising, given results in <a class="thought" href="entries/quantum_computing_entry.html">quantum computing</a> to the
+   effect that almost any nontrivial gate <a class="thought" href="entries/single_electron_transfer_entry.html">set</a> is universal (that is, can
+   approximate any unitary <a class="thought" href="entries/matrix_entry.html">matrix</a> to any desired precision, or any orthogonal
+   <a class="thought" href="entries/matrix_entry.html">matrix</a> in case one is limited to reals).  Indeed, Shi [14] has shown that a
+   Toffoli gate <a href="#5">(note 5)</a> plus any gate that
+   does not preserve the <a class="thought" href="entries/computation_entry.html">computation</a>al basis, or a
+   controlled-NOT
+   gate plus any gate whose <i>square</i> does not preserve the
+   <a class="thought" href="entries/computation_entry.html">computation</a>al basis, are both universal gate sets.  In any case, Wolfram does
+   not address the fact that continuity in amplitudes seems more 'benign' than
+   continuity in measurable quantities: the former, unlike the latter, does not
+   enable an infinite amount of <a class="thought" href="entries/computation_entry.html">computation</a> to be performed in a finite <a class="thought" href="entries/time_entry.html">time</a>.
+   Also, as observed by Bernstein and Vazirani [2], the <a class="thought" href="entries/linear_entry.html">linear</a>ity of quantum
+   mechanics implies that small errors in amplitudes cannot be magnified during a
+   quantum <a class="thought" href="entries/computation_entry.html">computation</a>.
+
+<p><b>3.2. <a class="thought" href="javascript:loadBrain('Bell\'s Theorem')">Bell's Theorem</a> and Causal Invariance</b>
+<p>
+   Let
+   <b>R</b>
+   be a <a class="thought" href="entries/single_electron_transfer_entry.html">set</a> of graph updating rules, which might be probabilistic.  Then consider
+   the following four assertions (which, though not mathematically precise, will
+   be clarified by subsequent discussion).
+</p>
+<ol>
+<li>
+<b>R</b>
+         satisfies causal invariance.  That is, given any initial graph (and choice of
+         randomness if
+         <b>R</b> is
+         probabilistic),
+         <b>R</b> yields
+         a unique causal <a class="thought" href="entries/network_entry.html">network</a>.
+</li></ol><ol>
+<li value="2">
+<b>R</b>
+         satisfies the <a class="thought" href="entries/relativity_entry.html">relativity</a> postulate.  That is, assuming the causal <a class="thought" href="entries/network_entry.html">network</a>
+         approximates a flat Minkowski spacetime at a large enough scale, there are no
+         preferred inertial frames.
+</li></ol><ol>
+<li value="3">
+<b>R</b>
+         permits Bell inequality violation.
+</li></ol><ol>
+<li value="4">
+         Any updating rule in
+         <b>R</b>
+         is always considered to act on a fixed graph, not on a distribution or
+         superposition over graphs.  This is true even if parts of the initial graph
+         are chosen at random, and even if
+         <b>R</b>
+         is probabilistic.
+</li></ol>
+<p>
+   Our goal is to show that, for any
+   <b>R</b>,
+   at least one of these assertions is false.  Current physical theory would
+   suggest that (1)-(3) are true and that (4) is false.  Wolfram, if we
+   understand him correctly, starts with (4) as a premise, and then introduces
+   causal invariance to satisfy (1) and (2), and long-range threads to satisfy
+   (3).  Of course, even to state the two-party Bell inequalities requires some
+   notion of randomness.  And on pages 299-326, Wolfram discusses three
+   mechanisms for introducing randomness into a <a class="thought" href="entries/system_entry.html">system</a>: randomness in initial
+   conditions, randomness from the environment (i.e. probabilistic updating
+   rules), and intrinsic randomness (i.e. deterministic rules that produce
+   pseudorandom output).  However, all of these mechanisms are compatible with
+   (4), and so our argument will show that they are inadequate assuming (1)-(3).
+   Our conclusion is that, in a model of the sort Wolfram considers, randomness
+   must play a more fundamental role than he allows.
+<p>
+   In a standard Bell <a class="thought" href="entries/experiment_entry.html">experiment</a>, <a class="thought" href="entries/alice_entry.html">Alice</a> and Bob are given input bits
+   x<sub>A</sub> and
+   x<sub>B</sub> respectively,
+   chosen uniformly and independently at random.  Their goal is, without
+   communicating, to output bits
+   y<sub>A</sub> and
+   y<sub>B</sub>
+   respectively such that
+<p>y<sub>A</sub> XOR y<sub>B</sub> = x<sub>A</sub> AND x<sub>B</sub>.
+ <p>Under any 'local hidden variable' theory, <a class="thought" href="entries/alice_entry.html">Alice</a> and Bob can succeed with
+   probability at most
+   3/4;
+   the optimal strategy is for them to ignore their inputs and output (say)
+   y<sub>A</sub>=0 and
+   y<sub>B</sub>=0.
+   However, suppose <a class="thought" href="entries/alice_entry.html">Alice</a> has a qubit
+   &#961;<sub>A</sub> and
+   Bob a
+   &#961;<sub>B</sub>,
+   that are jointly in the Bell state (|00&gt;+|11&gt;)/sqrt(2).
+   Then there is a protocol <a href="#6">(note 6)</a> by
+   which they can succeed with probability
+   (5+sqrt(2))/8, or about 0.802.
+<p>
+   We model this situation by letting
+   A
+   and
+   B,
+   corresponding to <a class="thought" href="entries/alice_entry.html">Alice</a> and Bob, be disjoint subgraphs of a graph
+   G.
+   We suppose that, at a large scale,
+   G
+   approximates a Euclidean <a class="thought" href="entries/space_entry.html">space</a> of some dimension; and that any causal <a class="thought" href="entries/network_entry.html">network</a>
+   obtained by applying updates to
+   Gapproximates
+   a Minkowski spacetime.  We can think of
+   G
+   as containing long-range threads from
+   A
+   to
+   B,
+   though the <a class="thought" href="entries/nature_entry.html">nature</a> of the threads will not affect our conclusions.  We encode
+   <a class="thought" href="entries/alice_entry.html">Alice</a>'s input
+   x<sub>A</sub> by
+   (say) placing an edge between two specific vertices in
+   A
+   if and only if
+   x<sub>A</sub>=1.
+   We encode
+   x<sub>B</sub>
+   similarly, and also supply <a class="thought" href="entries/alice_entry.html">Alice</a> and Bob with arbitrarily many correlated
+   random bits.  Finally we stipulate that, at the end of the protocol, there is
+   an edge between two specific vertices in
+   A
+   if and only if
+   y<sub>A</sub>=1,
+   and similarly for
+   y<sub>B</sub>.
+   A technicality is that we need to be able to identify which vertices
+   correspond to
+   x<sub>A</sub>,
+   y<sub>A</sub>,
+   and so on, even as
+   G
+   evolves over <a class="thought" href="entries/time_entry.html">time</a>.  We could do this by stipulating that (say) "the
+   x<sub>A</sub> vertices
+   are the ones that are roots of complete <a class="thought" href="entries/binary_entry.html">binary</a> trees of depth
+   3,"
+   and then choosing the rule <a class="thought" href="entries/single_electron_transfer_entry.html">set</a> to guarantee that, throughout the protocol,
+   exactly two vertices have this property.
+</p>
+<p>
+   Call a variable 'touched' after an update has been applied to a subgraph
+   containing any of the variable's vertices.  Also, let
+   Z
+   be an assignment to all random variables: that is,
+   x<sub>A</sub>,
+   x<sub>B</sub>,
+   the correlated random bits, and the choice of randomness if
+   <b>R</b> is
+   probabilistic.  Then for all
+   Z
+   we require the following, based on what observers in different inertial frames
+   could perceive:
+<ol>
+<li>
+         There exists a sequence of updates under which
+         y<sub>A</sub> is
+         output before any of Bob's variables are touched.
+   <li value="2">
+         There exists another sequence under which
+         y<sub>B</sub> is
+         output before any of <a class="thought" href="entries/alice_entry.html">Alice</a>'s variables are touched.
+</li></li></ol>
+<p>
+   Then it is easy to see that, if Bell inequality violation occurs, then causal
+   invariance must be violated.  Given
+   Z,
+   let y<sub>A</sub><sup>(1)</sup>(Z),y<sub>B</sub><sup>(1)</sup>(Z)
+   be the values of y<sub>A</sub>,y<sub>B</sub> that
+   are output under rule sequence (i), and let   y<sub>A</sub><sup>(2)</sup>(Z),y<sub>B</sub><sup>(2)</sup>(Z) be
+   the values output under sequence (ii).  Then there must exist some
+   Z
+   for which either
+ y<sub>A</sub><sup>(1)</sup>(Z) != y<sub>A</sub><sup>(2)</sup>(Z)  
+   or
+   y<sub>B</sub><sup>(1)</sup>(Z) != y<sub>B</sub><sup>(2)</sup>(Z) - for
+   if not, then the entire protocol could be simulated under a local hidden
+   variable model.  It follows that the outcome of the protocol can depend on the
+   <a class="thought" href="entries/order_entry.html">order</a> in which updates are applied.
+<p>
+   To obtain Bell inequality violation, something like the following seems to be
+   needed.  We can encode 'hidden variables' into
+   G,
+   representing the outcomes of the possible measurements Bob could make on
+   &#961;<sub>B</sub>.
+   (We can imagine, if we like, that the update rules are such that observing any
+   one of these variables destroys all the others.  Also, we make no assumption
+   of <a class="thought" href="entries/context_entry.html">context</a>uality.)  Then, after <a class="thought" href="entries/alice_entry.html">Alice</a> measures
+   &#961;<sub>A</sub>,
+   using the long-range threads she updates Bob's hidden variables conditioned on
+   her measurement outcome.  Similarly, Bob updates <a class="thought" href="entries/alice_entry.html">Alice</a>'s hidden variables
+   conditioned on his outcome.  Since at least one party must <a class="thought" href="entries/access_entry.html">access</a> its hidden
+   variables for there to be Bell inequality violation, causal invariance is
+   still violated.  But a sort of probabilistic causal invariance holds, in the
+   <a class="thought" href="entries/sense_entry.html">sense</a> that if we marginalize out
+   A
+   (the '<a class="thought" href="entries/alice_entry.html">Alice</a>' part of
+   G),
+   then the <i>distribution</i> of values for each of Bob's
+   hidden variables is the same before and after <a class="thought" href="entries/alice_entry.html">Alice</a>'s update.  The lesson is
+   that, if we want both causal invariance and Bell inequality violation, then we
+   need to introduce probabilities at a fundamental level - not merely to
+   represent <a class="thought" href="entries/alice_entry.html">Alice</a> and Bob's subjective uncertainty about the state of
+   G,
+   but even to define whether a <a class="thought" href="entries/single_electron_transfer_entry.html">set</a> of rules is or is not causal invariant.
+<p>
+   Note that we made no assumption about how the random bits were
+   generated - i.e. whether they were 'truly random' or were the pseudorandom
+   output of some updating rule.  Our conclusion is also unaffected if we
+   consider a 'deterministic' variant of <a class="thought" href="javascript:loadBrain('Bell\'s Theorem')">Bell's theorem</a> due to Greenberger,
+   Horne, and Zeilinger [8], discussed by Wolfram on p. 1065.  There three
+   parties, <a class="thought" href="entries/alice_entry.html">Alice</a>, Bob, and Charlie, are given input bits
+   x<sub>A</sub>,
+   x<sub>B</sub>,
+   and
+   x<sub><a class="thought" href="entries/c_entry.html">C</a></sub>
+   respectively, satisfying the promise that
+<p>x<sub>A</sub> + x<sub>B</sub> + x<sub><a class="thought" href="entries/c_entry.html">C</a></sub> = 0 (mod 2).
+   <p>The goal is to output bits
+   y<sub>A</sub>,
+   y<sub>B</sub>,
+   and
+   y<sub><a class="thought" href="entries/c_entry.html">C</a></sub> such
+   that
+            <p>y<sub>A</sub> + y<sub>B</sub> + y<sub><a class="thought" href="entries/c_entry.html">C</a></sub> = 1 - (1-x<sub>A</sub>)(1-x<sub>B</sub>)(1-x<sub><a class="thought" href="entries/c_entry.html">C</a></sub>) 
+              (mod 2). 
+            <p>Under a local hidden variable model, there is no protocol that succeeds on all
+   four possible inputs; but if the parties share the GHZ state (|011&gt;+|101&gt;+|110&gt;-|000&gt;)/2,
+   then such a protocol exists.  However, although the
+   <i>output</i> is correct with certainty, assuming causal
+   invariance one cannot <i><a class="thought" href="entries/implement_entry.html">implement</a></i> the protocol without
+   introducing randomness into the underlying rules, precisely as for the
+   two-party Bell inequality.
+<p>
+   After a version of the above argument was circulated, Rowland [13]
+   claimed that the argument fails for the following <a class="thought" href="entries/reason_entry.html">reason</a>.  We assumed that
+   there exist two sequences of updating events, one in which <a class="thought" href="entries/alice_entry.html">Alice</a>'s measurement
+   precedes Bob's and one in which Bob's precedes <a class="thought" href="entries/alice_entry.html">Alice</a>'s.  But we neglected the
+   possibility that a <i>single</i> update, call it
+   E,
+   is applied to a subgraph that straddles the long-range threads.  The <a class="thought" href="entries/event_entry.html">event</a>
+   E
+   would encompass both <a class="thought" href="entries/alice_entry.html">Alice</a> and Bob's measurements, so that neither would
+   precede the other in any sequence of updates.  We could thereby obtain a rule
+   <a class="thought" href="entries/single_electron_transfer_entry.html">set</a>
+<b>R</b> satisfying
+   assertions (1), (3), and (4).
+<p>
+   We argue that such an
+   <b>R</b> would
+   nevertheless fail to satisfy (2).  For in effect we start with a flat
+   Minkowski spacetime, and then take two distinct events that are simultaneous
+   in a particular inertial frame, and identify them as being the
+   <i>same</i> <a class="thought" href="entries/event_entry.html">event</a>
+   E.
+   This can be visualized as 'pinching together' two horizontally separated
+   points on a spacetime diagram.  (Actually a whole 'V' of points must be
+   pinched together, since otherwise entanglement could not have been created.)
+   However, what happens in a different inertial frame?  It would seem that
+   E,
+   a single <a class="thought" href="entries/event_entry.html">event</a>, is perceived to occur at two separate times.  That by itself
+   might be <a class="thought" href="entries/thought_entry.html">thought</a> acceptable, but it implies that there exists a class of
+   preferred inertial frames: those in which
+   E
+   is perceived to occur only once.  Of course, even in a flat spacetime, one
+   could designate as 'preferred' those frames in which <a class="thought" href="entries/alice_entry.html">Alice</a> and Bob's
+   measurements are perceived to be simultaneous.  A crucial distinction, though,
+   is that there one only obtains a class of preferred frames after deciding
+   which <a class="thought" href="entries/event_entry.html">event</a> at <a class="thought" href="entries/alice_entry.html">Alice</a>'s location, <i>and</i> which at Bob's
+   location, should count as the 'measurement.'  Under Rowland's <a class="thought" href="entries/hypothesis_entry.html">hypothesis</a>, by
+   contrast, once one decides what counts as the measurement at <a class="thought" href="entries/alice_entry.html">Alice</a>'s location,
+   the decision at Bob's location is made automatically, because of the
+   identification of events that would otherwise be far apart.
+
+<p><b>4. Conclusion</b>
+<p>
+   Steven Levy [11] opines in <i><a class="thought" href="entries/wired_entry.html">Wired</a></i> that "probably the
+   toughest criticism [of <i>A New Kind of <a class="thought" href="entries/science_entry.html">Science</a></i>] will
+   come from those who reject Wolfram's ideas because the evidence for his
+   <a class="thought" href="entries/content_entry.html">content</a>ions is based on observing <a class="thought" href="entries/system_entry.html">system</a>s contained inside <a class="thought" href="entries/computer_entry.html">computer</a>s."  In
+   our opinion, however, it is preferable to judge the book on its own terms - to
+   grant, that is, that many complex <a class="thought" href="entries/system_entry.html">system</a>s might indeed be fruitfully
+   understood in terms of simple <a class="thought" href="entries/computation_entry.html">computation</a>s.  The question is, what does the
+   book tell us about such <a class="thought" href="entries/system_entry.html">system</a>s, beyond what was known from 'traditional
+   <a class="thought" href="entries/science_entry.html">science</a>'?
+</p>
+<p>
+   This review focused on two fields, <a class="thought" href="entries/computation_entry.html">computation</a>al <a class="thought" href="entries/complexity_entry.html">complexity</a> and fundamental
+   <a class="thought" href="entries/physics_entry.html">physics</a>, which Wolfram claims are transformed by the discoveries in his book.
+   We made no attempt to assess the book's relevance to other fields such as
+   <a class="thought" href="entries/evolution_entry.html">evolution</a>ary <a class="thought" href="entries/biology_entry.html">biology</a> and statistical <a class="thought" href="entries/physics_entry.html">physics</a>.
+<p>
+   In <a class="thought" href="entries/computation_entry.html">computation</a>al <a class="thought" href="entries/complexity_entry.html">complexity</a>, we argued that Wolfram often recapitulates
+   existing ideas (such as pseudorandomness and the intractability of simple
+   <a class="thought" href="entries/instance_entry.html">instance</a>s of NP-complete problems), albeit without
+   precise definitions or proofs, and with greater claims of significance.  On
+   the other hand, some of the book's <a class="thought" href="entries/content_entry.html">content</a>s - such as the explicit
+   constructions of <a class="thought" href="entries/turing_machine_entry.html">Turing machine</a>s - may be of interest to theoretical <a class="thought" href="entries/computer_entry.html">computer</a>
+   scientists.
+</p>
+<p>
+   In <a class="thought" href="entries/physics_entry.html">physics</a>, the book proposes that spacetime be viewed in terms of causal
+   <a class="thought" href="entries/network_entry.html">network</a>s arising from graph rewriting <a class="thought" href="entries/system_entry.html">system</a>s.  The causal <a class="thought" href="entries/network_entry.html">network</a> models are
+   intriguing, and in our opinion merit further mathematical study.  However,
+   their relevance to <a class="thought" href="entries/physics_entry.html">physics</a> is difficult to evaluate without the details that
+   Wolfram declines to supply.  As for the proposal that a deterministic,
+   relativistically invariant, causal invariant model underlies quantum
+   mechanics, we argued that it fails - even if <a class="thought" href="entries/quantum_mechanics_entry.html">quantum mechanics</a> breaks down for
+   more than two <a class="thought" href="entries/particle_entry.html">particle</a>s, and even if, as Wolfram suggests, one allows
+   long-range threads to connect entangled <a class="thought" href="entries/particle_entry.html">particle</a>s.  Exactly what kinds of
+   classical models could underlie <a class="thought" href="entries/quantum_mechanics_entry.html">quantum mechanics</a> is a question of great
+   <a class="thought" href="entries/import_entry.html">import</a>ance, but Wolfram makes no serious effort to address the question.
+</p>
+<p>
+<i>A New Kind of <a class="thought" href="entries/science_entry.html">Science</a></i> was published by Wolfram's own
+   company, and was not subject to outside editing or peer review.  If it were
+   (say) a creationist tract, then this unusual route to publication would be of
+   little consequence: for then no amount of editing would have improved it, and
+   few scientifically literate readers would be misled by it.  What is
+   unfortunate in this case is that outside editing would probably have made a
+   substantial difference.  In an endnote, Wolfram explains that "[p]erhaps I
+   might avoid some criticism by a greater display of modesty [in the text], but
+   the cost would be a drastic <a class="thought" href="entries/reduction_entry.html">reduction</a> in clarity" (p. 849).  However, were
+   the book more cautious in its claims and more willing to acknowledge previous
+   work, it would likely be easier for readers to assess what it does offer: a
+   cellular-automaton-based perspective on existing ideas in <a class="thought" href="entries/science_entry.html">science</a>.  Thus, we
+   believe the book would be not only less susceptible to criticism, but also
+   clearer.
+<p><b>Acknowledgments</b>
+<p>
+   I thank Stephen Wolfram for an enjoyable <a class="thought" href="entries/conversation_entry.html">conversation</a> about this review, David
+   Reiss for arranging the <a class="thought" href="entries/conversation_entry.html">conversation</a>, Todd Rowland for correspondence about
+   Section 3.2, and Dave Bacon for helpful comments.  Supported by an NSF Graduate
+   Fellowship and by <a class="thought" href="entries/darpa_entry.html">DARPA</a> grant F30602-01-2-0524.
+<p><b>Notes</b>
+<ol>
+<li><a id="1">We are willing to be surprised by a counterexample.</a>
+</li></ol>
+<ol>
+<li value="2"><a id="2">Wolfram [19] suggested to us that these generators have another advantage for practical cryptography, that they can be implemented in simple hardware without the need for an arithmetic unit.</a>
+</li></ol>
+<ol>
+<li value="3"><a id="3">Wolfram [19] maintained to us that whether the number of degrees of freedom in a bounded region of spacetime is finite is unrelated to whether spacetime has a discrete structure of the sort he proposes.</a>
+</li></ol>
+<ol>
+<li value="4"><a id="4">In personal conversation [19], Wolfram said what was especially significant is that the Ricci tensor, but not the full Riemann tensor, can be read from the connectivity pattern; and the Ricci tensor is all that is needed for GR.  He said he had calculations to prove this, which were not included in the book for reasons of balance.  He expressed hope that physicists would confirm his result by redoing the calculations.</a>
+</li></ol>
+<ol>
+<li value="5"><a id="5">Indeed one can use almost any classical reversible 3-bit gate in place of a Toffoli gate.  On p. 1098, Wolfram reports that, out of 40,320 such gates, 38,976 are universal.</a>
+</li></ol>
+<ol>
+<li value="6"><a id="6">If x<sub>A</sub>=1 then Alice applies a &#960;/8 phase rotation to &#961;<sub>A</sub>, and if x<sub>B</sub>=1 then Bob applies a -&#960;/8 rotation to &#961;<sub>B</sub>.  Both parties then measure in the standard basis and output whatever they observe.</a>
+</li></ol>
+<p><b>References</b>
+<p>[1]
+      M. Ajtai and <a class="thought" href="entries/c_entry.html">C</a>. Dwork.  A public-key cryptosystem with worst-case/average-case
+      equivalence, <i><a class="thought" href="entries/electronic_entry.html">Electronic</a> Colloquium on <a class="thought" href="entries/computation_entry.html">Computation</a>al
+      <a class="thought" href="entries/complexity_entry.html">Complexity</a> (ECCC)</i> 3(65), 1996.
+<p>[2]
+   E. Bernstein and U. Vazirani.  Quantum <a class="thought" href="entries/complexity_entry.html">complexity</a>
+   theory, <i>SIAM Journal on Computing</i>, 26(5):1411-1473,
+   1997.
+<p>[3]
+   R. Bousso.  The holographic principle, to appear in <i>Reviews
+   of Modern <a class="thought" href="entries/physics_entry.html">Physics</a></i>, 74(3), 2002.
+<p>[4]
+   J. Cocke and M. Minsky.  Universality of tag <a class="thought" href="entries/system_entry.html">system</a>s with <i>P=2</i>,
+   <i>Journal of the ACM</i>, 11(1):15-20, 1964.
+<p>[5]
+   S. A. Cook and D. Mitchell.  Finding hard <a class="thought" href="entries/instance_entry.html">instance</a>s of the satisfiability
+   problem: a survey, <i>DIMACS Series in Discrete Math and
+   Theoretical <a class="thought" href="entries/computer_science_entry.html">Computer Science</a></i> 35, pp. 1-17, 1997.
+<p>[6]
+   G. Farmela.  The <a class="thought" href="entries/universe_entry.html">universe</a> in black and white, <i>The Daily
+   Telegraph</i>, 13 January 1999.
+<p>[7]
+   R. P. Feynman.  <i>The Character of Physical Law</i>, MIT
+   Press, 1998 (originally published 1965).
+<p>[8]
+   D. M. Greenberger, M. A. Horne, and A. Zeilinger.  <a class="thought" href="javascript:loadBrain('Bell\'s Theorem')">Bell's theorem</a> without
+   inequalities, in <i>Sixty-Two Years of Uncertainty: Historical,
+   Philosophical, and Physical Inquiries into the Foundations of Quantum
+   Mechanics</i>, A. Miller (ed.), Plenum, 1990.
+<p>[9]
+   J. H&#229;stad, R. Impagliazzo, L. A. Levin, and M. Luby.  A pseudorandom
+   generator from any one-way function, <i>SIAM Journal on
+   Computing</i>, 28(4):1364-1396, 1999.
+<p>[10]
+   L. A. Levin.  Average case complete problems, <i>SIAM Journal on
+   Computing</i>, 15(1):285-286, 1986.
+<p>[11]
+   S. Levy.  The man who cracked the <a class="thought" href="entries/code_entry.html">code</a> to everything,
+   <i><a class="thought" href="entries/wired_entry.html">Wired</a></i>, June 2002.
+            <p>[12] H. Marxen and J. Buntrock. Attacking the <a class="thought" href="entries/busy_beaver_entry.html">Busy Beaver</a> 5, <i>Bulletin of 
+              the EATCS</i> 40, pp. 247-251, 1990. Also <a href="http://web.archive.org/web/20071011040716/http://www.drb.insel.de/~heiner/BB" target="_blank">http://www.drb.insel.de/~heiner/BB</a>. 
+            <p>[13]
+   T. Rowland.  <a class="thought" href="entries/email_entry.html">Email</a> correspondence, June 12, 2002.
+<p>[14]
+   Y. Shi.  Both Toffoli and controlled-NOT need little help to do universal
+   quantum <a class="thought" href="entries/computation_entry.html">computation</a>, submitted, 2002.  quant-ph/0205115.
+<p>[15]
+   A. Stefanov, H. Zbinden, N. Gisin, and A. Suarez.  Quantum correlations with
+   spacelike separated beam splitters in <a class="thought" href="entries/motion_entry.html">motion</a>: <a class="thought" href="entries/experiment_entry.html">experiment</a>al test of
+   multisimultaneity, <i>Physical Review Letters</i> 88(12),
+   2002.
+<p>[16]
+   <a class="thought" href="entries/c_entry.html">C</a>. Umans.  The minimum equivalent DNF problem and shortest implicants,
+   <i>Proceedings of 39th IEEE Symposium on Foundations of <a class="thought" href="entries/computer_entry.html">Computer</a>
+<a class="thought" href="entries/science_entry.html">Science</a> (FOCS)</i>, pp. 556-563, 1998.
+<p>[17]
+   L. G. Valiant.  The <a class="thought" href="entries/complexity_entry.html">complexity</a> of computing the permanent,
+   <i>Theoretical <a class="thought" href="entries/computer_science_entry.html">Computer Science</a></i>, 8(2):189-201, 1979.
+<p>[18]
+   S. Wolfram.  <i>A New Kind of <a class="thought" href="entries/science_entry.html">Science</a></i>, Wolfram <a class="thought" href="entries/media_entry.html">Media</a>,
+   2002.
+<p>[19]
+   S. Wolfram.  Telephone <a class="thought" href="entries/conversation_entry.html">conversation</a>, June 10, 2002.
+
+
+			
+
+</p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></td><td>&#160;</td><td valign="top"><a href="#discussion">Join the discussion about this article on Mind&#183;X!</a><p></p></td><td> &#160; </td>
+</tr>
+<tr><td colspan="6"><img alt="" border="0" height="35" src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/blank.gif" width="35"></td></tr>
+<tr>
+<td>&#160;</td>
+<td colspan="4">
+<a name="discussion"></a><p><span class="mindxheader">&#160;&#160;&#160;[<a href="https://web.archive.org/web/20071011040716/http://www.kurzweilai.net/mindx/frame.html?main=post.php?reply%3D7936" target="_top">Post New Comment</a>]<br>&#160;&#160;&#160;</span>Mind&#183;X Discussion About This Article:</p><a name="id7937"></a>
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+<tr>
+<td><img height="1" src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/images/blank.gif" width="0"></td>
+<td colspan="4"><img height="1" src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/images/blank.gif" width="679"></td>
+</tr>
+<tr>
+<td></td>
+<td bgcolor="#CCCCCC" style="padding: 0px;" valign="top"><img src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/mindx/images/round-left.gif"></td>
+<td bgcolor="#CCCCCC"><p>A General Observation<br><span class="mindxheader"><i>posted on 07/04/2002 1:58 AM by scottwall5@attbi.com</i></span></p></td>
+<td align="right" bgcolor="#CCCCCC" valign="top"><span class="mindxheader">[<a href="#discussion">Top</a>]<br>[<a href="https://web.archive.org/web/20071011040716/http://www.kurzweilai.net/mindx/frame.html?main=show_thread.php?rootID%3D7936%23id7937" target="_top">Mind&#183;X</a>]<br>[<a href="https://web.archive.org/web/20071011040716/http://www.kurzweilai.net/mindx/frame.html?main=post.php?reply%3D7937" target="_top">Reply to this post</a>]</span></td>
+<td align="right" bgcolor="#CCCCCC" style="padding: 0px;" valign="top"><img src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/mindx/images/round-right.gif"></td>
+</tr>
+<tr>
+<td></td>
+<td bgcolor="#DDDDDD" colspan="4"><p>Oddly, this review gives A New Kind of Science increased credibility. You have effectively dismissed the most obvious and immediate concern of the general reader: that Wolfram is just plain nuts. I am finding this to be the case in other reviews. Another thing: most of the flaws in his theory that are being presented here and elsewhere seem amenable to repair. It appears to me that the only real issue left is that Wolfram's central thesis may simply be too vague and too general to be useful. Someone needs to find a specific way to apply it. When some sharp-eyed scientist or mathematician says 'eureka' and shows the world what Wolfram's ideas are good for, this will make an impression. For now, it's just a lot of talk. A New Kind of Science will never die, but it may fade away.</p></td>
+</tr>
+<tr>
+<td><img height="1" src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/images/blank.gif" width="1"></td>
+<td bgcolor="#DDDDDD" style="padding: 0px;" valign="bottom"><img src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/mindx/images/round-bottom-left.gif"></td>
+<td bgcolor="#DDDDDD" colspan="2"><img height="1" src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/images/blank.gif" width="1"></td>
+<td align="right" bgcolor="#DDDDDD" style="padding: 0px;" valign="bottom"><img src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/mindx/images/round-bottom-right.gif"></td>
+</tr>
+</table>
+<a name="id7938"></a>
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+<tr>
+<td><img height="1" src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/images/blank.gif" width="20"></td>
+<td colspan="4"><img height="1" src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/images/blank.gif" width="659"></td>
+</tr>
+<tr>
+<td></td>
+<td bgcolor="#CCCCCC" style="padding: 0px;" valign="top"><img src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/mindx/images/round-left.gif"></td>
+<td bgcolor="#CCCCCC"><p>Re: A General Observation<br><span class="mindxheader"><i>posted on 07/04/2002 2:29 AM by tomaz@techemail.com</i></span></p></td>
+<td align="right" bgcolor="#CCCCCC" valign="top"><span class="mindxheader">[<a href="#discussion">Top</a>]<br>[<a href="https://web.archive.org/web/20071011040716/http://www.kurzweilai.net/mindx/frame.html?main=show_thread.php?rootID%3D7936%23id7938" target="_top">Mind&#183;X</a>]<br>[<a href="https://web.archive.org/web/20071011040716/http://www.kurzweilai.net/mindx/frame.html?main=post.php?reply%3D7938" target="_top">Reply to this post</a>]</span></td>
+<td align="right" bgcolor="#CCCCCC" style="padding: 0px;" valign="top"><img src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/mindx/images/round-right.gif"></td>
+</tr>
+<tr>
+<td></td>
+<td bgcolor="#DDDDDD" colspan="4"><p>The real critique of Wolfram here, is his nonunderstanding of the Bell's theorem.
+<br>
+<br>
+Maybe one should know, that Bell himself rejected his theorem in 1986. 
+<br>
+<br>
+- Thomas</p></td>
+</tr>
+<tr>
+<td><img height="1" src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/images/blank.gif" width="1"></td>
+<td bgcolor="#DDDDDD" style="padding: 0px;" valign="bottom"><img src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/mindx/images/round-bottom-left.gif"></td>
+<td bgcolor="#DDDDDD" colspan="2"><img height="1" src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/images/blank.gif" width="1"></td>
+<td align="right" bgcolor="#DDDDDD" style="padding: 0px;" valign="bottom"><img src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/mindx/images/round-bottom-right.gif"></td>
+</tr>
+</table>
+<a name="id7985"></a>
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+<tr>
+<td><img height="1" src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/images/blank.gif" width="40"></td>
+<td colspan="4"><img height="1" src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/images/blank.gif" width="639"></td>
+</tr>
+<tr>
+<td></td>
+<td bgcolor="#CCCCCC" style="padding: 0px;" valign="top"><img src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/mindx/images/round-left.gif"></td>
+<td bgcolor="#CCCCCC"><p>Re: A General Observation<br><span class="mindxheader"><i>posted on 07/06/2002 10:25 PM by azb0@earthlink.net</i></span></p></td>
+<td align="right" bgcolor="#CCCCCC" valign="top"><span class="mindxheader">[<a href="#discussion">Top</a>]<br>[<a href="https://web.archive.org/web/20071011040716/http://www.kurzweilai.net/mindx/frame.html?main=show_thread.php?rootID%3D7936%23id7985" target="_top">Mind&#183;X</a>]<br>[<a href="https://web.archive.org/web/20071011040716/http://www.kurzweilai.net/mindx/frame.html?main=post.php?reply%3D7985" target="_top">Reply to this post</a>]</span></td>
+<td align="right" bgcolor="#CCCCCC" style="padding: 0px;" valign="top"><img src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/mindx/images/round-right.gif"></td>
+</tr>
+<tr>
+<td></td>
+<td bgcolor="#DDDDDD" colspan="4"><p>Einstein considered his conjectured "cosmological constant" (introduced to bring "steady state" solution to cosmology) to be the biggest mistake of his career...
+<br>
+<br>
+And yet, that same element is being re-introduced today, to explain an apparent "negative gravity" that acts to sustain expansion.
+<br>
+<br>
+The pronouncements of any individual scientist, no matter how well-respected, mean little in the overall scheme of things.  Peer review, testing, and  enless re-examination of premises and consequences are the order of business in science.
+<br>
+<br>
+Cheers!
+<br>
+<br>
+____tony____</p></td>
+</tr>
+<tr>
+<td><img height="1" src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/images/blank.gif" width="1"></td>
+<td bgcolor="#DDDDDD" style="padding: 0px;" valign="bottom"><img src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/mindx/images/round-bottom-left.gif"></td>
+<td bgcolor="#DDDDDD" colspan="2"><img height="1" src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/images/blank.gif" width="1"></td>
+<td align="right" bgcolor="#DDDDDD" style="padding: 0px;" valign="bottom"><img src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/mindx/images/round-bottom-right.gif"></td>
+</tr>
+</table>
+<a name="id8159"></a>
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+<tr>
+<td><img height="1" src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/images/blank.gif" width="60"></td>
+<td colspan="4"><img height="1" src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/images/blank.gif" width="619"></td>
+</tr>
+<tr>
+<td></td>
+<td bgcolor="#CCCCCC" style="padding: 0px;" valign="top"><img src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/mindx/images/round-left.gif"></td>
+<td bgcolor="#CCCCCC"><p>Re: A General Observation<br><span class="mindxheader"><i>posted on 07/11/2002 9:38 PM by scottwall5@attbi.com</i></span></p></td>
+<td align="right" bgcolor="#CCCCCC" valign="top"><span class="mindxheader">[<a href="#discussion">Top</a>]<br>[<a href="https://web.archive.org/web/20071011040716/http://www.kurzweilai.net/mindx/frame.html?main=show_thread.php?rootID%3D7936%23id8159" target="_top">Mind&#183;X</a>]<br>[<a href="https://web.archive.org/web/20071011040716/http://www.kurzweilai.net/mindx/frame.html?main=post.php?reply%3D8159" target="_top">Reply to this post</a>]</span></td>
+<td align="right" bgcolor="#CCCCCC" style="padding: 0px;" valign="top"><img src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/mindx/images/round-right.gif"></td>
+</tr>
+<tr>
+<td></td>
+<td bgcolor="#DDDDDD" colspan="4"><p>&gt;The pronouncements of any individual scientist, no matter how well-respected, mean little in the overall scheme of things.
+<br>
+<br>
+Excellent point. Actually, if Wolfram had called his book A New Kind of Mathematics he could have avoided all the furor'he obviously didn't want to. As for telling a mathematician his work has no application, you may as well tell a master of Haute Couture that his designs are not practical for everyday wear.
+<br>
+</p></td>
+</tr>
+<tr>
+<td><img height="1" src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/images/blank.gif" width="1"></td>
+<td bgcolor="#DDDDDD" style="padding: 0px;" valign="bottom"><img src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/mindx/images/round-bottom-left.gif"></td>
+<td bgcolor="#DDDDDD" colspan="2"><img height="1" src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/images/blank.gif" width="1"></td>
+<td align="right" bgcolor="#DDDDDD" style="padding: 0px;" valign="bottom"><img src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/mindx/images/round-bottom-right.gif"></td>
+</tr>
+</table>
+<a name="id8205"></a>
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+<tr>
+<td><img height="1" src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/images/blank.gif" width="80"></td>
+<td colspan="4"><img height="1" src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/images/blank.gif" width="599"></td>
+</tr>
+<tr>
+<td></td>
+<td bgcolor="#CCCCCC" style="padding: 0px;" valign="top"><img src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/mindx/images/round-left.gif"></td>
+<td bgcolor="#CCCCCC"><p>Re: A General Observation<br><span class="mindxheader"><i>posted on 07/13/2002 5:37 PM by tomaz@techemail.com</i></span></p></td>
+<td align="right" bgcolor="#CCCCCC" valign="top"><span class="mindxheader">[<a href="#discussion">Top</a>]<br>[<a href="https://web.archive.org/web/20071011040716/http://www.kurzweilai.net/mindx/frame.html?main=show_thread.php?rootID%3D7936%23id8205" target="_top">Mind&#183;X</a>]<br>[<a href="https://web.archive.org/web/20071011040716/http://www.kurzweilai.net/mindx/frame.html?main=post.php?reply%3D8205" target="_top">Reply to this post</a>]</span></td>
+<td align="right" bgcolor="#CCCCCC" style="padding: 0px;" valign="top"><img src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/mindx/images/round-right.gif"></td>
+</tr>
+<tr>
+<td></td>
+<td bgcolor="#DDDDDD" colspan="4"><p>If there are (there are = Universe) some 'random' bits and the rule 110 acting on them - Wolfram won.
+<br>
+<br>
+In any other case - he hasn't.
+<br>
+<br>
+The problem of those bits and the rule 110 may be, that they are background dependent. May be, the problem.
+<br>
+<br>
+- Thomas</p></td>
+</tr>
+<tr>
+<td><img height="1" src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/images/blank.gif" width="1"></td>
+<td bgcolor="#DDDDDD" style="padding: 0px;" valign="bottom"><img src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/mindx/images/round-bottom-left.gif"></td>
+<td bgcolor="#DDDDDD" colspan="2"><img height="1" src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/images/blank.gif" width="1"></td>
+<td align="right" bgcolor="#DDDDDD" style="padding: 0px;" valign="bottom"><img src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/mindx/images/round-bottom-right.gif"></td>
+</tr>
+</table>
+<a name="id8206"></a>
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+<tr>
+<td><img height="1" src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/images/blank.gif" width="60"></td>
+<td colspan="4"><img height="1" src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/images/blank.gif" width="619"></td>
+</tr>
+<tr>
+<td></td>
+<td bgcolor="#CCCCCC" style="padding: 0px;" valign="top"><img src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/mindx/images/round-left.gif"></td>
+<td bgcolor="#CCCCCC"><p>Re: A General Observation<br><span class="mindxheader"><i>posted on 07/13/2002 5:45 PM by tomaz@techemail.com</i></span></p></td>
+<td align="right" bgcolor="#CCCCCC" valign="top"><span class="mindxheader">[<a href="#discussion">Top</a>]<br>[<a href="https://web.archive.org/web/20071011040716/http://www.kurzweilai.net/mindx/frame.html?main=show_thread.php?rootID%3D7936%23id8206" target="_top">Mind&#183;X</a>]<br>[<a href="https://web.archive.org/web/20071011040716/http://www.kurzweilai.net/mindx/frame.html?main=post.php?reply%3D8206" target="_top">Reply to this post</a>]</span></td>
+<td align="right" bgcolor="#CCCCCC" style="padding: 0px;" valign="top"><img src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/mindx/images/round-right.gif"></td>
+</tr>
+<tr>
+<td></td>
+<td bgcolor="#DDDDDD" colspan="4"><p>&gt; The pronouncements of any individual scientist, no matter how well-respected, mean little in the overall scheme of things
+<br>
+<br>
+Not in this case. And why not? Be cause it's not understood well, by others also.
+<br>
+<br>
+It hasn't been understood by von Neumann, who made an earlier version. Everybody just grabed it, as a piece of gold. But it wasn't a gold.
+<br>
+<br>
+Sometimes, the situation is not very clear. Not even for people involved.
+<br>
+<br>
+In 1900, most biologists were not Darwinians. Remember that! It's not a proof, that it is the same sitiation in QM now. It's a proof, that peers can be wrong!
+<br>
+<br>
+- Thomas
+<br>
+<br>
+</p></td>
+</tr>
+<tr>
+<td><img height="1" src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/images/blank.gif" width="1"></td>
+<td bgcolor="#DDDDDD" style="padding: 0px;" valign="bottom"><img src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/mindx/images/round-bottom-left.gif"></td>
+<td bgcolor="#DDDDDD" colspan="2"><img height="1" src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/images/blank.gif" width="1"></td>
+<td align="right" bgcolor="#DDDDDD" style="padding: 0px;" valign="bottom"><img src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/mindx/images/round-bottom-right.gif"></td>
+</tr>
+</table>
+<a name="id9552"></a>
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+<tr>
+<td><img height="1" src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/images/blank.gif" width="0"></td>
+<td colspan="4"><img height="1" src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/images/blank.gif" width="679"></td>
+</tr>
+<tr>
+<td></td>
+<td bgcolor="#CCCCCC" style="padding: 0px;" valign="top"><img src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/mindx/images/round-left.gif"></td>
+<td bgcolor="#CCCCCC"><p>Re: Book Review: A New Kind of Science<br><span class="mindxheader"><i>posted on 09/04/2002 9:20 AM by roussi@yahoo.com</i></span></p></td>
+<td align="right" bgcolor="#CCCCCC" valign="top"><span class="mindxheader">[<a href="#discussion">Top</a>]<br>[<a href="https://web.archive.org/web/20071011040716/http://www.kurzweilai.net/mindx/frame.html?main=show_thread.php?rootID%3D7936%23id9552" target="_top">Mind&#183;X</a>]<br>[<a href="https://web.archive.org/web/20071011040716/http://www.kurzweilai.net/mindx/frame.html?main=post.php?reply%3D9552" target="_top">Reply to this post</a>]</span></td>
+<td align="right" bgcolor="#CCCCCC" style="padding: 0px;" valign="top"><img src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/mindx/images/round-right.gif"></td>
+</tr>
+<tr>
+<td></td>
+<td bgcolor="#DDDDDD" colspan="4"><p>I found this review to be interesting in both its content (which focussed on two important issues in the book) and its understated nature. The treatment was thoughtful and complete. Maybe too thoughtful. However, I find that I cannot be quite so even-handed in my comments about Wolfram's book. 
+<br>
+<br>
+I was annoyed by his arrogant belief that somehow there is more to his idea than a clever restatement of the obvious -- that simple programs can exhibit complex behavior. (Any programmer can attest to that when trying to "debug" even the simplest of programs.) I was put off by his lack of references, even to point the reader to background information. And I found that his frequent use of the words "I suspect that it will be found..." seems more appropriate to a statement of opinion rather than a "new kind of science". I suspect that Wolfram published the book himself because he suspected (correctly) that he would not find a publisher.
+<br>
+<br>
+In summary, I found the book to be, largely, a self-serving restatement of the obvious. It lacked the technical "meat" needed to satisfy the expert, and was too obtuse to be understood readily by the layman. 
+<br>
+<br>
+Christopher Roussi
+<br>
+Senior Scientist
+<br>
+Altarum Institute
+<br>
+Ann Arbor, MI</p></td>
+</tr>
+<tr>
+<td><img height="1" src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/images/blank.gif" width="1"></td>
+<td bgcolor="#DDDDDD" style="padding: 0px;" valign="bottom"><img src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/mindx/images/round-bottom-left.gif"></td>
+<td bgcolor="#DDDDDD" colspan="2"><img height="1" src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/images/blank.gif" width="1"></td>
+<td align="right" bgcolor="#DDDDDD" style="padding: 0px;" valign="bottom"><img src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/mindx/images/round-bottom-right.gif"></td>
+</tr>
+</table>
+<a name="id9554"></a>
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+<tr>
+<td><img height="1" src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/images/blank.gif" width="20"></td>
+<td colspan="4"><img height="1" src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/images/blank.gif" width="659"></td>
+</tr>
+<tr>
+<td></td>
+<td bgcolor="#CCCCCC" style="padding: 0px;" valign="top"><img src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/mindx/images/round-left.gif"></td>
+<td bgcolor="#CCCCCC"><p>Re: Book Review: A New Kind of Science<br><span class="mindxheader"><i>posted on 09/04/2002 12:18 PM by wclary5424@aol.com</i></span></p></td>
+<td align="right" bgcolor="#CCCCCC" valign="top"><span class="mindxheader">[<a href="#discussion">Top</a>]<br>[<a href="https://web.archive.org/web/20071011040716/http://www.kurzweilai.net/mindx/frame.html?main=show_thread.php?rootID%3D7936%23id9554" target="_top">Mind&#183;X</a>]<br>[<a href="https://web.archive.org/web/20071011040716/http://www.kurzweilai.net/mindx/frame.html?main=post.php?reply%3D9554" target="_top">Reply to this post</a>]</span></td>
+<td align="right" bgcolor="#CCCCCC" style="padding: 0px;" valign="top"><img src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/mindx/images/round-right.gif"></td>
+</tr>
+<tr>
+<td></td>
+<td bgcolor="#DDDDDD" colspan="4"><p>     I have read about 75% of Wolfram's opus.  I'll pick it up again when I have some time...but my three observations:
+<br>
+<br>
+    1.  Wolfram has a knack for seeming to claim the earlier work of others as his own, or at least downplaying others' contributions.  He overstates the importance of his observations.  The hubris is a little wearisome.  (And it's apparently not just in the book.  In a couple of interviews I've read, Wolfram compares himself to Isaac Newton.)
+<br>
+<br>
+    2.  Wolfram's simple thesis, that complex phenomena can be explained by simple computer programs is not all that earth-shattering.  He already said as much 20 years ago.  Others have said similar things, and the idea is worth pursuing.  But for all its heft,  the book doesn't do much to advance the argument.  There's a lot of suggestion, but not a lot of concrete theory.
+<br>
+<br>
+    3.  Wolfram seriously underestimates the importance of natural selection in biology.  He discusses how simple CA-programs might be responsible for certain features found in organisms (seashell markings, for one).  Other scientists have come to similar conclusions, some as early as the 1950s.    But from there, he goes on to suggest that Darwinian natural selection might not be very important in explaining the complexity of the biosophere.  Here, he makes a fundamental error.    CA-type programs might determine the markings of seashells, for instance--but if the program generates a pattern that makes the organism more likely to be eaten before it reproduces, I guarantee that pattern will quickly disappear from the population.  Simple programs might determine what natural selection has to work with, but selection determines what survives.  
+<br>
+<br>
+<br>
+BC        </p></td>
+</tr>
+<tr>
+<td><img height="1" src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/images/blank.gif" width="1"></td>
+<td bgcolor="#DDDDDD" style="padding: 0px;" valign="bottom"><img src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/mindx/images/round-bottom-left.gif"></td>
+<td bgcolor="#DDDDDD" colspan="2"><img height="1" src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/images/blank.gif" width="1"></td>
+<td align="right" bgcolor="#DDDDDD" style="padding: 0px;" valign="bottom"><img src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/mindx/images/round-bottom-right.gif"></td>
+</tr>
+</table>
+<a name="id10259"></a>
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+<tr>
+<td><img height="1" src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/images/blank.gif" width="0"></td>
+<td colspan="4"><img height="1" src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/images/blank.gif" width="679"></td>
+</tr>
+<tr>
+<td></td>
+<td bgcolor="#CCCCCC" style="padding: 0px;" valign="top"><img src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/mindx/images/round-left.gif"></td>
+<td bgcolor="#CCCCCC"><p>Re: Book Review: A New Kind of Science<br><span class="mindxheader"><i>posted on 09/27/2002 5:07 PM by mkelly@stuart.iit.edu</i></span></p></td>
+<td align="right" bgcolor="#CCCCCC" valign="top"><span class="mindxheader">[<a href="#discussion">Top</a>]<br>[<a href="https://web.archive.org/web/20071011040716/http://www.kurzweilai.net/mindx/frame.html?main=show_thread.php?rootID%3D7936%23id10259" target="_top">Mind&#183;X</a>]<br>[<a href="https://web.archive.org/web/20071011040716/http://www.kurzweilai.net/mindx/frame.html?main=post.php?reply%3D10259" target="_top">Reply to this post</a>]</span></td>
+<td align="right" bgcolor="#CCCCCC" style="padding: 0px;" valign="top"><img src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/mindx/images/round-right.gif"></td>
+</tr>
+<tr>
+<td></td>
+<td bgcolor="#DDDDDD" colspan="4"><p>I found this review by far the best and most detailed analysis to date of all the reviews of Wolfram's magnum opus. By restricting his comments to two distinct areas - computational complexity and fundamental physics, Scott Aaronson showed three things:
+<br>
+a) that such areas are far from fully understood or exhaustively described by current science
+<br>
+b) that while Wolfram has accomplished a considerable degree of insight, that insight is not totally original nor immediately applicable, and 
+<br>
+c) that such problems are extremely difficult and worth challenging afresh.
+<br>
+<br>
+The review treats Wolfram's book seriously, as it fully deserves, and opens his ideas to further discussion and analysis, which is how science really progresses and is the real fun associated with such publications. I agree that the book would have been better served by editorial control, but what editor could have ever accomplished such a task, unless he is a polymath on the same level as Wolfram? Clearly no simple candidate springs to mind. If then a tribe of editors were employed the cost and single mindedness of the work would suffer.
+<br>
+<br>
+I have difficulties with many details of the book, but find its overall conception and linking of the major ideas in science, maths and philosophy exhilarating. It correctly concludes that:
+<br>
+1) Computing is THE premier tool of science and thought, as well as a model of nature.
+<br>
+2) That any comprehensive theory of maths and science must account for the central role of undecidability, incompleteness and universality in theoretical and natural systems, as posited by the great theorems of Godel and Turing, and
+<br>
+3) In order for computers to be intuitively usable, then there needs to be a powerful, pattern and rule based language like Mathematica, which allows the extension of mathematical constructs within a computing environment.
+<br>
+<br>
+If for nothing else, Wolfram successfully makes the case for all of the above, though his real aims were far more general. In fact, little of the book would have been achievable had Mathematica not already been developed. Users of this astounding program have little difficulty adapting to the ideas of ANKS, since many of the ideas are implicit in the design of the Mathematica language.
+<br>
+<br>
+My feeling about theories expounded by statistical outlier intellects like Wolfram is that they offer extraordinary insight into problems which come from an uncommon intuition and that such approaches, even when they are incorrect, still lead to very fertile concepts. Take the mathematician Riemann for example, many of his theories were more like conjectures and often the proofs were erroneous, but he opened up vistas of beautiful insights that still intrigue today. 
+<br>
+<br>
+However almost all reviewers ignore the very best aspect of the book: that it can be investigated and experimented with directly on computer, either by using the Explorer program, or better still by downloading and applying the underlying Mathematica programs. There has not been any other intellectual work of such magnitude that direcly invites the reader to participatre in the ideas and discoveries that it describes. This is unique and lots of fun. I would have more respect for other reviewers if they at least attempted a proper first scientific analysis by trying to replicate the experiments the book describes and then construct their criticisms by possibly finding fault with the given programs. After Galileo published his book on the moon he was widely and thoroughly condemned, which especially troubled him, because as he said, none of his vociferous critics bothered to look through a telescope.
+<br>
+<br>
+With best regards to fellow readers
+<br>
+<br>
+Dr Michael Kelly
+<br>
+Stuart Graduate School of Business
+<br>
+Illinois Institute of Technology
+<br>
+Chicago, IL.
+<br>
+mkelly@stuart.iit.edu</p></td>
+</tr>
+<tr>
+<td><img height="1" src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/images/blank.gif" width="1"></td>
+<td bgcolor="#DDDDDD" style="padding: 0px;" valign="bottom"><img src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/mindx/images/round-bottom-left.gif"></td>
+<td bgcolor="#DDDDDD" colspan="2"><img height="1" src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/images/blank.gif" width="1"></td>
+<td align="right" bgcolor="#DDDDDD" style="padding: 0px;" valign="bottom"><img src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/mindx/images/round-bottom-right.gif"></td>
+</tr>
+</table>
+<a name="id11454"></a>
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+<tr>
+<td><img height="1" src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/images/blank.gif" width="0"></td>
+<td colspan="4"><img height="1" src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/images/blank.gif" width="679"></td>
+</tr>
+<tr>
+<td></td>
+<td bgcolor="#CCCCCC" style="padding: 0px;" valign="top"><img src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/mindx/images/round-left.gif"></td>
+<td bgcolor="#CCCCCC"><p>Re: Book Review: A New Kind of Science<br><span class="mindxheader"><i>posted on 11/07/2002 8:25 PM by Shai Simonson</i></span></p></td>
+<td align="right" bgcolor="#CCCCCC" valign="top"><span class="mindxheader">[<a href="#discussion">Top</a>]<br>[<a href="https://web.archive.org/web/20071011040716/http://www.kurzweilai.net/mindx/frame.html?main=show_thread.php?rootID%3D7936%23id11454" target="_top">Mind&#183;X</a>]<br>[<a href="https://web.archive.org/web/20071011040716/http://www.kurzweilai.net/mindx/frame.html?main=post.php?reply%3D11454" target="_top">Reply to this post</a>]</span></td>
+<td align="right" bgcolor="#CCCCCC" style="padding: 0px;" valign="top"><img src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/mindx/images/round-right.gif"></td>
+</tr>
+<tr>
+<td></td>
+<td bgcolor="#DDDDDD" colspan="4"><p>A very respectful, patient, and thoughtful review -- Refusing to take the bait and rant in
+<br>
+vague frustration, the reviewer methodically and relentlessly critiques strongly and clearly.
+<br>
+The clarity of the review in contrast to the reviewed material is striking.
+<br>
+<br>
+Wolfram's book does prove one thing beyond a reasonable doubt -- 
+<br>
+That narcisistic personality disorders are orthogonal to intelligence.</p></td>
+</tr>
+<tr>
+<td><img height="1" src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/images/blank.gif" width="1"></td>
+<td bgcolor="#DDDDDD" style="padding: 0px;" valign="bottom"><img src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/mindx/images/round-bottom-left.gif"></td>
+<td bgcolor="#DDDDDD" colspan="2"><img height="1" src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/images/blank.gif" width="1"></td>
+<td align="right" bgcolor="#DDDDDD" style="padding: 0px;" valign="bottom"><img src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/mindx/images/round-bottom-right.gif"></td>
+</tr>
+</table>
+<a name="id17405"></a>
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+<tr>
+<td><img height="1" src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/images/blank.gif" width="20"></td>
+<td colspan="4"><img height="1" src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/images/blank.gif" width="659"></td>
+</tr>
+<tr>
+<td></td>
+<td bgcolor="#CCCCCC" style="padding: 0px;" valign="top"><img src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/mindx/images/round-left.gif"></td>
+<td bgcolor="#CCCCCC"><p>Re: Book Review: A New Kind of Science<br><span class="mindxheader"><i>posted on 06/01/2003 5:50 PM by <a href="https://web.archive.org/web/20071011040716/http://www.kurzweilai.net/mindx/profile.php?id=375">dematerius</a></i></span></p></td>
+<td align="right" bgcolor="#CCCCCC" valign="top"><span class="mindxheader">[<a href="#discussion">Top</a>]<br>[<a href="https://web.archive.org/web/20071011040716/http://www.kurzweilai.net/mindx/frame.html?main=show_thread.php?rootID%3D7936%23id17405" target="_top">Mind&#183;X</a>]<br>[<a href="https://web.archive.org/web/20071011040716/http://www.kurzweilai.net/mindx/frame.html?main=post.php?reply%3D17405" target="_top">Reply to this post</a>]</span></td>
+<td align="right" bgcolor="#CCCCCC" style="padding: 0px;" valign="top"><img src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/mindx/images/round-right.gif"></td>
+</tr>
+<tr>
+<td></td>
+<td bgcolor="#DDDDDD" colspan="4"><p>After reading Mr. Wolfram's overly extended description of his thesis about how complexity originates from simple algorithms, I find his musings to be rather vaguely illustrated. In his book, Wolfram mentions the relationship between his mathematical rules (such as rule 110) and the formation of the universe, but does not attempt to bridge the gap between the two. After looking at the illustrations of the recursive natural patterns of plant life (such as tree branches), I hoped to find a "rule" that truly attempted to approximate them. Instead, I only read about 2 dimensional sheets of endlessly bombarding and cascading lines and shapes, and not even a fairly complex 3 dimensional representation of nature to support his theory. 
+<br>
+In short, the book (being an unfinished work) has left me asking for more depth and elaboration.
+<br>
+<br>
+From a mathematical perspective, I was really looking forward to a better compilation than what I read, and unfortunately, the yellow pages provide more ordered and complete arrangements of numbers within 1000+ pages of text than Mr. Wolfram's book does.
+<br>
+<br>
+</p></td>
+</tr>
+<tr>
+<td><img height="1" src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/images/blank.gif" width="1"></td>
+<td bgcolor="#DDDDDD" style="padding: 0px;" valign="bottom"><img src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/mindx/images/round-bottom-left.gif"></td>
+<td bgcolor="#DDDDDD" colspan="2"><img height="1" src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/images/blank.gif" width="1"></td>
+<td align="right" bgcolor="#DDDDDD" style="padding: 0px;" valign="bottom"><img src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/mindx/images/round-bottom-right.gif"></td>
+</tr>
+</table>
+<a name="id17406"></a>
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+<tr>
+<td><img height="1" src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/images/blank.gif" width="40"></td>
+<td colspan="4"><img height="1" src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/images/blank.gif" width="639"></td>
+</tr>
+<tr>
+<td></td>
+<td bgcolor="#CCCCCC" style="padding: 0px;" valign="top"><img src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/mindx/images/round-left.gif"></td>
+<td bgcolor="#CCCCCC"><p>Re: Book Review: A New Kind of Science<br><span class="mindxheader"><i>posted on 06/01/2003 6:24 PM by <a href="https://web.archive.org/web/20071011040716/http://www.kurzweilai.net/mindx/profile.php?id=255">mindxx</a></i></span></p></td>
+<td align="right" bgcolor="#CCCCCC" valign="top"><span class="mindxheader">[<a href="#discussion">Top</a>]<br>[<a href="https://web.archive.org/web/20071011040716/http://www.kurzweilai.net/mindx/frame.html?main=show_thread.php?rootID%3D7936%23id17406" target="_top">Mind&#183;X</a>]<br>[<a href="https://web.archive.org/web/20071011040716/http://www.kurzweilai.net/mindx/frame.html?main=post.php?reply%3D17406" target="_top">Reply to this post</a>]</span></td>
+<td align="right" bgcolor="#CCCCCC" style="padding: 0px;" valign="top"><img src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/mindx/images/round-right.gif"></td>
+</tr>
+<tr>
+<td></td>
+<td bgcolor="#DDDDDD" colspan="4"><p>I read this book standing up in a book shop[ with my mouth open and ran pell mell to rush some programming screaming "the yanks are catching up!"
+<br>
+<br>
+It felt like reading keats or shakespeare to me when i was  boy and the simple joy it brang.
+<br>
+<br>
+Ta Salutant!</p></td>
+</tr>
+<tr>
+<td><img height="1" src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/images/blank.gif" width="1"></td>
+<td bgcolor="#DDDDDD" style="padding: 0px;" valign="bottom"><img src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/mindx/images/round-bottom-left.gif"></td>
+<td bgcolor="#DDDDDD" colspan="2"><img height="1" src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/images/blank.gif" width="1"></td>
+<td align="right" bgcolor="#DDDDDD" style="padding: 0px;" valign="bottom"><img src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/mindx/images/round-bottom-right.gif"></td>
+</tr>
+</table>
+<a name="id71777"></a>
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+<tr>
+<td><img height="1" src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/images/blank.gif" width="0"></td>
+<td colspan="4"><img height="1" src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/images/blank.gif" width="679"></td>
+</tr>
+<tr>
+<td></td>
+<td bgcolor="#CCCCCC" style="padding: 0px;" valign="top"><img src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/mindx/images/round-left.gif"></td>
+<td bgcolor="#CCCCCC"><p>Re: Book Review: A New Kind of Science<br><span class="mindxheader"><i>posted on 11/25/2006 3:12 AM by <a href="https://web.archive.org/web/20071011040716/http://www.kurzweilai.net/mindx/profile.php?id=3426">chemba</a></i></span></p></td>
+<td align="right" bgcolor="#CCCCCC" valign="top"><span class="mindxheader">[<a href="#discussion">Top</a>]<br>[<a href="https://web.archive.org/web/20071011040716/http://www.kurzweilai.net/mindx/frame.html?main=show_thread.php?rootID%3D7936%23id71777" target="_top">Mind&#183;X</a>]<br>[<a href="https://web.archive.org/web/20071011040716/http://www.kurzweilai.net/mindx/frame.html?main=post.php?reply%3D71777" target="_top">Reply to this post</a>]</span></td>
+<td align="right" bgcolor="#CCCCCC" style="padding: 0px;" valign="top"><img src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/mindx/images/round-right.gif"></td>
+</tr>
+<tr>
+<td></td>
+<td bgcolor="#DDDDDD" colspan="4"><p>A new kind of science. 
+<br>
+<br>
+Yes, we urgenly need this one. The present science has been becoming an old one. It has got number of branches like in a tree. But what we have forgot the main thing that is the root, the place where original things begin. Big disadvantage of the present ultra modern science is that it has been going without the very basic knowledge of nature or universe. 
+<br>
+<br>
+Our universe is in name 'One', and in action it is 'Two'. First, we must understand this basic principle of universe. Our universe is working in a strict rule. The universe as a whole and in a particle level, it is ruled by a single and simple rule. 
+<br>
+<br>
+Now we are discussing about the singularity and dualism. This discussion is not new, now only. It is the centuries old controversial subject. 
+<br>
+<br>
+Atom is one in name, but really it is two things. In the same way the universe is one but in action it is two. so, we couldn't come to an solid idea about these things. We need a new approach to understand the universe. Then only we can reach the destination. 
+<br>
+<br>
+Universe is one, but it has two forces as dark and light. Actually, there is no dark and light energy, but it is darkless dark and lightless light energy. What we are seeing as light and dark is nothing but illusion. Our capacity of understanding could not go into that extent. 
+<br>
+<br>
+Regarding Black hole, the present statements are confusing with one another. There are only two energy or foces, as I have mentioned, in universe. We see many celestial, bodies in our universe, like sun and stars. They all are working individually as is the universe works in general. 
+<br>
+<br>
+What the sun and other celestial bodies have contained within it?  ? What is inside in it is the same that what is outside. Just as a simple atom, when it loses its more electrons, it will explode or change its originality. Anyhow,  simply the 'Two' things are behaving as different things. So, now what we see is illusion and what we see not is real. We can say this as 'Reality'.
+<br>
+<br>
+I will give more details to convince all through my future articles.
+<br>
+<br>
+Thank you.</p></td>
+</tr>
+<tr>
+<td><img height="1" src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/images/blank.gif" width="1"></td>
+<td bgcolor="#DDDDDD" style="padding: 0px;" valign="bottom"><img src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/mindx/images/round-bottom-left.gif"></td>
+<td bgcolor="#DDDDDD" colspan="2"><img height="1" src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/images/blank.gif" width="1"></td>
+<td align="right" bgcolor="#DDDDDD" style="padding: 0px;" valign="bottom"><img src="https://web.archive.org/web/20071011040716im_/http://www.kurzweilai.net/mindx/images/round-bottom-right.gif"></td>
+</tr>
+</table>
+<p></p></td>
+<td>&#160;</td>
+</tr>
+</table>
+</td></tr></table>
+</body>
+</html>

@@ -1,0 +1,566 @@
+<html>
+<head><base href="file:///Users/beka/Projects/Brain%20Archive/brain_archive/"><link href="articlemaster.css" rel="stylesheet" title="style1" type="text/css">
+<style>
+.sidebar {border-left-width: 2px; border-right-width: 0px; border-top-width: 0px; border-bottom-width: 0px; border-color: #000000; border-style: solid; padding-left: 12px;}
+</style>
+<title>The Paradigms and Paradoxes of Intelligence, Part 1: Russell's Paradox</title>
+</head>
+<body leftmargin="0" marginheight="0" marginwidth="0" topmargin="0"><div id="centering-column"><div id="header">
+  <div id="logo">
+    <img src="logo.gif" />
+  </div>
+  <div id="title">
+    <h1>Brain Archive</h1><br />
+    <a href="">Entry Index</a>
+  </div>
+  <div class="clearer"></div>
+</div>
+<table align="center" bgcolor="#EEEEEE" border="0" cellpadding="0" cellspacing="0" height="100%" width="780">
+<tr height="100%">
+<td align="left" valign="top">
+<table align="center" bgcolor="#EEEEEE" border="0" cellpadding="0" cellspacing="0" width="780">
+<tr>
+<td><img alt="" border="0" height="5" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/blank.gif" width="20"></td>
+<td><img alt="" border="0" height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/blank.gif" width="90"></td>
+<td><img alt="" border="0" height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/blank.gif" width="375"></td>
+<td><img alt="" border="0" height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/blank.gif" width="30"></td>
+<td><img alt="" border="0" height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/blank.gif" width="200"></td>
+<td><img alt="" border="0" height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/blank.gif" width="30"></td>
+</tr>
+<tr>
+<td> &#160; </td>
+<td colspan="5"> <span class="breadcrumb"><a href="https://web.archive.org/web/20100613234823/http://www.kurzweilai.net/" target="_top">Origin</a> &gt;
+ <a href="https://web.archive.org/web/20100613234823/http://www.kurzweilai.net/meme/memelist.html?m=7">Visions of the Future</a> &gt; 
+<a href="https://web.archive.org/web/20100613234823/http://www.kurzweilai.net/meme/memelist.html?m=13">The Futurecast</a> &gt; 
+The Paradigms and Paradoxes of Intelligence, Part 1: Russell's Paradox
+<br>
+Permanent link to this article: <a href="http://web.archive.org/web/20100613234823/http://www.kurzweilai.net/meme/frame.html?main=/articles/art0257.html" target="_top">http://www.kurzweilai.net/meme/frame.html?main=/articles/art0257.html</a></span>
+<br>
+<a class="printable" href="https://web.archive.org/web/20100613234823/http://www.kurzweilai.net/articles/art0257.html?printable=1" target="_new">Printable Version</a></td>
+</tr>
+<tr><td colspan="6"><img alt="" border="0" height="50" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/blank.gif" width="1"></td></tr>
+<tr>
+<td> &#160; </td>
+<td> &#160; </td>
+<td valign="top"><span class="Title">The Paradigms and Paradoxes of Intelligence, Part 1: Russell's Paradox</span>
+<br>
+<span class="Subtitle"></span>
+<table border="0" cellpadding="0" cellspacing="0">
+<td valign="top"><span class="Authors">by &#160;</span></td><td><span class="Authors"> <a class="Authors" href="https://web.archive.org/web/20100613234823/http://www.kurzweilai.net/bios/frame.html?main=/bios/bio0005.html" target="_top">    Raymond   Kurzweil </a><br>
+</span></td>
+</table>
+<br>
+<div class="TeaserText">An exploration of <a class="thought" href="javascript:loadBrain('Russell\'s%20Paradox')">Russell's Paradox</a>, written for "The Futurecast," a monthly column in the Library Journal.</div>
+<br>
+<br>
+<p>Originally published June 1992. Published on KurzweilAI.net August 6, 2001.</p>
+<p>Over the past several months The Futurecast has examined some of the ramifications of this early phase of <a class="thought" href="entries/machine_entry.html">machine</a> <a class="thought" href="entries/intelligence_entry.html">intelligence</a>. For the next several months we will take a look at the <a class="thought" href="entries/nature_entry.html">nature</a> of <a class="thought" href="entries/intelligence_entry.html">intelligence</a>, what it is, and what makes it tick, and then examine the long-term feasibility of simulating the human mind and the practical and philosophical implications of doing so.</p>
+<p>A judge is sentencing a man for a crime that he finds reprehensible and for which he wishes to mete out the most severe sentence. He tells the convicted man not only that he is sentenced to die, but that the sentence is to be carried out in a unique way. "The sentence is to be carried out no later than next Saturday. Furthermore, I want the sentence to be carried out in such a way that on the morning of your execution, you will not know for certain that you are going to be executed on that day. When we come for you, it will be a surprise."</p>
+<p>When the judge finishes describing his unusual sentence, the condemned man seems surprisingly pleased and replies, "Well, that's great judge. I am greatly relieved." To this the judge says, "I don't understand. How can you be relieved?"</p>
+<p>The man replies, "Well, your honor, in order for your sentence to be carried out, I could not be executed on Saturday." "Why is that?' asks the judge. "Since the sentence must be carried out by Saturday, if we actually get to Saturday, I will know for certain that I am to be executed on that day, and thus it would not be a surprise."</p>
+<p>"I suppose you are right," responds the judge. "You cannot be executed on Saturday. I still do not see why you are relieved." "Well," says the prisoner, "if we have definitely ruled out Saturday, then I cannot be executed on Friday either."</p>
+<p>"Why is that?'' asks the judge. "We have agreed that I definitely cannot be executed on Saturday. Therefore, Friday is the last day I can be executed. Thus, if Friday rolls around, I will definitely know that I am to be executed on that day, and therefore it would not be a surprise. So I cannot be executed on Friday." "I see," says the judge.</p>
+<p>"Thus the last day I can be executed would be Thursday. But if Thursday rolls around, I would know I had to be executed on that day, and thus it would not be a surprise. So Thursday is out. By the same reasoning we can eliminate Wednesday, Tuesday, Monday, and today."</p>
+<p>The judge scratches his head as the confident prisoner is led back to his cell. On Thursday, the prisoner is taken to be executed. He is very surprised. So the judge's orders are successfully carried out.</p><h1><a class="thought" href="entries/paradox_entry.html">Paradox</a> Lost</h1><p>The above is my version of what has become known as <a class="thought" href="javascript:loadBrain('Russell\'s%20Paradox')">Russell's paradox</a>. In the early part of this century, Bertrand Russell, a young and as yet relatively unknown mathematician and philosopher, became increasingly occupied with a certain type of <a class="thought" href="entries/paradox_entry.html">paradox</a> and attempted to understand its implications.</p>
+<p>If we analyze the <a class="thought" href="entries/paradox_entry.html">paradox</a> contained in the above story, we see that the conditions that the judge has set up result in a conclusion where none of the days meets the conditions, because, as the prisoner so adroitly points out, each one of them in turn would not be a surprise. But the conclusion itself changes the situation, and now surprise is possible again. This brings us back to the original situation in which the prisoner could (in theory) demonstrate that each day in turn would be impossible, and so on. The judge applies <a class="thought" href="javascript:loadBrain('Alexander\'s%20Solution')">Alexander's solution</a> to this <a class="thought" href="entries/gordian_knot_entry.html">Gordian knot</a>.</p>
+<p>A simple example and the one that Russell actually struggled with is the following question about sets. In <a class="thought" href="entries/mathematics_entry.html">mathematics</a>, a set is a collection of objects (cats, children, people you like, as well as theoretical "things" - squares, circles, lines, points, etc.). A set is often defined in terms of a rule. For example, we could define a set to consist of all shapes that are circles. <a class="thought" href="javascript:loadBrain('Russell\'s%20Paradox')">Russell's paradox</a> concerned set A, defined as containing all sets that are not members of themselves. Russell then asked the question: Does set A contain itself?</p>
+<p>As we consider this problem, our first realization is that there are only two possible answers: yes or no. If the answer is yes, then set A does contain itself. But if set A contains itself, then, according to its definition, set A would not belong to set A, and thus it does not belong to itself. Since the assumption that A contains itself leads to a contradiction, it must be wrong.</p>
+<p>If the answer is no, then set A does not contain itself. But again, according to the defining condition, if A does not belong to itself, then it would belong to set A. As with the story about the prisoner, we have contradictory propositions that imply one another. The assumption of no yields yes, which yields no, and so on.</p><h1>Both yes and no</h1><p>This may all seem amusing (or confusing), but to Russell, it threatened the very foundations of <a class="thought" href="entries/mathematics_entry.html">mathematics</a>. The <a class="thought" href="entries/concept_entry.html">concept</a> of a "set" is fundamental to <a class="thought" href="entries/mathematics_entry.html">mathematics</a>, and the definition of set A appears to be a perfectly reasonable one. The question of whether or not set A belongs to itself also seems perfectly reasonable. Yet it appears that we cannot come up with a logically consistent answer. Without a resolution to this <a class="thought" href="entries/paradox_entry.html">paradox</a>, the basic premise of all of <a class="thought" href="entries/mathematics_entry.html">mathematics</a> was in question.</p>
+<p>To solve this problem, Russell invented a <a class="thought" href="entries/concept_entry.html">concept</a> of a logical transformation as an <a class="thought" href="entries/operation_entry.html">operation</a> that requires the equivalent of a quantum of time. Russell designed a set of logical operations in which a particular problem would be expressed as a "<a class="thought" href="entries/program_entry.html">program</a>" of operations to follow. We then turn the <a class="thought" href="entries/program_entry.html">program</a> on and let it run. Each logical inference is implemented in turn, and when the process is completed, we get our answer.</p>
+<p>If we apply this theoretical <a class="thought" href="entries/machine_entry.html">machine</a> to the problem of set A, the logical operations are "executed" in turn. At a certain point, the answer will be yes, but the <a class="thought" href="entries/program_entry.html">program</a> keeps running, and at a later point the answer becomes no.</p>
+<p>Russell then provided narrow and broad definitions of a set. In the narrow sense, a set has a definition that allows the construction of a <a class="thought" href="entries/program_entry.html">program</a> that can determine whether a given <a class="thought" href="entries/entity_entry.html">entity</a> is a member of the set in a finite amount of time. According to this definition, set A is not a true set, so the <a class="thought" href="entries/paradox_entry.html">paradox</a> is eliminated.</p><h1>Eliminating the contradictions</h1><p>In the broad sense, the <a class="thought" href="entries/program_entry.html">program</a> defining the logical rules of set membership need not come to a halt in a finite amount of time, it just needs to come to an answer in a finite amount of time; it is allowed to change that answer as the <a class="thought" href="entries/program_entry.html">program</a> continues to run. According to this definition, set A is a proper set. The question of whether set A belongs to itself will be yes at one point in "time" and no at another point, and the <a class="thought" href="entries/program_entry.html">program</a> will alternate between the two.</p>
+<p>Thus, logical inferences are not implemented instantly, but rather one at a time with an orderly change of state between each. In our case, the answer is never yes and no at the same time. In the broad definition of a set, set A is a valid set, but a particular type that is "unstable," just as an <a class="thought" href="entries/electronic_entry.html">electronic</a> <a class="thought" href="entries/circuit_entry.html">circuit</a> can be unstable. Nonetheless, the contradiction is eliminated.</p>
+<p>Similarly, we can build a "Russell" logic <a class="thought" href="entries/machine_entry.html">machine</a> to simulate the logical inferences inherent in the story of the prisoner. The lecture on logic delivered by the prisoner would be simulated by a sequence of logical inferences. He has shown quite logically why it is not possible for him to be executed following the judge's instructions. The judge then realizes that the prisoners belief that he cannot be executed makes it possible once again to execute him (because now he can be surprised). Before the prisoner can formulate yet another lecture on logic showing why he cannot be executed (that is, before the "<a class="thought" href="entries/program_entry.html">program</a>" simulating this situation can alternate again to "impossible to execute"), the judge quickly implements his sentence. He must <a class="thought" href="entries/implement_entry.html">implement</a> his sentence at a particular point in the <a class="thought" href="entries/program_entry.html">program</a>.</p><h1>The logic <a class="thought" href="entries/machine_entry.html">machine</a></h1><p>Russell expanded his theory to lay a new foundation for logic and the theory of sets in his first major work in <a class="thought" href="entries/mathematics_entry.html">mathematics</a>, <i>The Principles of </i><i>Mathematics</i>, published in 1903. He subsequently felt that all of <a class="thought" href="entries/mathematics_entry.html">mathematics</a> should be recast in terms of his new theory of sets, since the <a class="thought" href="entries/concept_entry.html">concept</a> of sets and their interactions is fundamental to all other mathematical disciplines.</p>
+<p>With the help of his friend and former tutor Alfred North Whitehead (1861-1947), he labored for nearly ten years to apply his new theory of sets and logic to all realms of <a class="thought" href="entries/mathematics_entry.html">mathematics</a>. Whitehead and Russell did not manage to complete their reexamination, but they nonetheless published their work in three volumes in 1910, 1912, and 1913 under the title <i>Principia Mathematica</i>. The work was truly revolutionary and provided a new methodology for all <a class="thought" href="entries/mathematics_entry.html">mathematics</a> that was to follow.</p>
+<p>As significant as <i>Principia</i> was to <a class="thought" href="entries/mathematics_entry.html">mathematics</a> in general, it was a pivotal development in terms of the foundations of the theory of <a class="thought" href="entries/computation_entry.html">computation</a> that would be developed two decades later. Russell had created a theoretical model of a logic <a class="thought" href="entries/machine_entry.html">machine</a> that we now recognize as essentially a <a class="thought" href="entries/computer_entry.html">computer</a>, particularly in its execution of logical operations in cycles of time.</p>
+<p>Modern <a class="thought" href="entries/set_theory_entry.html">set theory</a>, still based on Russell's <i>Principia</i>, provides a foundation for much of <a class="thought" href="entries/mathematics_entry.html">mathematics</a>. It is interesting to note that modern <a class="thought" href="entries/set_theory_entry.html">set theory</a> is in turn based on Russell's theoretical model of <a class="thought" href="entries/computation_entry.html">computation</a>. Viewing things in this way, it would be correct to say that <a class="thought" href="entries/mathematics_entry.html">mathematics</a> is a branch of <a class="thought" href="entries/computer_entry.html">computer</a> theory. What is particularly impressive about Russell's achievement is that there were no computers even contemplated at the time he developed his theory. Russell needed to invent a theoretical model of a <a class="thought" href="entries/computer_entry.html">computer</a> and programming to address a flaw in the foundation of logic itself.</p>
+<p>A quarter of a century later, <a class="thought" href="entries/turing_entry.html">Alan Turing</a> created the <a class="thought" href="entries/turing_machine_entry.html">Turing machine</a>, based largely on Russell's earlier work, that endures today as our primary theoretical model of a <a class="thought" href="entries/computer_entry.html">computer</a>. Turing is also famous for creating the first operational <a class="thought" href="entries/computer_entry.html">computer</a> ever built in 1940.</p>
+<p>The <a class="thought" href="entries/turing_machine_entry.html">Turing machine</a> has persisted as our primary theoretical model of <a class="thought" href="entries/computation_entry.html">computation</a> because of its combination of simplicity and power. Its simplicity derives from its short list of capabilities (which in the interest of space I will not describe). As for its power, Turing was able to show that this extremely simple <a class="thought" href="entries/machine_entry.html">machine</a> can compute anything that any <a class="thought" href="entries/machine_entry.html">machine</a> can compute, no <a class="thought" href="entries/matter_entry.html">matter</a> how complex. If a problem cannot be solved by a <a class="thought" href="entries/turing_machine_entry.html">Turing machine</a>, then it cannot be solved by any <a class="thought" href="entries/machine_entry.html">machine</a>.</p>
+<p>An unexpected discovery that Turing reports in his 1937 paper on the <a class="thought" href="entries/turing_machine_entry.html">Turing machine</a> (entitled "On Computable Numbers, with an Application to the Entscheidungsproblem") is the <a class="thought" href="entries/concept_entry.html">concept</a> of unsolvable problems, i.e., problems that are well-defined with unique answers that can be shown to exist, but that can never be computed by a <a class="thought" href="entries/turing_machine_entry.html">Turing machine</a>. The fact that there are problems that cannot be solved by this particular theoretical <a class="thought" href="entries/machine_entry.html">machine</a> may not seem particularly startling until one considers the other conclusion of Turing's paper, namely, that the <a class="thought" href="entries/turing_machine_entry.html">Turing machine</a> can model any <a class="thought" href="entries/machine_entry.html">machine</a>. A <a class="thought" href="entries/machine_entry.html">machine</a> is regarded as any process that follows fixed laws.</p>
+<p>According to Turing, if we regard the human brain as subject to natural physical law (a reasonable position in the view of many observers), then Turing's unsolvable problems cannot be solved by either <a class="thought" href="entries/machine_entry.html">machine</a> or human <a class="thought" href="entries/thought_entry.html">thought</a>. We are left with the perplexing situation of being able to define a problem, to prove that a unique answer exists, and yet know that the answer can never be known. Turing went on to prove that there are as many unsolvable problems as solvable ones, the <a class="thought" href="entries/number_entry.html">number</a> of each being the lowest order of <a class="thought" href="entries/infinity_entry.html">infinity</a>, the so called countable <a class="thought" href="entries/infinity_entry.html">infinity</a> (that is, the <a class="thought" href="entries/number_entry.html">number</a> of integers).</p>
+<p>Turing then teamed up with Alonzo Church, an American mathematician and philosopher. The result of this collaboration is the <a class="thought" href="entries/church_turing_thesis_entry.html">Church-Turing thesis</a> that postulates an essential equivalence between what can be computed by a <a class="thought" href="entries/turing_machine_entry.html">Turing machine</a> (that is, by a <a class="thought" href="entries/computer_entry.html">computer</a>) and what can be accomplished by human <a class="thought" href="entries/thought_entry.html">thought</a>.</p>
+<p>Reprinted with permission from <b>Library Journal</b>, June 1992. <a class="thought" href="entries/copyright_entry.html">Copyright</a> &#169; 1992, Reed Elsevier, USA</p>
+<p>
+<a href="http://web.archive.org/web/20100613234823/http://www.kurzweilai.net/meme/memelist.html?m=13" target="_self">Other Futurecast columns</a>
+</p>
+</td><td>&#160;</td><td valign="top"><a href="#discussion">Join the discussion about this article on Mind&#183;X!</a></td><td> &#160; </td>
+</tr>
+<tr><td colspan="6"><img alt="" border="0" height="35" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/blank.gif" width="35"></td></tr>
+<tr>
+<td>&#160;</td>
+<td colspan="4">
+<a name="discussion"></a><p><span class="mindxheader">&#160;&#160;&#160;[<a href="https://web.archive.org/web/20100613234823/http://www.kurzweilai.net/mindx/frame.html?main=post.php?reply%3D15582" target="_top">Post New Comment</a>]<br>&#160;&#160;&#160;</span>Mind&#183;X Discussion About This Article:</p><a name="id15583"></a>
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+<tr>
+<td><img height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/images/blank.gif" width="0"></td>
+<td colspan="4"><img height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/images/blank.gif" width="679"></td>
+</tr>
+<tr>
+<td></td>
+<td bgcolor="#CCCCCC" style="padding: 0px;" valign="top"><img src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/mindx/images/round-left.gif"></td>
+<td bgcolor="#CCCCCC"><p>What about the paradox and lambda calculus?<br><span class="mindxheader"><i>posted on 03/11/2003 8:28 PM by <a href="https://web.archive.org/web/20100613234823/http://www.kurzweilai.net/mindx/profile.php?id=144">icosahedron</a></i></span></p></td>
+<td align="right" bgcolor="#CCCCCC" valign="top"><span class="mindxheader">[<a href="#discussion">Top</a>]<br>[<a href="https://web.archive.org/web/20100613234823/http://www.kurzweilai.net/mindx/frame.html?main=show_thread.php?rootID%3D15582%23id15583" target="_top">Mind&#183;X</a>]<br>[<a href="https://web.archive.org/web/20100613234823/http://www.kurzweilai.net/mindx/frame.html?main=post.php?reply%3D15583" target="_top">Reply to this post</a>]</span></td>
+<td align="right" bgcolor="#CCCCCC" style="padding: 0px;" valign="top"><img src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/mindx/images/round-right.gif"></td>
+</tr>
+<tr>
+<td></td>
+<td bgcolor="#DDDDDD" colspan="4"><p>How does Russel's modifications affect paradox of lambda calculus?  If Russell's machine and Turing's machine are equivalent to the lambda calculus, and they don't have the paradox, then does lambda calculus?
+<br>
+<br>
+Very informative article.
+<br>
+<br>
+Jay
+<br>
+</p></td>
+</tr>
+<tr>
+<td><img height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/images/blank.gif" width="1"></td>
+<td bgcolor="#DDDDDD" style="padding: 0px;" valign="bottom"><img src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/mindx/images/round-bottom-left.gif"></td>
+<td bgcolor="#DDDDDD" colspan="2"><img height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/images/blank.gif" width="1"></td>
+<td align="right" bgcolor="#DDDDDD" style="padding: 0px;" valign="bottom"><img src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/mindx/images/round-bottom-right.gif"></td>
+</tr>
+</table>
+<a name="id15677"></a>
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+<tr>
+<td><img height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/images/blank.gif" width="20"></td>
+<td colspan="4"><img height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/images/blank.gif" width="659"></td>
+</tr>
+<tr>
+<td></td>
+<td bgcolor="#CCCCCC" style="padding: 0px;" valign="top"><img src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/mindx/images/round-left.gif"></td>
+<td bgcolor="#CCCCCC"><p>Re: What about the paradox and lambda calculus?<br><span class="mindxheader"><i>posted on 03/14/2003 8:26 PM by <a href="https://web.archive.org/web/20100613234823/http://www.kurzweilai.net/mindx/profile.php?id=119">john_f_ellis</a></i></span></p></td>
+<td align="right" bgcolor="#CCCCCC" valign="top"><span class="mindxheader">[<a href="#discussion">Top</a>]<br>[<a href="https://web.archive.org/web/20100613234823/http://www.kurzweilai.net/mindx/frame.html?main=show_thread.php?rootID%3D15582%23id15677" target="_top">Mind&#183;X</a>]<br>[<a href="https://web.archive.org/web/20100613234823/http://www.kurzweilai.net/mindx/frame.html?main=post.php?reply%3D15677" target="_top">Reply to this post</a>]</span></td>
+<td align="right" bgcolor="#CCCCCC" style="padding: 0px;" valign="top"><img src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/mindx/images/round-right.gif"></td>
+</tr>
+<tr>
+<td></td>
+<td bgcolor="#DDDDDD" colspan="4"><p>I agree. Russell is/was great. Mad as hell according to folk who met him.
+<br>
+<br>
+Maths searches for absolutes. I doubt if there are any.
+<br>
+<br>
+Zeno came down from the hills and pointed out flaws in maths reasoning in his paradi.
+<br>
+<br>
+I like the infinite hotel room (of Russell).</p></td>
+</tr>
+<tr>
+<td><img height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/images/blank.gif" width="1"></td>
+<td bgcolor="#DDDDDD" style="padding: 0px;" valign="bottom"><img src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/mindx/images/round-bottom-left.gif"></td>
+<td bgcolor="#DDDDDD" colspan="2"><img height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/images/blank.gif" width="1"></td>
+<td align="right" bgcolor="#DDDDDD" style="padding: 0px;" valign="bottom"><img src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/mindx/images/round-bottom-right.gif"></td>
+</tr>
+</table>
+<a name="id15678"></a>
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+<tr>
+<td><img height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/images/blank.gif" width="0"></td>
+<td colspan="4"><img height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/images/blank.gif" width="679"></td>
+</tr>
+<tr>
+<td></td>
+<td bgcolor="#CCCCCC" style="padding: 0px;" valign="top"><img src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/mindx/images/round-left.gif"></td>
+<td bgcolor="#CCCCCC"><p>Re: The Paradigms and Paradoxes of Intelligence, Part 1: Russell's Paradox<br><span class="mindxheader"><i>posted on 03/14/2003 9:44 PM by <a href="https://web.archive.org/web/20100613234823/http://www.kurzweilai.net/mindx/profile.php?id=18">claireatcthisspace</a></i></span></p></td>
+<td align="right" bgcolor="#CCCCCC" valign="top"><span class="mindxheader">[<a href="#discussion">Top</a>]<br>[<a href="https://web.archive.org/web/20100613234823/http://www.kurzweilai.net/mindx/frame.html?main=show_thread.php?rootID%3D15582%23id15678" target="_top">Mind&#183;X</a>]<br>[<a href="https://web.archive.org/web/20100613234823/http://www.kurzweilai.net/mindx/frame.html?main=post.php?reply%3D15678" target="_top">Reply to this post</a>]</span></td>
+<td align="right" bgcolor="#CCCCCC" style="padding: 0px;" valign="top"><img src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/mindx/images/round-right.gif"></td>
+</tr>
+<tr>
+<td></td>
+<td bgcolor="#DDDDDD" colspan="4"><p>The paradox is a paradox of [logic] by sets only and is in mathematics specifically because it deals with [absolutes] an example is even refering to variables in differential equations as absolutes and so are sets. It is our understanding that thinks they are not, and then are, etc... infinitum because they are compounded concepts (are similar to logic gates). The mechanism that [we] cannot emulate from AI very easily and whcih sets sets apart is to see that this isnt' really a paradox at all then but it is called percpetion of what the sets are about. The paradox is due to our/ the condemned man's change of perception of the logic presented to us (by the judge) by the sets or rules. The reasoning is based on compounds by the the mathematical sets,  we change our perception of the reason or the condemned man does. Computers cannot change the patterns of logic in the same way as us because we use thinking to do so. On this assumption the Turing machine cannot really think and maybe even computers too. 
+<br>
+<br>
+<br>
+Claire</p></td>
+</tr>
+<tr>
+<td><img height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/images/blank.gif" width="1"></td>
+<td bgcolor="#DDDDDD" style="padding: 0px;" valign="bottom"><img src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/mindx/images/round-bottom-left.gif"></td>
+<td bgcolor="#DDDDDD" colspan="2"><img height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/images/blank.gif" width="1"></td>
+<td align="right" bgcolor="#DDDDDD" style="padding: 0px;" valign="bottom"><img src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/mindx/images/round-bottom-right.gif"></td>
+</tr>
+</table>
+<a name="id15679"></a>
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+<tr>
+<td><img height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/images/blank.gif" width="20"></td>
+<td colspan="4"><img height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/images/blank.gif" width="659"></td>
+</tr>
+<tr>
+<td></td>
+<td bgcolor="#CCCCCC" style="padding: 0px;" valign="top"><img src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/mindx/images/round-left.gif"></td>
+<td bgcolor="#CCCCCC"><p>Re: The Paradigms and Paradoxes of Intelligence, Part 1: Russell's Paradox<br><span class="mindxheader"><i>posted on 03/14/2003 9:47 PM by <a href="https://web.archive.org/web/20100613234823/http://www.kurzweilai.net/mindx/profile.php?id=18">claireatcthisspace</a></i></span></p></td>
+<td align="right" bgcolor="#CCCCCC" valign="top"><span class="mindxheader">[<a href="#discussion">Top</a>]<br>[<a href="https://web.archive.org/web/20100613234823/http://www.kurzweilai.net/mindx/frame.html?main=show_thread.php?rootID%3D15582%23id15679" target="_top">Mind&#183;X</a>]<br>[<a href="https://web.archive.org/web/20100613234823/http://www.kurzweilai.net/mindx/frame.html?main=post.php?reply%3D15679" target="_top">Reply to this post</a>]</span></td>
+<td align="right" bgcolor="#CCCCCC" style="padding: 0px;" valign="top"><img src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/mindx/images/round-right.gif"></td>
+</tr>
+<tr>
+<td></td>
+<td bgcolor="#DDDDDD" colspan="4"><p>When I say computers cannot think I mean thinking that forms the percpetion mechanism of what ever information is presented to thtat system, however computers are very good at computing, VERY good.
+<br>
+<br>
+Claire </p></td>
+</tr>
+<tr>
+<td><img height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/images/blank.gif" width="1"></td>
+<td bgcolor="#DDDDDD" style="padding: 0px;" valign="bottom"><img src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/mindx/images/round-bottom-left.gif"></td>
+<td bgcolor="#DDDDDD" colspan="2"><img height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/images/blank.gif" width="1"></td>
+<td align="right" bgcolor="#DDDDDD" style="padding: 0px;" valign="bottom"><img src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/mindx/images/round-bottom-right.gif"></td>
+</tr>
+</table>
+<a name="id15719"></a>
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+<tr>
+<td><img height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/images/blank.gif" width="20"></td>
+<td colspan="4"><img height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/images/blank.gif" width="659"></td>
+</tr>
+<tr>
+<td></td>
+<td bgcolor="#CCCCCC" style="padding: 0px;" valign="top"><img src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/mindx/images/round-left.gif"></td>
+<td bgcolor="#CCCCCC"><p>Re:Re written<br><span class="mindxheader"><i>posted on 03/15/2003 6:11 PM by <a href="https://web.archive.org/web/20100613234823/http://www.kurzweilai.net/mindx/profile.php?id=18">claireatcthisspace</a></i></span></p></td>
+<td align="right" bgcolor="#CCCCCC" valign="top"><span class="mindxheader">[<a href="#discussion">Top</a>]<br>[<a href="https://web.archive.org/web/20100613234823/http://www.kurzweilai.net/mindx/frame.html?main=show_thread.php?rootID%3D15582%23id15719" target="_top">Mind&#183;X</a>]<br>[<a href="https://web.archive.org/web/20100613234823/http://www.kurzweilai.net/mindx/frame.html?main=post.php?reply%3D15719" target="_top">Reply to this post</a>]</span></td>
+<td align="right" bgcolor="#CCCCCC" style="padding: 0px;" valign="top"><img src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/mindx/images/round-right.gif"></td>
+</tr>
+<tr>
+<td></td>
+<td bgcolor="#DDDDDD" colspan="4"><p>Please can the moderator delete the other 1st thread I posted here to this topic and keep this one instead. Thanks (Iv'e no e- mail at the moment because my pc is bing re-done! infact I have nothing except the net till a day or two so I cant get replies as yet) 
+<br>
+<br>
+I typed this wrong before because I was pretty tired then, this is better. Sorry folks.
+<br>
+<br>
+The paradox seems to be a paradox of [logic] by sets in my mind. These are as we know, created by mathematics (that is stil created by us!), so maths deals with [absolutes], an example is even refering to variables in differential equations as absolutes. It is our [understanding] of these absolutes that makes us thinks they are not, and then are, then not, or to become a paradox etc infinitum... The absolute becomes a compounded concept. What makes us different to AI computers is that we see these absolutes of logic not really being a paradox at all because we have developed a mechanism called perception. The paradox is due to our/the condemned man's change of perception of the logic not really the actual logic presented to us (by the judge) as a sets or rules or sets. The logic is reasoned out based on absolutes by the the mathematical sets or course but we change our perception of the absolutes or the condemned man begins to. I doubt at this time that AI computers can change the patterns of logic in the same way as us because we use thinking in order to do so. On this assumption the Turing machine cannot really think and maybe even AI computers too OR we ahevnt yet got round to deciding how to measure and quantify thinking for an AI programme.  So the problem or the paradox here, cannot be percieved by AI in the same way as humans, yet because we use an entirely different system in order to understand  it.
+<br>
+<br>
+I know this sounds pessimistic but it could be quite true even though iam not at all pessimistic about it.
+<br>
+<br>
+Claire
+<br>
+</p></td>
+</tr>
+<tr>
+<td><img height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/images/blank.gif" width="1"></td>
+<td bgcolor="#DDDDDD" style="padding: 0px;" valign="bottom"><img src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/mindx/images/round-bottom-left.gif"></td>
+<td bgcolor="#DDDDDD" colspan="2"><img height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/images/blank.gif" width="1"></td>
+<td align="right" bgcolor="#DDDDDD" style="padding: 0px;" valign="bottom"><img src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/mindx/images/round-bottom-right.gif"></td>
+</tr>
+</table>
+<a name="id15723"></a>
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+<tr>
+<td><img height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/images/blank.gif" width="40"></td>
+<td colspan="4"><img height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/images/blank.gif" width="639"></td>
+</tr>
+<tr>
+<td></td>
+<td bgcolor="#CCCCCC" style="padding: 0px;" valign="top"><img src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/mindx/images/round-left.gif"></td>
+<td bgcolor="#CCCCCC"><p>Re:Re written<br><span class="mindxheader"><i>posted on 03/15/2003 6:17 PM by <a href="https://web.archive.org/web/20100613234823/http://www.kurzweilai.net/mindx/profile.php?id=18">claireatcthisspace</a></i></span></p></td>
+<td align="right" bgcolor="#CCCCCC" valign="top"><span class="mindxheader">[<a href="#discussion">Top</a>]<br>[<a href="https://web.archive.org/web/20100613234823/http://www.kurzweilai.net/mindx/frame.html?main=show_thread.php?rootID%3D15582%23id15723" target="_top">Mind&#183;X</a>]<br>[<a href="https://web.archive.org/web/20100613234823/http://www.kurzweilai.net/mindx/frame.html?main=post.php?reply%3D15723" target="_top">Reply to this post</a>]</span></td>
+<td align="right" bgcolor="#CCCCCC" style="padding: 0px;" valign="top"><img src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/mindx/images/round-right.gif"></td>
+</tr>
+<tr>
+<td></td>
+<td bgcolor="#DDDDDD" colspan="4"><p>No dont chuck this post, chuck the one above this one.
+<br>
+<br>
+:-)
+<br>
+<br>
+<br>
+Claire (i hope i get this right this time)</p></td>
+</tr>
+<tr>
+<td><img height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/images/blank.gif" width="1"></td>
+<td bgcolor="#DDDDDD" style="padding: 0px;" valign="bottom"><img src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/mindx/images/round-bottom-left.gif"></td>
+<td bgcolor="#DDDDDD" colspan="2"><img height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/images/blank.gif" width="1"></td>
+<td align="right" bgcolor="#DDDDDD" style="padding: 0px;" valign="bottom"><img src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/mindx/images/round-bottom-right.gif"></td>
+</tr>
+</table>
+<a name="id15721"></a>
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+<tr>
+<td><img height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/images/blank.gif" width="20"></td>
+<td colspan="4"><img height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/images/blank.gif" width="659"></td>
+</tr>
+<tr>
+<td></td>
+<td bgcolor="#CCCCCC" style="padding: 0px;" valign="top"><img src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/mindx/images/round-left.gif"></td>
+<td bgcolor="#CCCCCC"><p>Re: The Paradigms and Paradoxes of Intelligence, Part 1: Russell's Paradox<br><span class="mindxheader"><i>posted on 03/15/2003 6:14 PM by <a href="https://web.archive.org/web/20100613234823/http://www.kurzweilai.net/mindx/profile.php?id=18">claireatcthisspace</a></i></span></p></td>
+<td align="right" bgcolor="#CCCCCC" valign="top"><span class="mindxheader">[<a href="#discussion">Top</a>]<br>[<a href="https://web.archive.org/web/20100613234823/http://www.kurzweilai.net/mindx/frame.html?main=show_thread.php?rootID%3D15582%23id15721" target="_top">Mind&#183;X</a>]<br>[<a href="https://web.archive.org/web/20100613234823/http://www.kurzweilai.net/mindx/frame.html?main=post.php?reply%3D15721" target="_top">Reply to this post</a>]</span></td>
+<td align="right" bgcolor="#CCCCCC" style="padding: 0px;" valign="top"><img src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/mindx/images/round-right.gif"></td>
+</tr>
+<tr>
+<td></td>
+<td bgcolor="#DDDDDD" colspan="4"><p>Amara, chuck this post above! 
+<br>
+<br>
+<br>
+thanks
+<br>
+<br>
+<br>
+claire</p></td>
+</tr>
+<tr>
+<td><img height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/images/blank.gif" width="1"></td>
+<td bgcolor="#DDDDDD" style="padding: 0px;" valign="bottom"><img src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/mindx/images/round-bottom-left.gif"></td>
+<td bgcolor="#DDDDDD" colspan="2"><img height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/images/blank.gif" width="1"></td>
+<td align="right" bgcolor="#DDDDDD" style="padding: 0px;" valign="bottom"><img src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/mindx/images/round-bottom-right.gif"></td>
+</tr>
+</table>
+<a name="id15722"></a>
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+<tr>
+<td><img height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/images/blank.gif" width="40"></td>
+<td colspan="4"><img height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/images/blank.gif" width="639"></td>
+</tr>
+<tr>
+<td></td>
+<td bgcolor="#CCCCCC" style="padding: 0px;" valign="top"><img src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/mindx/images/round-left.gif"></td>
+<td bgcolor="#CCCCCC"><p>Re: The Paradigms and Paradoxes of Intelligence, Part 1: Russell's Paradox<br><span class="mindxheader"><i>posted on 03/15/2003 6:15 PM by <a href="https://web.archive.org/web/20100613234823/http://www.kurzweilai.net/mindx/profile.php?id=18">claireatcthisspace</a></i></span></p></td>
+<td align="right" bgcolor="#CCCCCC" valign="top"><span class="mindxheader">[<a href="#discussion">Top</a>]<br>[<a href="https://web.archive.org/web/20100613234823/http://www.kurzweilai.net/mindx/frame.html?main=show_thread.php?rootID%3D15582%23id15722" target="_top">Mind&#183;X</a>]<br>[<a href="https://web.archive.org/web/20100613234823/http://www.kurzweilai.net/mindx/frame.html?main=post.php?reply%3D15722" target="_top">Reply to this post</a>]</span></td>
+<td align="right" bgcolor="#CCCCCC" style="padding: 0px;" valign="top"><img src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/mindx/images/round-right.gif"></td>
+</tr>
+<tr>
+<td></td>
+<td bgcolor="#DDDDDD" colspan="4"><p>NO NO NO!!!!! wrong not this post above (huh???) whats gong on here! I was supposed to be under the wrong post!
+<br>
+<br>
+<br>
+Claire </p></td>
+</tr>
+<tr>
+<td><img height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/images/blank.gif" width="1"></td>
+<td bgcolor="#DDDDDD" style="padding: 0px;" valign="bottom"><img src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/mindx/images/round-bottom-left.gif"></td>
+<td bgcolor="#DDDDDD" colspan="2"><img height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/images/blank.gif" width="1"></td>
+<td align="right" bgcolor="#DDDDDD" style="padding: 0px;" valign="bottom"><img src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/mindx/images/round-bottom-right.gif"></td>
+</tr>
+</table>
+<a name="id15720"></a>
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+<tr>
+<td><img height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/images/blank.gif" width="0"></td>
+<td colspan="4"><img height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/images/blank.gif" width="679"></td>
+</tr>
+<tr>
+<td></td>
+<td bgcolor="#CCCCCC" style="padding: 0px;" valign="top"><img src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/mindx/images/round-left.gif"></td>
+<td bgcolor="#CCCCCC"><p>Re: The Paradigms and Paradoxes of Intelligence, Part 1: Russell's Paradox<br><span class="mindxheader"><i>posted on 03/15/2003 6:14 PM by <a href="https://web.archive.org/web/20100613234823/http://www.kurzweilai.net/mindx/profile.php?id=18">claireatcthisspace</a></i></span></p></td>
+<td align="right" bgcolor="#CCCCCC" valign="top"><span class="mindxheader">[<a href="#discussion">Top</a>]<br>[<a href="https://web.archive.org/web/20100613234823/http://www.kurzweilai.net/mindx/frame.html?main=show_thread.php?rootID%3D15582%23id15720" target="_top">Mind&#183;X</a>]<br>[<a href="https://web.archive.org/web/20100613234823/http://www.kurzweilai.net/mindx/frame.html?main=post.php?reply%3D15720" target="_top">Reply to this post</a>]</span></td>
+<td align="right" bgcolor="#CCCCCC" style="padding: 0px;" valign="top"><img src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/mindx/images/round-right.gif"></td>
+</tr>
+<tr>
+<td></td>
+<td bgcolor="#DDDDDD" colspan="4"><p>Please can the moderator delete the other 1st thread I posted here to this topic and keep this one instead. Thanks (Iv'e no e- mail at the moment because my pc is bing re-done! infact I have nothing except the net till a day or two so I cant get replies as yet) 
+<br>
+<br>
+I typed this wrong before because I was pretty tired then, this is better. Sorry folks. 
+<br>
+<br>
+The paradox seems to be a paradox of [logic] by sets in my mind. These are as we know, created by mathematics (that is stil created by us!), so maths deals with [absolutes], an example is even refering to variables in differential equations as absolutes. It is our [understanding] of these absolutes that makes us thinks they are not, and then are, then not, or to become a paradox etc infinitum... The absolute becomes a compounded concept. What makes us different to AI computers is that we see these absolutes of logic not really being a paradox at all because we have developed a mechanism called perception. The paradox is due to our/the condemned man's change of perception of the logic not really the actual logic presented to us (by the judge) as a sets or rules or sets. The logic is reasoned out based on absolutes by the the mathematical sets or course but we change our perception of the absolutes or the condemned man begins to. I doubt at this time that AI computers can change the patterns of logic in the same way as us because we use thinking in order to do so. On this assumption the Turing machine cannot really think and maybe even AI computers too OR we ahevnt yet got round to deciding how to measure and quantify thinking for an AI programme. So the problem or the paradox here, cannot be percieved by AI in the same way as humans, yet because we use an entirely different system in order to understand it. 
+<br>
+<br>
+I know this sounds pessimistic but it could be quite true even though iam not at all pessimistic about it. 
+<br>
+<br>
+Claire 
+<br>
+<br>
+<br>
+</p></td>
+</tr>
+<tr>
+<td><img height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/images/blank.gif" width="1"></td>
+<td bgcolor="#DDDDDD" style="padding: 0px;" valign="bottom"><img src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/mindx/images/round-bottom-left.gif"></td>
+<td bgcolor="#DDDDDD" colspan="2"><img height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/images/blank.gif" width="1"></td>
+<td align="right" bgcolor="#DDDDDD" style="padding: 0px;" valign="bottom"><img src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/mindx/images/round-bottom-right.gif"></td>
+</tr>
+</table>
+<a name="id15724"></a>
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+<tr>
+<td><img height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/images/blank.gif" width="20"></td>
+<td colspan="4"><img height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/images/blank.gif" width="659"></td>
+</tr>
+<tr>
+<td></td>
+<td bgcolor="#CCCCCC" style="padding: 0px;" valign="top"><img src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/mindx/images/round-left.gif"></td>
+<td bgcolor="#CCCCCC"><p>Re: The Paradigms and Paradoxes of Intelligence, Part 1: Russell's Paradox<br><span class="mindxheader"><i>posted on 03/15/2003 6:19 PM by <a href="https://web.archive.org/web/20100613234823/http://www.kurzweilai.net/mindx/profile.php?id=18">claireatcthisspace</a></i></span></p></td>
+<td align="right" bgcolor="#CCCCCC" valign="top"><span class="mindxheader">[<a href="#discussion">Top</a>]<br>[<a href="https://web.archive.org/web/20100613234823/http://www.kurzweilai.net/mindx/frame.html?main=show_thread.php?rootID%3D15582%23id15724" target="_top">Mind&#183;X</a>]<br>[<a href="https://web.archive.org/web/20100613234823/http://www.kurzweilai.net/mindx/frame.html?main=post.php?reply%3D15724" target="_top">Reply to this post</a>]</span></td>
+<td align="right" bgcolor="#CCCCCC" style="padding: 0px;" valign="top"><img src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/mindx/images/round-right.gif"></td>
+</tr>
+<tr>
+<td></td>
+<td bgcolor="#DDDDDD" colspan="4"><p>Oh my gewd, what a total mess. Sorry :-/
+<br>
+<br>
+delete this post in brackets:  
+<br>
+<br>
+(posted on 03/14/2003 9:44 PM by claireatcthisspace)
+<br>
+<br>
+Claire. Im outta here...</p></td>
+</tr>
+<tr>
+<td><img height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/images/blank.gif" width="1"></td>
+<td bgcolor="#DDDDDD" style="padding: 0px;" valign="bottom"><img src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/mindx/images/round-bottom-left.gif"></td>
+<td bgcolor="#DDDDDD" colspan="2"><img height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/images/blank.gif" width="1"></td>
+<td align="right" bgcolor="#DDDDDD" style="padding: 0px;" valign="bottom"><img src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/mindx/images/round-bottom-right.gif"></td>
+</tr>
+</table>
+<a name="id15750"></a>
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+<tr>
+<td><img height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/images/blank.gif" width="40"></td>
+<td colspan="4"><img height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/images/blank.gif" width="639"></td>
+</tr>
+<tr>
+<td></td>
+<td bgcolor="#CCCCCC" style="padding: 0px;" valign="top"><img src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/mindx/images/round-left.gif"></td>
+<td bgcolor="#CCCCCC"><p>Re: The Paradigms and Paradoxes of Intelligence, Part 1: Russell's Paradox<br><span class="mindxheader"><i>posted on 03/16/2003 1:33 AM by <a href="https://web.archive.org/web/20100613234823/http://www.kurzweilai.net/mindx/profile.php?id=144">icosahedron</a></i></span></p></td>
+<td align="right" bgcolor="#CCCCCC" valign="top"><span class="mindxheader">[<a href="#discussion">Top</a>]<br>[<a href="https://web.archive.org/web/20100613234823/http://www.kurzweilai.net/mindx/frame.html?main=show_thread.php?rootID%3D15582%23id15750" target="_top">Mind&#183;X</a>]<br>[<a href="https://web.archive.org/web/20100613234823/http://www.kurzweilai.net/mindx/frame.html?main=post.php?reply%3D15750" target="_top">Reply to this post</a>]</span></td>
+<td align="right" bgcolor="#CCCCCC" style="padding: 0px;" valign="top"><img src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/mindx/images/round-right.gif"></td>
+</tr>
+<tr>
+<td></td>
+<td bgcolor="#DDDDDD" colspan="4"><p>Very interesting reply, Claire (in all its incarnations :)).
+<br>
+<br>
+To be honest, what I see that the difference between the machines and the lambda calculus is the notion of time.  The machines operate within a time space meaning that at a given moment of time, they are operating on an instruction.  In the case of Russell's paradox, the machine infinitely operates on it, alternating states between true and false.  In lambda calculus the evaluation takes no time at all, resulting in a contradiction.
+<br>
+<br>
+Of course, I'm probably wrong.
+<br>
+</p></td>
+</tr>
+<tr>
+<td><img height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/images/blank.gif" width="1"></td>
+<td bgcolor="#DDDDDD" style="padding: 0px;" valign="bottom"><img src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/mindx/images/round-bottom-left.gif"></td>
+<td bgcolor="#DDDDDD" colspan="2"><img height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/images/blank.gif" width="1"></td>
+<td align="right" bgcolor="#DDDDDD" style="padding: 0px;" valign="bottom"><img src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/mindx/images/round-bottom-right.gif"></td>
+</tr>
+</table>
+<a name="id15765"></a>
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+<tr>
+<td><img height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/images/blank.gif" width="60"></td>
+<td colspan="4"><img height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/images/blank.gif" width="619"></td>
+</tr>
+<tr>
+<td></td>
+<td bgcolor="#CCCCCC" style="padding: 0px;" valign="top"><img src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/mindx/images/round-left.gif"></td>
+<td bgcolor="#CCCCCC"><p>Re: The Paradigms and Paradoxes of Intelligence, Part 1: Russell's Paradox<br><span class="mindxheader"><i>posted on 03/16/2003 6:15 PM by <a href="https://web.archive.org/web/20100613234823/http://www.kurzweilai.net/mindx/profile.php?id=18">claireatcthisspace</a></i></span></p></td>
+<td align="right" bgcolor="#CCCCCC" valign="top"><span class="mindxheader">[<a href="#discussion">Top</a>]<br>[<a href="https://web.archive.org/web/20100613234823/http://www.kurzweilai.net/mindx/frame.html?main=show_thread.php?rootID%3D15582%23id15765" target="_top">Mind&#183;X</a>]<br>[<a href="https://web.archive.org/web/20100613234823/http://www.kurzweilai.net/mindx/frame.html?main=post.php?reply%3D15765" target="_top">Reply to this post</a>]</span></td>
+<td align="right" bgcolor="#CCCCCC" style="padding: 0px;" valign="top"><img src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/mindx/images/round-right.gif"></td>
+</tr>
+<tr>
+<td></td>
+<td bgcolor="#DDDDDD" colspan="4"><p>No, we're both right.
+<br>
+<br>
+claire</p></td>
+</tr>
+<tr>
+<td><img height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/images/blank.gif" width="1"></td>
+<td bgcolor="#DDDDDD" style="padding: 0px;" valign="bottom"><img src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/mindx/images/round-bottom-left.gif"></td>
+<td bgcolor="#DDDDDD" colspan="2"><img height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/images/blank.gif" width="1"></td>
+<td align="right" bgcolor="#DDDDDD" style="padding: 0px;" valign="bottom"><img src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/mindx/images/round-bottom-right.gif"></td>
+</tr>
+</table>
+<a name="id15768"></a>
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+<tr>
+<td><img height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/images/blank.gif" width="60"></td>
+<td colspan="4"><img height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/images/blank.gif" width="619"></td>
+</tr>
+<tr>
+<td></td>
+<td bgcolor="#CCCCCC" style="padding: 0px;" valign="top"><img src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/mindx/images/round-left.gif"></td>
+<td bgcolor="#CCCCCC"><p>Re: The Paradigms and Paradoxes of Intelligence, Part 1: Russell's Paradox<br><span class="mindxheader"><i>posted on 03/16/2003 8:04 PM by <a href="https://web.archive.org/web/20100613234823/http://www.kurzweilai.net/mindx/profile.php?id=18">claireatcthisspace</a></i></span></p></td>
+<td align="right" bgcolor="#CCCCCC" valign="top"><span class="mindxheader">[<a href="#discussion">Top</a>]<br>[<a href="https://web.archive.org/web/20100613234823/http://www.kurzweilai.net/mindx/frame.html?main=show_thread.php?rootID%3D15582%23id15768" target="_top">Mind&#183;X</a>]<br>[<a href="https://web.archive.org/web/20100613234823/http://www.kurzweilai.net/mindx/frame.html?main=post.php?reply%3D15768" target="_top">Reply to this post</a>]</span></td>
+<td align="right" bgcolor="#CCCCCC" style="padding: 0px;" valign="top"><img src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/mindx/images/round-right.gif"></td>
+</tr>
+<tr>
+<td></td>
+<td bgcolor="#DDDDDD" colspan="4"><p>Maths serves an important function to valueness of absolutes to somthing, like a particle that has a value because we know it velocity and position or a strings tesntion value, of course in 3 D realtiy terms it really has no particular length or depth to it, but it still exists in abstract form whithin the mind. This is the signifier to why I propose absolutes as sets, as being part of the minds ability to make assumptions on past experience about what is a set, when in fact sets can be seen as a mix of peramereters that, much like the structures that define the somthing of a particle, has structures that also define the sets boundries, that end as one set and begin as another. This is fuzzy.
+<br>
+<br>
+<br>
+Claire
+<br>
+<br>
+</p></td>
+</tr>
+<tr>
+<td><img height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/images/blank.gif" width="1"></td>
+<td bgcolor="#DDDDDD" style="padding: 0px;" valign="bottom"><img src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/mindx/images/round-bottom-left.gif"></td>
+<td bgcolor="#DDDDDD" colspan="2"><img height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/images/blank.gif" width="1"></td>
+<td align="right" bgcolor="#DDDDDD" style="padding: 0px;" valign="bottom"><img src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/mindx/images/round-bottom-right.gif"></td>
+</tr>
+</table>
+<a name="id15769"></a>
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+<tr>
+<td><img height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/images/blank.gif" width="80"></td>
+<td colspan="4"><img height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/images/blank.gif" width="599"></td>
+</tr>
+<tr>
+<td></td>
+<td bgcolor="#CCCCCC" style="padding: 0px;" valign="top"><img src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/mindx/images/round-left.gif"></td>
+<td bgcolor="#CCCCCC"><p>Re: The Paradigms and Paradoxes of Intelligence, Part 1: Russell's Paradox<br><span class="mindxheader"><i>posted on 03/16/2003 8:15 PM by <a href="https://web.archive.org/web/20100613234823/http://www.kurzweilai.net/mindx/profile.php?id=18">claireatcthisspace</a></i></span></p></td>
+<td align="right" bgcolor="#CCCCCC" valign="top"><span class="mindxheader">[<a href="#discussion">Top</a>]<br>[<a href="https://web.archive.org/web/20100613234823/http://www.kurzweilai.net/mindx/frame.html?main=show_thread.php?rootID%3D15582%23id15769" target="_top">Mind&#183;X</a>]<br>[<a href="https://web.archive.org/web/20100613234823/http://www.kurzweilai.net/mindx/frame.html?main=post.php?reply%3D15769" target="_top">Reply to this post</a>]</span></td>
+<td align="right" bgcolor="#CCCCCC" style="padding: 0px;" valign="top"><img src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/mindx/images/round-right.gif"></td>
+</tr>
+<tr>
+<td></td>
+<td bgcolor="#DDDDDD" colspan="4"><p>and carrying on from that last post (because i hadn't really finished) i think the mind has various ways of assuming what the permateres or sets are. A mathematician might do better at explaining this than me. I see it as the time aspects of the calculus is also perameter/set related, but so is calculus! The percpetion of the calculus is a defining property of itself, then when we think it takes no time at all it makes sense that it doesn't need to (the paradox), untill we see the sets defined in different time perameters then whcih defines a different type of calculus. This different type of calculus then could include the paradox of paradoxical sets from Russels percpetion to the machines.
+<br>
+<br>
+<br>
+Claire   </p></td>
+</tr>
+<tr>
+<td><img height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/images/blank.gif" width="1"></td>
+<td bgcolor="#DDDDDD" style="padding: 0px;" valign="bottom"><img src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/mindx/images/round-bottom-left.gif"></td>
+<td bgcolor="#DDDDDD" colspan="2"><img height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/images/blank.gif" width="1"></td>
+<td align="right" bgcolor="#DDDDDD" style="padding: 0px;" valign="bottom"><img src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/mindx/images/round-bottom-right.gif"></td>
+</tr>
+</table>
+<a name="id15770"></a>
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+<tr>
+<td><img height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/images/blank.gif" width="100"></td>
+<td colspan="4"><img height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/images/blank.gif" width="579"></td>
+</tr>
+<tr>
+<td></td>
+<td bgcolor="#CCCCCC" style="padding: 0px;" valign="top"><img src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/mindx/images/round-left.gif"></td>
+<td bgcolor="#CCCCCC"><p>Re: The Paradigms and Paradoxes of Intelligence, Part 1: Russell's Paradox<br><span class="mindxheader"><i>posted on 03/16/2003 8:17 PM by <a href="https://web.archive.org/web/20100613234823/http://www.kurzweilai.net/mindx/profile.php?id=18">claireatcthisspace</a></i></span></p></td>
+<td align="right" bgcolor="#CCCCCC" valign="top"><span class="mindxheader">[<a href="#discussion">Top</a>]<br>[<a href="https://web.archive.org/web/20100613234823/http://www.kurzweilai.net/mindx/frame.html?main=show_thread.php?rootID%3D15582%23id15770" target="_top">Mind&#183;X</a>]<br>[<a href="https://web.archive.org/web/20100613234823/http://www.kurzweilai.net/mindx/frame.html?main=post.php?reply%3D15770" target="_top">Reply to this post</a>]</span></td>
+<td align="right" bgcolor="#CCCCCC" style="padding: 0px;" valign="top"><img src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/mindx/images/round-right.gif"></td>
+</tr>
+<tr>
+<td></td>
+<td bgcolor="#DDDDDD" colspan="4"><p>iam  not sure what terminology we would use to define what paradoxes are within the sets of paradoxes, but it would be bloody interesting.
+<br>
+<br>
+<br>
+claire</p></td>
+</tr>
+<tr>
+<td><img height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/images/blank.gif" width="1"></td>
+<td bgcolor="#DDDDDD" style="padding: 0px;" valign="bottom"><img src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/mindx/images/round-bottom-left.gif"></td>
+<td bgcolor="#DDDDDD" colspan="2"><img height="1" src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/images/blank.gif" width="1"></td>
+<td align="right" bgcolor="#DDDDDD" style="padding: 0px;" valign="bottom"><img src="https://web.archive.org/web/20100613234823im_/http://www.kurzweilai.net/mindx/images/round-bottom-right.gif"></td>
+</tr>
+</table>
+<p></p></td>
+<td>&#160;</td>
+</tr>
+</table>
+</td></tr></table>
+</body>
+</html>

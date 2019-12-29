@@ -1,0 +1,522 @@
+/* Master Style Sheet Document 03/14/02 */
+BODY {
+  background: #006699;
+  color: #000000;
+  font-family: verdana, arial, sans-serif;
+  font-size: 10pt;
+	margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+#centering-column {
+  width: 780px;
+  background-color: red;
+  height: 100%;
+}
+
+#header {
+	background-color: #404040;
+  padding: 5px;
+  margin: 0;
+  height: 75px;
+}
+#header h1 {
+	color: #eeeeee;
+	font-size: 25pt;
+	margin-bottom: -20px;
+}
+#header a {
+	color: #eeeeee;
+  font-size: 9pt;
+}
+
+#logo {
+  float: left;
+}
+
+#title {
+  float: right;
+  padding-top: 10px;
+  padding-right: 30px;
+  align: right;
+}
+#title > * {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  color: #000000;
+  font-family: verdana, arial, sans-serif;
+  font-size: 10pt;
+}
+
+tr {
+  color: #000000;
+  font-family: verdana, arial, sans-serif;
+  font-size: 10pt;
+}
+
+td {
+  color: #000000;
+  font-family: verdana, arial, sans-serif;
+  font-size: 10pt;
+}
+
+table {
+  color: #000000;
+  font-family: verdana, arial, sans-serif;
+  font-size: 10pt;
+}
+
+BLOCKQUOTE {
+  color: #000000;
+  font-family: verdana, arial, sans-serif;
+  font-size: 9pt;
+}
+
+.thought {
+  color: #006699;
+  font-family: verdana, arial, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.thought:visited {
+  color: #006699;
+  font-family: verdana, arial, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+A {
+  color: #000099;
+}
+
+/* unvisited links */
+A:visited {
+  color: #000077;
+}
+
+/*visited links */
+A:active {
+  color: #0088BB;
+}
+
+/*active links */
+H1 {
+  color: #000000;
+  font-family: verdana, arial, sans-serif;
+  font-size: 14pt;
+}
+
+H2 {
+  color: #000000;
+  font-family: verdana, arial, sans-serif;
+  font-size: 12pt;
+}
+
+H3 {
+  color: #000000;
+  font-family: verdana, arial, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+}
+
+.Title {
+  color: #006699;
+  font-family: verdana, arial, sans-serif;
+  font-weight: bold;
+  font-size: 11pt;
+}
+
+.Title:visited {
+  color: #004477;
+  font-family: verdana, arial, sans-serif;
+  font-weight: bold;
+  font-size: 11pt;
+}
+
+.Subtitle {
+  color: #006699;
+  font-family: verdana, arial, sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 10pt;
+}
+
+.Subtitle:visited {
+  color: #004477;
+  font-family: verdana, arial, sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 10pt;
+}
+
+.DatePublished {
+  color: #006699;
+  font-family: verdana, arial, sans-serif;
+  font-style: italic;
+  font-size: 9pt;
+}
+
+.memeDatePublished {
+  color: #000000;
+  font-family: verdana, arial, sans-serif;
+  font-style: italic;
+  font-size: 8pt;
+}
+
+.TeaserText {
+  color: #000000;
+  font-family: verdana, arial, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+}
+
+.smallTeaserText {
+  color: #000000;
+  font-family: verdana, arial, sans-serif;
+  font-size: 10pt;
+}
+
+.homeNews {
+  font-size: 8pt;
+}
+
+.teaser {
+  color: #000000;
+  font-family: verdana, arial, sans-serif;
+  font-size: 9pt;
+}
+
+.subMemeTeaser {
+  color: #006699;
+  font-family: verdana, arial, sans-serif;
+  font-style: italic;
+  font-size: 10pt;
+}
+
+.indent {
+  margin-left: 20pt;
+}
+
+.relatedTitle {
+  color: #006699;
+  font-family: verdana, arial, sans-serif;
+  font-weight: bold;
+  font-size: 10pt;
+}
+
+.relatedTitle:visited {
+  color: #004477;
+  font-family: verdana, arial, sans-serif;
+  font-weight: bold;
+  font-size: 10pt;
+}
+
+.relatedHeader {
+  color: #006699;
+  font-family: verdana, arial, sans-serif;
+  font-weight: bold;
+  font-size: 9pt;
+}
+
+.relatedHeader:visited {
+  color: #006699;
+  font-family: verdana, arial, sans-serif;
+  font-weight: bold;
+  font-size: 9pt;
+}
+
+.Authors {
+  color: #006699;
+  font-family: verdana, arial, sans-serif;
+  font-weight: bold;
+  font-size: 10pt;
+}
+
+.Authors:visited {
+  color: #004477;
+  font-family: verdana, arial, sans-serif;
+  font-weight: bold;
+  font-size: 10pt;
+}
+
+.Author {
+  color: #006699;
+  font-family: verdana, arial, sans-serif;
+  font-weight: bold;
+  font-size: 10pt;
+}
+
+.Author:visited {
+  color: #004477;
+  font-family: verdana, arial, sans-serif;
+  font-weight: bold;
+  font-size: 10pt;
+}
+
+.AuthorAffiliation {
+  color: #006699;
+  font-family: verdana, arial, sans-serif;
+  font-size: 9pt;
+}
+
+.AuthorAffiliation:visited {
+  color: #004477;
+  font-family: verdana, arial, sans-serif;
+  font-size: 9pt;
+}
+
+.Abstract {
+  margin-left: 50pt;
+  color: #000000;
+  font-family: verdana, arial, sans-serif;
+  font-size: 10pt;
+}
+
+.Caption {
+  color: #006699;
+  font-family: verdana, arial, sans-serif;
+  font-style: italic;
+  font-size: 9pt;
+}
+
+.keyword {
+  color: #006699;
+  font-family: verdana, arial, sans-serif;
+  font-style: italic;
+  font-size: 9pt;
+}
+
+.StoryLink {
+  color: #000000;
+  font-family: verdana, arial, sans-serif;
+  font-size: 8pt;
+}
+
+.StoryLink:visited {
+  color: #333333;
+  font-family: verdana, arial, sans-serif;
+  font-size: 8pt;
+}
+
+.PhotoCredit {
+  color: #006699;
+  font-family: verdana, arial, sans-serif;
+  font-size: 8pt;
+}
+
+.Reference {
+  color: #000000;
+  font-family: verdana, arial, sans-serif;
+  font-size: 10pt;
+  text-indent: 20pt;
+}
+
+.Footnote {
+  color: #000000;
+  font-family: verdana, arial, sans-serif;
+  font-size: 10pt;
+  text-indent: 20pt;
+}
+
+.Quotation {
+  color: #000000;
+  font-family: verdana, arial, sans-serif;
+  font-size: 10pt;
+  text-indent: 50pt;
+}
+
+.thought {
+  color: #006699;
+  font-family: verdana, arial, sans-serif;
+  text-decoration: none;
+}
+
+.thought:visited {
+  color: #006699;
+  font-family: verdana, arial, sans-serif;
+  text-decoration: none;
+}
+
+.breadcrumb {
+  font-family: verdana, arial, sans-serif;
+  font-size: 8pt;
+}
+
+.printable {
+  font-family: verdana, arial, sans-serif;
+  font-weight: bold;
+  font-size: 8pt;
+}
+
+.header {
+  font-family: verdana, arial, sans-serif;
+  font-size: 8pt;
+}
+
+.padded {
+  display: block;
+  padding: 10px;
+}
+
+/* should it have display: block? some do, some don't */
+.Search {
+  color: #000000;
+  font-family: verdana, arial, sans-serif;
+  font-size: 8pt;
+}
+
+.Searchblack {
+  color: #000000;
+  font-family: verdana, arial, sans-serif;
+  font-size: 8pt;
+}
+
+.button {
+  bacgkround: #0099CC;
+  font-family: verdana, arial, sans-serif;
+  font-size: 8pt;
+  font-weight: bold;
+  color: #000000;
+}
+
+.ramona {
+  font-family: verdana, arial, sans-serif;
+  font-size: 8pt;
+}
+
+.note {
+  color: #006699;
+  font-family: verdana, arial, sans-serif;
+  font-size: 8pt;
+}
+
+.subtleNote {
+  color: #336699;
+  font-family: verdana, arial, sans-serif;
+  font-size: 8pt;
+}
+
+.spotlightTitle {
+  color: #000000;
+  font-family: verdana, arial, sans-serif;
+  font-size: 9pt;
+}
+
+.whiteHeadline {
+  color: #000000;
+  font-family: verdana, arial, sans-serif;
+  font-size: 10pt;
+}
+
+.affiliate {
+  color: #000000;
+  font-family: verdana, arial, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+}
+
+.meme {
+  color: #333333;
+  font-family: verdana, arial, sans-serif;
+  font-weight: bold;
+  font-size: 12pt;
+}
+
+.memeTeaser {
+  color: #333333;
+  font-family: verdana, arial, sans-serif;
+  font-style: italic;
+  font-size: 10pt;
+}
+
+.StoryBorder {
+  background: #CCCCCC;
+  padding: 10px;
+  width: 375px;
+  display: block;
+}
+
+.mindxheader {
+  font-family: verdana, arial, sans-serif;
+  font-size: 8pt;
+}
+
+.mindxquote {
+  font-family: verdana, arial, sans-serif;
+  font-size: 8pt;
+  background: #EEEEEE;
+  border-style: solid;
+  border-color: #000000;
+  padding: 5px;
+  border-width: 1px;
+  width: 80%;
+  text-align: left;
+  margin-bottom: 0px;
+}
+
+.smText {
+  font-size: 8pt;
+}
+
+.subHead {
+  font-size: 10pt;
+  font-weight: bold;
+}
+
+.more {
+  color: #000099;
+  font-family: verdana, arial, sans-serif;
+  font-weight: bold;
+  font-size: 9pt;
+}
+
+.nomore {
+  color: #666666;
+  font-family: verdana, arial, sans-serif;
+  font-weight: bold;
+  font-size: 9pt;
+}
+
+.date {
+  color: #000000;
+  font-family: verdana, arial, sans-serif;
+  font-weight: bold;
+  font-size: 9pt;
+}
+
+.smlist {
+  color: #000000;
+  font-family: verdana, arial, sans-serif;
+  font-size: 9pt;
+}
+
+.smtitle {
+  color: #000000;
+  font-family: verdana, arial, sans-serif;
+  font-weight: bold;
+  font-size: 9pt;
+}
+
+.pagenav {
+  color: #000099;
+  font-family: verdana, arial, sans-serif;
+  font-weight: bold;
+  font-size: 9pt;
+}
+
+.error (color: #CC0000;
+font-family: verdana, arial, sans-serif;
+font-weight: bold;
+font-size: 10pt;
+}
+
+.columnHead {
+  font-family: verdana, arial, sans-serif;
+  font-style: italic;
+  font-size: 10pt;
+}

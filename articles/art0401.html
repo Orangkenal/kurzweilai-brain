@@ -1,0 +1,207 @@
+<html>
+<head><base href="file:///Users/beka/Projects/Brain%20Archive/brain_archive/"><link href="articlemaster.css" rel="stylesheet" title="style1" type="text/css">
+<style>
+.sidebar {border-left-width: 2px; border-right-width: 0px; border-top-width: 0px; border-bottom-width: 0px; border-color: #000000; border-style: solid; padding-left: 12px;}
+</style>
+<title>Rethinking Operating Systems</title>
+</head>
+<body leftmargin="0" marginheight="0" marginwidth="0" topmargin="0"><div id="centering-column"><div id="header">
+  <div id="logo">
+    <img src="logo.gif" />
+  </div>
+  <div id="title">
+    <h1>Brain Archive</h1><br />
+    <a href="">Entry Index</a>
+  </div>
+  <div class="clearer"></div>
+</div>
+<table align="center" bgcolor="#EEEEEE" border="0" cellpadding="0" cellspacing="0" height="100%" width="780">
+<tr height="100%">
+<td align="left" valign="top">
+<table align="center" bgcolor="#EEEEEE" border="0" cellpadding="0" cellspacing="0" width="780">
+<tr>
+<td><img alt="" border="0" height="5" src="https://web.archive.org/web/20071011120848im_/http://www.kurzweilai.net/blank.gif" width="20"></td>
+<td><img alt="" border="0" height="1" src="https://web.archive.org/web/20071011120848im_/http://www.kurzweilai.net/blank.gif" width="90"></td>
+<td><img alt="" border="0" height="1" src="https://web.archive.org/web/20071011120848im_/http://www.kurzweilai.net/blank.gif" width="375"></td>
+<td><img alt="" border="0" height="1" src="https://web.archive.org/web/20071011120848im_/http://www.kurzweilai.net/blank.gif" width="30"></td>
+<td><img alt="" border="0" height="1" src="https://web.archive.org/web/20071011120848im_/http://www.kurzweilai.net/blank.gif" width="200"></td>
+<td><img alt="" border="0" height="1" src="https://web.archive.org/web/20071011120848im_/http://www.kurzweilai.net/blank.gif" width="30"></td>
+</tr>
+<tr>
+<td> &#160; </td>
+<td colspan="5"> <span class="breadcrumb"><a href="https://web.archive.org/web/20071011120848/http://www.kurzweilai.net/" target="_top">Origin</a> &gt;
+ <a href="https://web.archive.org/web/20071011120848/http://www.kurzweilai.net/meme/memelist.html?m=7">Visions of the Future</a> &gt; 
+Rethinking Operating Systems
+<br>
+Permanent link to this article: <a href="http://web.archive.org/web/20071011120848/http://www.kurzweilai.net/meme/frame.html?main=/articles/art0401.html" target="_top">http://www.kurzweilai.net/meme/frame.html?main=/articles/art0401.html</a></span>
+<br>
+<a class="printable" href="https://web.archive.org/web/20071011120848/http://www.kurzweilai.net/articles/art0401.html?printable=1" target="_new">Printable Version</a></td>
+</tr>
+<tr><td colspan="6"><img alt="" border="0" height="50" src="https://web.archive.org/web/20071011120848im_/http://www.kurzweilai.net/blank.gif" width="1"></td></tr>
+<tr>
+<td> &#160; </td>
+<td> &#160; </td>
+<td valign="top"><span class="Title">Rethinking Operating Systems</span>
+<br>
+<span class="Subtitle"></span>
+<table border="0" cellpadding="0" cellspacing="0">
+<td valign="top"><span class="Authors">by &#160;</span></td><td><span class="Authors"> <a class="Authors" href="https://web.archive.org/web/20071011120848/http://www.kurzweilai.net/bios/frame.html?main=/bios/bio0165.html" target="_top">    Bob   Frankston </a><br>
+</span></td>
+</table>
+<br>
+<div class="TeaserText">We know <a class="thought" href="entries/hardware_entry.html">hardware</a> has become exponentially faster, cheaper and smaller since the advent of the <a class="thought" href="entries/operating_system_entry.html">operating system</a>, yet the <a class="thought" href="entries/interface_entry.html">interface</a> hasn't changed much. In this draft of an essay, <a class="thought" href="entries/frankston_entry.html">Bob Frankston</a> proposes a rethink of the assumptions that went into user <a class="thought" href="entries/interface_entry.html">interface</a> design thirty years ago.</div>
+<br>
+<br>
+<p>Originally published 1995 at <a href="http://web.archive.org/web/20071011120848/http://www.frankston.com/" target="_new">www.frankston.com</a>. Updates and revisions may occur at the essay's <a href="http://web.archive.org/web/20071011120848/http://www.frankston.com/public/Writings/OS_Essay.asp" target="_new">original location</a>. Published on KurzweilAI.net February 11, 2002.</p><h1>Updated Preface</h1><p>This essay is primarily a critical examination of many of the assumptions about systems design. Namely the <a class="thought" href="entries/concept_entry.html">concept</a> that we must add a lot of mechanism to build systems. Since writing this I've been focusing more on what we can and do to make effective use of computational technologies. At some point my <a class="thought" href="entries/thinking_entry.html">thinking</a> will be clear-enough to post.</p><h1>Overview</h1><p>The idea of operating systems have been around since the mid 60's. It is time to reexamine the basic rationale for such systems as we prepare the next generation of systems and as computers become the basic components of our infrastructure.</p>
+<p>The direction of <a class="thought" href="entries/computer_science_entry.html">computer</a> <a class="thought" href="entries/science_entry.html">science</a>/<a class="thought" href="entries/software_entry.html">software</a> engineering was set in the 1960's when the primary concerns were making effective use of expensive computers and managing what were then large efforts. Though the world has changed greatly since then, we are still pursuing the same basic directions. A general-purpose <a class="thought" href="entries/computer_entry.html">computer</a> comes as a set of <a class="thought" href="entries/hardware_entry.html">hardware</a> matched to an <a class="thought" href="entries/operating_system_entry.html">operating system</a> that manages resources. <a class="thought" href="entries/software_entry.html">Software</a> Engineering methodologies are focused on assuring that one can specify and follow through on large projects.</p>
+<p>But the computers are getting smaller and cheaper. <a class="thought" href="entries/personal_computer_entry.html">PC</a>'s are only a middle stage in this <a class="thought" href="entries/evolution_entry.html">evolution</a>. <a class="thought" href="entries/individual_entry.html">Individual</a> systems are becoming simpler but their interactions are becoming more important and more complex.</p><h1>The <a class="thought" href="entries/future_entry.html">Future</a></h1><p>Before reviewing the sins of the past, it is important to remember that we are just starting to learn how to create effective interacting systems. Despite the issues presented here operating systems as we know it are not going away. They are the common <a class="thought" href="entries/platform_entry.html">platform</a> for interacting systems. We will need to evolve the rules for how these systems interact. More important, as <a class="thought" href="entries/software_entry.html">software</a> becomes the key infrastructure <a class="thought" href="entries/element_entry.html">element</a>, must assure that we can still provide an effective mechanism for supporting the "rules of the road". We may even choose to call these frameworks "<a class="thought" href="entries/operating_system_entry.html">operating system</a>". We have attempted to use terms like "Operating Environments" which are more appropriate, but they have not caught on.</p>
+<p>The <a class="thought" href="entries/operating_system_entry.html">operating system</a> is pass&#233;, long live the <a class="thought" href="entries/operating_system_entry.html">operating system</a>.</p><h1>Origins</h1><p>The <a class="thought" href="entries/computer_entry.html">computer</a> <a class="thought" href="entries/operating_system_entry.html">operating system</a> was a major accomplishment of the 1960's. The 1960's was the age of discovery in computers. Compilers (automatic programming), databases (<a class="thought" href="entries/network_entry.html">network</a> and then relational) were all-important.</p>
+<p>With the perspective of time we can rethink our assumptions and the results. The <a class="thought" href="entries/operating_system_entry.html">operating system</a> has persisted as a central theme because it seems that there should be a conductor for every orchestra. But we've mistaken a powerful, though pragmatic, solution for a fundamental principle.</p>
+<p>This is not merely an historical exercise to see why one particular set of ideas won. With computers we have an unusual degree of <a class="thought" href="entries/freedom_entry.html">freedom</a> to not only rethink the past but rework the present.</p>
+<p>There is no perfection, just tradeoffs. The <a class="thought" href="entries/operating_system_entry.html">operating system</a> itself is one such tradeoff.</p><h1>Operating Systems</h1><p>Not all systems have operating systems. <a class="thought" href="entries/embedded_systems_entry.html">Embedded systems</a> are often written to standard libraries or direct to the "iron".</p>
+<p>The <a class="thought" href="entries/operating_system_entry.html">operating system</a> evolved from such libraries into a resource manager at the heart of a complex <a class="thought" href="entries/system_entry.html">system</a>. In the days of the <a class="thought" href="entries/ibm_entry.html">IBM</a> 7094, the Fortran Monitor <a class="thought" href="entries/system_entry.html">System</a> (FMS) was little more than a set of standard subroutines and I/O routines that operated according to a set of conventions. They supported one job at a time as part of a stream of jobs conforming to local conventions. Typically unit #5 was the input tape and #6 was the output tape. Eventually, these became magic numbers no longer associated with tapes.</p>
+<p>By the time of Multics, we saw the <a class="thought" href="entries/operating_system_entry.html">operating system</a> as a manager of <a class="thought" href="entries/system_entry.html">system</a> resources. The computers were expensive and it was very important that we provided for sharing. More to the point, fair sharing, of the resources among the competing interests. The fundamental model assumed a large <a class="thought" href="entries/system_entry.html">system</a> managed by a trustworthy systems manager with <a class="thought" href="entries/software_entry.html">software</a> provided by the systems supplier. </p>
+<p>The <a class="thought" href="entries/concept_entry.html">concept</a> of a security <a class="thought" href="entries/kernel_entry.html">kernel</a> which added incentive to the idea of simplifying the <a class="thought" href="entries/operating_system_entry.html">operating system</a> to its basics so that it could be understood. This was also considered important for reliability. The file <a class="thought" href="entries/system_entry.html">system</a>, once central, was reduced to some basic disk management functions with the rest of the <a class="thought" href="entries/system_entry.html">system</a> being moved to outer levels. Interestingly, <a class="thought" href="entries/operating_system_entry.html">OS</a>/360 didn't even have a file <a class="thought" href="entries/system_entry.html">system</a> initially, just some optional cataloging. Multics at the high end and RSX-11M were systems that separated naming of files from managing their on-disk <a class="thought" href="entries/structure_entry.html">structure</a>. Files had a unique id or a disk block id.</p>
+<p>The notion of rings ran into trouble when the simplifying assumption of a central authority gave way to the need to support mutually suspicious subsystems. A third party <a class="thought" href="entries/database_entry.html">database</a> manager could not be trusted unfettered <a class="thought" href="entries/access_entry.html">access</a> to all of the user's environment.</p>
+<p>Security has stayed important but a poor step-child of operating systems since it was simply not important within small groups. Fundamentally complex, heavyweight, secure operating systems were artifacts of expensive mainframes domiciled in <a class="thought" href="entries/computer_entry.html">computer</a> rooms.</p>
+<p>Unix has been at the center of moving <a class="thought" href="entries/operating_system_entry.html">operating system</a> concepts from the heavy <a class="thought" href="entries/mainframe_entry.html">mainframe</a> to a more pragmatic small <a class="thought" href="entries/system_entry.html">system</a> though it didn't reach full maturation until the 1980's and has continued to evolve to the 90's.</p><h1>Enter the <a class="thought" href="entries/personal_computer_entry.html">PC</a></h1><p>
+<a class="thought" href="entries/personal_computer_entry.html">PC</a>'s evolved from chip sets with little <a class="thought" href="entries/software_entry.html">software</a>. They either ran "on the iron" or had small monitors to assist in writing simple applications. For those of us who wanted to deliver capability, this was fortuitous. Though well versed in operating systems, we also had <a class="thought" href="entries/experience_entry.html">experience</a> with earlier, smaller systems and specialty <a class="thought" href="entries/hardware_entry.html">hardware</a>. If we could write operating systems, we could write applications that did the same things themselves.</p>
+<p>Much more important was the realization that the user's didn't care what was going on inside the <a class="thought" href="entries/system_entry.html">system</a>, what mattered was whether they could make the <a class="thought" href="entries/machine_entry.html">machine</a> do what they needed it to do. If the <a class="thought" href="entries/operating_system_entry.html">operating system</a> were convenient then we'd use it, if not, then we would ignore it and, if necessary, work around it.</p>
+<p>As the <a class="thought" href="entries/personal_computer_entry.html">PC</a> evolved, we got more and more services provided. But those of us who kept to the notion that the user <a class="thought" href="entries/experience_entry.html">experience</a> was paramount would pick and choose which of these services we would use and which we would work around.</p>
+<p>The Abort, Retry, Ignore message separated the pros from the amateurs. The pros took responsibility for handling all eventualities and the amateurs just used the standard <a class="thought" href="entries/c_entry.html">C</a>-<a class="thought" href="entries/language_entry.html">language</a> I/O packages which placed the burden of handling contingencies on the users.</p>
+<p>At this point, <a class="thought" href="entries/personal_computer_entry.html">PC</a>'s have evolved sophisticated operating systems that have grown far larger and more complex than any <a class="thought" href="entries/mainframe_entry.html">mainframe</a> from the 70's and has lost of its simple innocence.</p>
+<p>We already see this happening within the <a class="thought" href="entries/personal_computer_entry.html">PC</a> as interactions between components dominates the basic systems services. We cling to the notion that the <a class="thought" href="entries/operating_system_entry.html">operating system</a> is at the center as all the activity goes on around it and between systems. Yet it is in the interaction between the applications that our challenges lie.</p>
+<p>We have lost sight of the fundamental idea that the <a class="thought" href="entries/operating_system_entry.html">operating system</a> is merely a set of conventions that we abstract from common practices and there is nothing fundamental. Using standard services is useful as a cost/benefit tradeoff. It requires that there be enough slack in the <a class="thought" href="entries/system_entry.html">system</a> to allow for it and the that its <a class="thought" href="entries/complexity_entry.html">complexity</a> doesn't overwhelm the <a class="thought" href="entries/architecture_entry.html">architecture</a>.</p><h1>An Applications <a class="thought" href="entries/platform_entry.html">Platform</a></h1><p>In building applications, the <a class="thought" href="entries/personal_computer_entry.html">PC</a> will continue being the <a class="thought" href="entries/platform_entry.html">platform</a> of choice for a long time. The problems of building applications that work together is not limited to the <a class="thought" href="entries/personal_computer_entry.html">PC</a>, the issues recur whether the applications are cooperating within a single <a class="thought" href="entries/system_entry.html">system</a> or are communicating over a <a class="thought" href="entries/network_entry.html">network</a>. In order to address the issues of <a class="thought" href="entries/complexity_entry.html">complexity</a>, we need to rethink some of the standard paradigms.</p>
+<p>This is occurring, as computing itself becomes the fundamental building block of our infrastructure. This involves creating many interacting systems. But we have little understanding of how to make these complex interactions scale.</p>
+<p>The most important lesson to learn is that we can and should be able to discard the comfort and overhead of the <a class="thought" href="entries/operating_system_entry.html">operating system</a> and reinvent the services we need. We need to reexamine some of the basic gospel of <a class="thought" href="entries/computer_science_entry.html">computer</a> <a class="thought" href="entries/science_entry.html">science</a>:</p>
+<p>Reusability. It is better to build out of existing pieces than to create new ones every time. But this notion easily goes awry when the effort involved in assuring reuse overwhelms the cost of rebuilding. Consumer electronics provides great lessons in the advantage of just replacing entire systems than reusing pieces. </p>
+<p>Layering. Breaking problems down into simpler elements is a powerful technique for building systems. After sufficient <a class="thought" href="entries/experience_entry.html">experience</a> we develop a set of conventions that allow arms length cooperation.. Out of this arose the notion of the <a class="thought" href="entries/operating_system_entry.html">operating system</a> <a class="thought" href="entries/api_entry.html">API</a>. What is lost is the notion that these <a class="thought" href="entries/api_entry.html">API</a>'s must be renegotiated as the circumstances change. A <a class="thought" href="entries/network_entry.html">network</a> is not simply a remote disk drive. </p>
+<p>Networks represent very different <a class="thought" href="entries/semantics_entry.html">semantics</a> from a local disk reference. Not only are there additional failure modes that should be handled, notions of performance and delay don't even have analogs when dealing with a local disk drive. When we take this into the <a class="thought" href="entries/wireless_entry.html">wireless</a> <a class="thought" href="entries/domain_entry.html">domain</a>, the lie is put to the test and fails miserably. Yet we continue to model <a class="thought" href="entries/network_entry.html">network</a> as simple extensions of the local <a class="thought" href="entries/system_entry.html">system</a>. This only touches upon the complexities introduced by networking among mutually suspicious systems.</p>
+<p>Uniformism. The purpose of layers is to try to provide a uniform basis upon which to build our applications. But it is often the idiosyncrasies of each <a class="thought" href="entries/system_entry.html">system</a> that make the <a class="thought" href="entries/system_entry.html">system</a> what it is. </p>
+<p>We also need to question the scope of specific techniques and paradigms. These do represent good practices but can readily become dogmas.</p>
+<p>Objects. Objects are a good technique for encapsulating methods and instances as unit. They are a nice way of structuring systems. Like other forms of layering they can serve as an internal structuring tool and, to a limited extent, as a way to codifying arms length relationships. Objects go beyond layering in that they are more independent of underlying systems and have relationships among themselves and isolation between themselves. This leads to complex interactions. </p>
+<p>With objects, we take the dangers of layering -- the lies and misrepresentations -- and multiply them as objects build upon other objects as both layers and peers. Without oversight, these relationships drift apart as in a whispering chain. Adding the notion of distribution, implicit networking, creates a volatile mix that is likely to explode or simply fail.</p>
+<p>Minimal Kernels. These are still operating systems but the foist the blame onto the applications by declaring all the service subsystems to be outside the <a class="thought" href="entries/kernel_entry.html">kernel</a>. This isn't necessarily bad but neither is it necessary good. It attempts to preserve the notion of a standard environment into which one can load applications. An alternative is to statically link systems together rather than relying on the dynamic environment of the <a class="thought" href="entries/kernel_entry.html">kernel</a>. Key to this is the merging of the embedded <a class="thought" href="entries/system_entry.html">system</a> and the general-purpose <a class="thought" href="entries/system_entry.html">system</a>. The <a class="thought" href="entries/embedded_systems_entry.html">embedded systems</a> come to the fore as <a class="thought" href="entries/hardware_entry.html">hardware</a> becomes a trivial part of the cost of systems. This is not to say that the notions of operating systems are obsolete. But it is as <a class="thought" href="entries/knowledge_entry.html">knowledge</a> rather than code that they survive. </p>
+<p>
+<a class="thought" href="entries/central_processing_unit_entry.html">CPU</a> Centricity. Just like a car might be characterized by its horsepower, a <a class="thought" href="entries/computer_entry.html">computer</a> is characterized by its <a class="thought" href="entries/central_processing_unit_entry.html">CPU</a>. We need to identify systems of cooperating components as the <a class="thought" href="entries/entity_entry.html">entity</a> that is important. This goes beyond the notion of the <a class="thought" href="entries/network_entry.html">network</a> as the <a class="thought" href="entries/system_entry.html">system</a> since we are not positing the form of cooperation and can reduce the <a class="thought" href="entries/network_entry.html">network</a> <a class="thought" href="entries/complexity_entry.html">complexity</a> and scope in these systems. </p>
+<p>Paging. Generally paging is used to give the user the illusion of having more physical <a class="thought" href="entries/memory_entry.html">memory</a> than there really is. Hence the term virtual <a class="thought" href="entries/memory_entry.html">memory</a>. As long as there was sufficient <a class="thought" href="entries/memory_entry.html">memory</a> to keep a working set in real <a class="thought" href="entries/memory_entry.html">memory</a>, the illusion could be maintained. The problem is that as systems become more complex more and more components are required to maintain the user <a class="thought" href="entries/interface_entry.html">interface</a> (as well as support other functions). If these aren't used constantly they will get displaced by more active components. But when one shifts tasks, the <a class="thought" href="entries/system_entry.html">system</a> goes into a frenzy of paging in order to bring in the main components, each of which has responsibility of a small portion of the user <a class="thought" href="entries/interface_entry.html">interface</a> that must be repaired at each change. </p>
+<p>Secure systems. Users have physical possession of much of their devices and much of the infrastructure. The idea of a security <a class="thought" href="entries/kernel_entry.html">kernel</a> is limited by physical possession. We can have some security in parts of the infrastructure. <a class="thought" href="entries/encryption_entry.html">Encryption</a> allows some degree of security for <a class="thought" href="entries/information_entry.html">information</a> in insecure systems. As the infostructure becomes more important integrity and security of data become more important. The mechanisms must be robust and assume both technical and human error as the norm. Security is only useful to the extent it is understandable by the user and there is a way to specify "intuitive" security policies.</p>
+<p>Trust and reliability. These are at the heart of how computers have differed from other appliances. We have had the luxury of factors of a trillion in scale. We are now at the limit of the <a class="thought" href="entries/complexity_entry.html">complexity</a> of interactions compounded by the distributed authority that frustrates the ability to assure proper behavior even if such behavior was well-defined. </p>
+<p>
+<a class="thought" href="entries/software_entry.html">Software</a> design methodology. Obviously the idea of doing a design is not bad. What is bad is the assumption that one can design a <a class="thought" href="entries/system_entry.html">system</a> as a whole and then <a class="thought" href="entries/implement_entry.html">implement</a> it. At the same time as we take more responsibility for an entire <a class="thought" href="entries/system_entry.html">system</a> including the <a class="thought" href="entries/silicon_entry.html">silicon</a>, we have less control of the environment in which it runs. We are incrementally adding capability rather than building entire systems. Of course, we really don't have any idea how to do this.</p>
+<p>Common purpose. We don't really have the luxury of designing a <a class="thought" href="entries/system_entry.html">system</a> as a whole. Not only are there the <a class="thought" href="entries/software_entry.html">software</a> design issues and trust issues, but we are writing application in a real world of disparate parties, with little in common. The ability to add function quickly and incrementally will win over a full-blown design that doesn't add sufficient additional value and will win over a design that requires too much cooperation between competing parties. </p>
+<p>Error reporting. It does little good,, beyond frustrating the user to report that something has gone wrong. Add the words "fatal" is just an attempt to heighten the user's anxiety and bring on a heart attack. Rather than reporting errors, we must report solutions -- what should or can be done to resolve the problem. This is nontrivial because the explanation must be tailored to each user and each situation </p><h1>What to do?</h1><p>Build simple <a class="thought" href="entries/intelligence_entry.html">intelligence</a> devices. The notion of simple given that we can place the equivalent of an early <a class="thought" href="entries/personal_computer_entry.html">PC</a> on a single chip has grown. But just like <a class="thought" href="entries/personal_computer_entry.html">PC</a>'s freed us up from the need to assure full utilization of all the <a class="thought" href="entries/hardware_entry.html">hardware</a>, these new devices needn't do more than one or, at best, a handful of functions. Instead of reusability build for function. If one is building a golf watch, make it have a golf scoring button and color it green and use a different watch off the course. </p>
+<p>Build-in simple cooperation. We can design some simple protocols for cooperation and evolve them over time. This is the secret of the <a class="thought" href="entries/internet_entry.html">Internet</a>. Perhaps the golf watch can transmit scores to the <a class="thought" href="entries/personal_computer_entry.html">PC</a> but it doesn't need to be your <a class="thought" href="entries/digital_entry.html">digital</a> communicator since you've got a phone in your pocket anyway and don't want the weight on your wrist. </p>
+<p>Assume failure. It is normal for systems to fail. You should expect that services you call upon are unreliable. You should depend on what runs locally and be able to survive failures as minor annoyances. Do not do any nontrivial error recovery since the interactions between failures are major sources of untestable failures of their own. Better to isolate the failure than to do complex recovery. At the same time, you shouldn't hide failures since then the <a class="thought" href="entries/system_entry.html">system</a> still fails but behaves perversely. The <a class="thought" href="entries/www_entry.html">World Wide Web</a> provides one example, other servers are likely to fail but you can still use the rest of the infrastructure and can retry if necessary. This is more problematic as we build layers of <a class="thought" href="entries/middleware_entry.html">middleware</a> upon the Web. </p>
+<p>Learn by doing. If we are to build large systems out of simpler systems, the <a class="thought" href="entries/individual_entry.html">individual</a> components should be effective <a class="thought" href="entries/individual_entry.html">individual</a>. It follows that sets of them should also be useful. An incremental implementation not only assures early <a class="thought" href="entries/utility_entry.html">utility</a>, it allows for <a class="thought" href="entries/learning_entry.html">learning</a> as one implements. But this must be done with an expectation of reworking and revisiting earlier decisions. Loose coupling between components helps maintain the <a class="thought" href="entries/system_entry.html">system</a> through change as welling as making it robust against minor failures and mismatches. Despite these, we are still subject the to complexities of the growing interactions between systems. </p>
+<p>Learn how to composite systems. We don't have an understanding of how to manage the interactions as we composite <a class="thought" href="entries/individual_entry.html">individual</a> systems. How do the policies interact? We cannot know the full consequences of these interactions so how do we prepare for the contingencies? I think of this as a policy interaction. One general approach is to have an overseer for each interaction but how does on do this in practice. This is a vital area in <a class="thought" href="entries/research_entry.html">research</a>, one long past due. </p><h1>Summary and Looking Ahead</h1><p>The <a class="thought" href="entries/operating_system_entry.html">operating system</a> has come to characterize the <a class="thought" href="entries/substrate_entry.html">substrate</a> upon which the applications and services are to be built? This has been a powerful idea that has been the underpinnings for much that we have done.</p>
+<p>But each time we reinvent computing we need to reexamine these notions. And with each generation the <a class="thought" href="entries/operation_entry.html">operation</a> <a class="thought" href="entries/system_entry.html">system</a> becomes less the core issue. Minis were dependent upon operating systems for their generality. <a class="thought" href="entries/personal_computer_entry.html">PC</a>'s didn't get full operating systems until very late in their <a class="thought" href="entries/evolution_entry.html">evolution</a>.</p>
+<p>As <a class="thought" href="entries/software_entry.html">software</a> becomes the key infrastructure <a class="thought" href="entries/element_entry.html">element</a>, we will shift from the <a class="thought" href="entries/operating_system_entry.html">OS</a> Centric model of <a class="thought" href="entries/software_entry.html">software</a> to more a federation of independent systems. The focus will be on the services they deliver to each other and the resilience of the federation. If it is the infrastructure then there is no option for the <a class="thought" href="entries/system_entry.html">system</a> as a whole failing.</p>
+<p>Please send comments and suggestions to me at <a href="http://web.archive.org/web/20071011120848/mailto:Bobf@frankston.com" target="_new">Bobf@frankston.com</a>.</p>
+<p>
+<a class="thought" href="entries/copyright_entry.html">Copyright</a> 1995 <a class="thought" href="entries/frankston_entry.html">Bob Frankston</a>.</p>
+</td><td>&#160;</td><td valign="top"><a href="#discussion">Join the discussion about this article on Mind&#183;X!</a></td><td> &#160; </td>
+</tr>
+<tr><td colspan="6"><img alt="" border="0" height="35" src="https://web.archive.org/web/20071011120848im_/http://www.kurzweilai.net/blank.gif" width="35"></td></tr>
+<tr>
+<td>&#160;</td>
+<td colspan="4">
+<a name="discussion"></a><p><span class="mindxheader">&#160;&#160;&#160;[<a href="https://web.archive.org/web/20071011120848/http://www.kurzweilai.net/mindx/frame.html?main=post.php?reply%3D5344" target="_top">Post New Comment</a>]<br>&#160;&#160;&#160;</span>Mind&#183;X Discussion About This Article:</p><a name="id5345"></a>
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+<tr>
+<td><img height="1" src="https://web.archive.org/web/20071011120848im_/http://www.kurzweilai.net/images/blank.gif" width="0"></td>
+<td colspan="4"><img height="1" src="https://web.archive.org/web/20071011120848im_/http://www.kurzweilai.net/images/blank.gif" width="679"></td>
+</tr>
+<tr>
+<td></td>
+<td bgcolor="#CCCCCC" style="padding: 0px;" valign="top"><img src="https://web.archive.org/web/20071011120848im_/http://www.kurzweilai.net/mindx/images/round-left.gif"></td>
+<td bgcolor="#CCCCCC"><p>This is hardly new...<br><span class="mindxheader"><i>posted on 02/12/2002 8:33 AM by chuckr@cicons.com</i></span></p></td>
+<td align="right" bgcolor="#CCCCCC" valign="top"><span class="mindxheader">[<a href="#discussion">Top</a>]<br>[<a href="https://web.archive.org/web/20071011120848/http://www.kurzweilai.net/mindx/frame.html?main=show_thread.php?rootID%3D5344%23id5345" target="_top">Mind&#183;X</a>]<br>[<a href="https://web.archive.org/web/20071011120848/http://www.kurzweilai.net/mindx/frame.html?main=post.php?reply%3D5345" target="_top">Reply to this post</a>]</span></td>
+<td align="right" bgcolor="#CCCCCC" style="padding: 0px;" valign="top"><img src="https://web.archive.org/web/20071011120848im_/http://www.kurzweilai.net/mindx/images/round-right.gif"></td>
+</tr>
+<tr>
+<td></td>
+<td bgcolor="#DDDDDD" colspan="4"><p>I just read this article and feel as thought the author, while understanding well the history of computing, does not understand the movement towards mobile, decentralized computing.
+<br>
+<br>
+He takes issue with large layered operating systems that provide infratructure for 'multipurpose' computing. 
+<br>
+<br>
+Of course a large OS may not be right for a PDA device or a mobile music device. But guess what, I can plug either into my multipurpose device (my PC) and share data (music, files, calendars, phone numbers etc.,).
+<br>
+<br>
+How do we solve the data here, data there problems? How does my golf watch transfer my last round to the computer? What if I don't like wearing 2 watches? All usability issues, often solved by multipurpos swiss army computing devices.
+<br>
+<br>
+Good comments on failover, error handling and building code to 'solve problems'... but doesn't this add code? Won't this contribute to a bloated error management infrastructure? 
+<br>
+<br>
+It already has...take a look at Windows XP. 20MM lines of infrastructure. Take a look at the LINUX code bloat, look at the Windows Pocket PC platform.
+<br>
+<br>
+Isn't this layered infrastructure there to support innovation? Isn't it there to free up the solutions provider from the underlying complexity of the device and it's interrelated parts? Without it would anyone build software as fast? As functional?
+<br>
+<br>
+Then I got to the bottom of the article and saw the date. 1995??  What's with that? Why waste my time?
+<br>
+<br>
+</p></td>
+</tr>
+<tr>
+<td><img height="1" src="https://web.archive.org/web/20071011120848im_/http://www.kurzweilai.net/images/blank.gif" width="1"></td>
+<td bgcolor="#DDDDDD" style="padding: 0px;" valign="bottom"><img src="https://web.archive.org/web/20071011120848im_/http://www.kurzweilai.net/mindx/images/round-bottom-left.gif"></td>
+<td bgcolor="#DDDDDD" colspan="2"><img height="1" src="https://web.archive.org/web/20071011120848im_/http://www.kurzweilai.net/images/blank.gif" width="1"></td>
+<td align="right" bgcolor="#DDDDDD" style="padding: 0px;" valign="bottom"><img src="https://web.archive.org/web/20071011120848im_/http://www.kurzweilai.net/mindx/images/round-bottom-right.gif"></td>
+</tr>
+</table>
+<a name="id5377"></a>
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+<tr>
+<td><img height="1" src="https://web.archive.org/web/20071011120848im_/http://www.kurzweilai.net/images/blank.gif" width="20"></td>
+<td colspan="4"><img height="1" src="https://web.archive.org/web/20071011120848im_/http://www.kurzweilai.net/images/blank.gif" width="659"></td>
+</tr>
+<tr>
+<td></td>
+<td bgcolor="#CCCCCC" style="padding: 0px;" valign="top"><img src="https://web.archive.org/web/20071011120848im_/http://www.kurzweilai.net/mindx/images/round-left.gif"></td>
+<td bgcolor="#CCCCCC"><p>Its hard to be an OS devel.<br><span class="mindxheader"><i>posted on 02/15/2002 4:48 PM by alangrimes@starpower.net</i></span></p></td>
+<td align="right" bgcolor="#CCCCCC" valign="top"><span class="mindxheader">[<a href="#discussion">Top</a>]<br>[<a href="https://web.archive.org/web/20071011120848/http://www.kurzweilai.net/mindx/frame.html?main=show_thread.php?rootID%3D5344%23id5377" target="_top">Mind&#183;X</a>]<br>[<a href="https://web.archive.org/web/20071011120848/http://www.kurzweilai.net/mindx/frame.html?main=post.php?reply%3D5377" target="_top">Reply to this post</a>]</span></td>
+<td align="right" bgcolor="#CCCCCC" style="padding: 0px;" valign="top"><img src="https://web.archive.org/web/20071011120848im_/http://www.kurzweilai.net/mindx/images/round-right.gif"></td>
+</tr>
+<tr>
+<td></td>
+<td bgcolor="#DDDDDD" colspan="4"><p>I have been designing an OS around this line of thought for many years now... 
+<br>
+<br>
+My work can be seen at: 
+<br>
+<br>
+http://users.rcn.com/alangrimes/UCE/sphere.txt
+<br>
+<br>
+Unfortunately, current compilers are very unfriendly towards this design and OS development in general
+<br>
+on a number of fronts. =(
+<br>
+<br>
+Developing a compiler is its own challenge... 
+<br>
+<br>
+I really need all the help I can get. Programmers, RISC development platforms, and millions of dollars in money..
+<br>
+<br>
+</p></td>
+</tr>
+<tr>
+<td><img height="1" src="https://web.archive.org/web/20071011120848im_/http://www.kurzweilai.net/images/blank.gif" width="1"></td>
+<td bgcolor="#DDDDDD" style="padding: 0px;" valign="bottom"><img src="https://web.archive.org/web/20071011120848im_/http://www.kurzweilai.net/mindx/images/round-bottom-left.gif"></td>
+<td bgcolor="#DDDDDD" colspan="2"><img height="1" src="https://web.archive.org/web/20071011120848im_/http://www.kurzweilai.net/images/blank.gif" width="1"></td>
+<td align="right" bgcolor="#DDDDDD" style="padding: 0px;" valign="bottom"><img src="https://web.archive.org/web/20071011120848im_/http://www.kurzweilai.net/mindx/images/round-bottom-right.gif"></td>
+</tr>
+</table>
+<p></p></td>
+<td>&#160;</td>
+</tr>
+</table>
+</td></tr></table>
+</body>
+</html>
